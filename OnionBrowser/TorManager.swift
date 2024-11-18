@@ -100,7 +100,7 @@ class TorManager {
 			torConf = getTorConf()
 
 //			if let debug = torConf?.compile().joined(separator: ", ") {
-//				Logger.log(debug, to: FileManager.default.torLogFile)
+//				print(debug)
 //			}
 
 			torThread = TorThread(configuration: torConf)
@@ -305,7 +305,9 @@ class TorManager {
 		arguments.append(contentsOf: transportConf(Transport.asArguments).joined())
 		arguments.append(contentsOf: ipStatus.torConf(transport, Transport.asArguments).joined())
 
-		conf.arguments = arguments as? NSMutableArray
+		// Urgh. Transports and IP settings where ignored on first start.
+		// Careful: `arguments as? NSMutableCopy == nil`
+		conf.arguments.addObjects(from: arguments)
 
 #if DEBUG
 		let log = "notice stdout"
