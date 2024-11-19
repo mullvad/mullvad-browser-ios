@@ -85,7 +85,7 @@ class CircuitViewController: UIViewController, UIPopoverPresentationControllerDe
 	private var nodes = [Node]()
 	private var usedCircuits = [OrbotKit.TorCircuit]()
 
-	private static let onionAddressRegex = try? NSRegularExpression(pattern: "^(.*)\\.(onion|exit)$", options: .caseInsensitive)
+	private static let onionAddressRegex = try? NSRegularExpression(pattern: "^(.*\\.)?(.*?)\\.(onion|exit)$", options: .caseInsensitive)
 
 	private static let beginningOfTime = Date(timeIntervalSince1970: 0)
 
@@ -228,10 +228,14 @@ class CircuitViewController: UIViewController, UIPopoverPresentationControllerDe
 							in: host, options: [],
 							range: NSRange(host.startIndex ..< host.endIndex, in: host))
 
-						if matches?.first?.numberOfRanges ?? 0 > 1,
-							let nsRange = matches?.first?.range(at: 1),
-							let range = Range(nsRange, in: host) {
-							query = String(host[range])
+						if let match = matches?.first,
+						   match.numberOfRanges > 1
+						{
+						   let nsRange = match.range(at: match.numberOfRanges - 2)
+
+							if let range = Range(nsRange, in: host) {
+								query = String(host[range])
+							}
 						}
 
 						// Circuits used for .onion addresses can be identified by their
@@ -244,7 +248,7 @@ class CircuitViewController: UIViewController, UIPopoverPresentationControllerDe
 						}
 						else {
 							candidates = candidates.filter { circuit in
-								circuit.purpose == TorCircuit.purposeGeneral || circuit.purpose == "CONFLUX_LINKED"
+								circuit.purpose == TorCircuit.purposeGeneral || circuit.purpose == TorCircuit.purposeConfluxLinked
 							}
 						}
 					}
