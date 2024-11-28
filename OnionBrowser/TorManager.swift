@@ -77,7 +77,7 @@ class TorManager {
 				self?.torController?.setConfs(status.torConf(self?.transport ?? .none, Transport.asConf))
 				{ success, error in
 					if let error = error {
-						print("[\(String(describing: type(of: self)))] error: \(error)")
+						self?.log("error: \(error)")
 					}
 
 					self?.torController?.resetConnection()
@@ -95,7 +95,12 @@ class TorManager {
 		self.transport = transport
 
 		if !torRunning {
-			startTransport()
+			do {
+				try startTransport()
+			}
+			catch {
+				return completion(error)
+			}
 
 			torConf = getTorConf()
 
@@ -207,7 +212,12 @@ class TorManager {
 	func updateConfig(_ transport: Transport) {
 		self.transport = transport
 
-		startTransport()
+		do {
+			try startTransport()
+		}
+		catch {
+			return log("error=\(error)")
+		}
 
 		guard let torController = torController else {
 			return
@@ -221,9 +231,9 @@ class TorManager {
 		for key in resetKeys {
 			group.enter()
 
-			torController.resetConf(forKey: key) { _, error in
+			torController.resetConf(forKey: key) { [weak self] _, error in
 				if let error = error {
-					debugPrint(error)
+					self?.log("error=\(error)")
 				}
 
 				group.leave()
@@ -340,19 +350,12 @@ class TorManager {
 		return arguments
 	}
 
-	private func startTransport() {
-		switch transport {
-		case .obfs4, .custom, .meekAzure:
-			Transport.snowflake.stop()
+	private func startTransport() throws {
+		Transport.custom.stop()
+		Transport.meekAzure.stop()
+		Transport.obfs4.stop()
+		Transport.snowflake.stop()
 
-		case .snowflake, .snowflakeAmp:
-			Transport.obfs4.stop()
-
-		default:
-			Transport.obfs4.stop()
-			Transport.snowflake.stop()
-		}
-
-		transport.start()
+		try transport.start()
 	}
 }
