@@ -1,2 +1,4 @@
-- Tor päivitetty uusimpaan versioon 0.4.8.12.
-- Käytä aina `https` clearnet-osoitteisiin, kun käyttäjä ei ole antanut URL-suunnitelmaa.
+- Korjattu vika, jossa valittu kuljetus jätettiin huomiotta käynnistyksen aikana ja se tuli voimaan vasta sen muuttamisen jälkeen.
+- Tor päivitetty uusimpaan versioon 0.4.8.13.
+- Snowflake päivitetty uusimpaan versioon 2.10.1.
+- Lyrebird päivitetty uusimpaan versioon 0.5.0.

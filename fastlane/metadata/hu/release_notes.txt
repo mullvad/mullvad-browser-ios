@@ -1,2 +1,4 @@
-- Frissítettük a Tor-t a legújabb, 0.4.8.12-es verzióra.
-- Mindig az `https`-t használja a clearnet címeken, ha a felhasználó nem adott meg URL sémát.
+- Kijavítottuk azt a hibát, hogy a kiválasztott szállítóeszközöket az indításkor figyelmen kívül hagyták, és csak a módosítás után léptek működésbe.
+- Frissítettük a Tor-t a legújabb, 0.4.8.13-as verzióra.
+- Snowflake frissítve a legújabb, 2.10.1-es verzióra.
+- Lyrebird frissítve a legújabb 0.5.0 verzióra.

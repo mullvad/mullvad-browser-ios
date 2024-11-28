@@ -1,2 +1,4 @@
-- S'ha actualitzat Tor a la darrera versió 0.4.8.12.
-- Feu servir sempre `https` a les adreces de Clearnet, quan l'usuari no ha introduït un esquema d'URL.
+- S'ha corregit un error en què un transport seleccionat s'ignorava durant l'inici i només entrava en vigor després de canviar-lo.
+- S'ha actualitzat Tor a la darrera versió 0.4.8.13.
+- S'ha actualitzat Snowflake a la darrera versió 2.10.1.
+- S'ha actualitzat Lyrebird a la darrera versió 0.5.0.

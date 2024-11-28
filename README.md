@@ -11,7 +11,7 @@ Please see the [LICENSE][license] file for usage and redistribution terms.
 
 ---
 
-* **Onion Browser**: 3.1.4 - See [official release history][releases] and [changelog][changelog].
+* **Onion Browser**: 3.1.5 - See [official release history][releases] and [changelog][changelog].
 
 [official]: https://onionbrowser.com/
 [help]: https://github.com/OnionBrowser/OnionBrowser/wiki/Help

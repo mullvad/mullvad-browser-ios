@@ -1,2 +1,4 @@
-- Aggiornato Tor all'ultima versione 0.4.8.12.
-- Utilizza sempre `https` sugli indirizzi clearnet, quando l'utente non ha inserito uno schema URL.
+- Corretto l'errore per cui un trasporto selezionato veniva ignorato all'avvio e diventava effettivo solo dopo averlo cambiato.
+- Aggiornato Tor all'ultima versione 0.4.8.13.
+- Aggiornato Snowflake all'ultima versione 2.10.1.
+- Aggiornato Lyrebird all'ultima versione 0.5.0.

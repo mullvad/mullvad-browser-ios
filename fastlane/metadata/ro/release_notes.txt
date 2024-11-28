@@ -1,2 +1,4 @@
-- Am actualizat Tor la ultima versiune 0.4.8.12.
-- Utilizați întotdeauna `https` pe adresele clearnet, atunci când utilizatorul nu a introdus o schemă URL.
+- A fost rezolvată problema în care un transport selectat era ignorat în timpul pornirii și avea efect numai după schimbarea acestuia.
+- Actualizat Tor la ultima versiune 0.4.8.13.
+- Actualizat Snowflake la ultima versiune 2.10.1.
+- Actualizat Lyrebird la ultima versiune 0.5.0.

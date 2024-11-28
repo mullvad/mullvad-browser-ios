@@ -1,2 +1,4 @@
-- Ažuriran Tor na najnoviju verziju 0.4.8.12.
-- Uvijek koristite `https` na clearnet adresama, kada korisnik nije unio URL shemu.
+- Ispravljena greška gdje je odabrani prijenos zanemaren tijekom pokretanja i stupio je na snagu tek nakon promjene.
+- Ažuriran Tor na najnoviju verziju 0.4.8.13.
+- Snowflake je ažuriran na najnoviju verziju 2.10.1.
+- Ažuriran Lyrebird na najnoviju verziju 0.5.0.

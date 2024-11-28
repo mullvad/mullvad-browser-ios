@@ -1,2 +1,4 @@
-- Memperbarui Tor ke versi terbaru 0.4.8.12.
-- Selalu gunakan `https` pada alamat clearnet, ketika pengguna tidak memasukkan skema URL.
+- Memperbaiki bug di mana transportasi yang dipilih diabaikan selama startup dan hanya berlaku setelah mengubahnya.
+- Memperbarui Tor ke versi terbaru 0.4.8.13.
+- Memperbarui Snowflake ke versi terbaru 2.10.1.
+- Memperbarui Lyrebird ke versi terbaru 0.5.0.

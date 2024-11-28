@@ -1,2 +1,4 @@
-- Tor en son 0.4.8.12 sürümüne güncellendi.
-- Kullanıcı bir URL şeması girmediğinde, clearnet adreslerinde her zaman `https` kullanın.
+- Seçilen bir aktarımın başlangıç sırasında yok sayılması ve yalnızca değiştirildikten sonra etkili olması hatası düzeltildi.
+- Tor en son 0.4.8.13 sürümüne güncellendi.
+- Snowflake en son 2.10.1 sürümüne güncellendi.
+- Lyrebird en son 0.5.0 sürümüne güncellendi.

@@ -1,5 +1,11 @@
 #  Onion Browser Changelog
 
+## 3.1.5
+- Fixed bug where a selected transport was ignored during startup and only took effect after changing it.
+- Updated Tor to latest version 0.4.8.13.
+- Updated Snowflake to latest version 2.10.1.
+- Updated Lyrebird to latest version 0.5.0.
+
 ## 3.1.4
 - Updated Tor to latest version 0.4.8.12.
 - Always use `https` on clearnet addresses, when the user didn't enter a URL scheme.
