@@ -265,6 +265,9 @@
 /* RuleEditorController */
 "Enable" = "Inschakelen";
 
+/* Option title */
+"Enable Lockdown Mode" = "Enable Lockdown Mode";
+
 /* AlertHelper */
 "Error" = "Fout";
 

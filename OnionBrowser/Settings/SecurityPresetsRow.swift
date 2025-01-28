@@ -86,16 +86,16 @@ enum SecurityPreset: Int, CustomStringConvertible {
 		}
 	}
 
-	var values: (javaScript: Bool, orientationAndMotion: Bool, mediaCapture: Bool)? {
+	var values: (javaScript: Bool, lockdownMode: Bool, orientationAndMotion: Bool, mediaCapture: Bool)? {
 		switch self {
 		case .insecure:
-			return (true, true, true)
+			return (true, false, true, true)
 
 		case .medium:
-			return (true, false, false)
+			return (true, true, false, false)
 
 		case .secure:
-			return (false, false, false)
+			return (false, true, false, false)
 
 		default:
 			return nil
@@ -107,15 +107,15 @@ enum SecurityPreset: Int, CustomStringConvertible {
 	case medium = 1
 	case secure = 2
 
-	init(_ javaScript: Bool?, _ orientationAndMotion: Bool?, _ mediaCapture: Bool?) {
-		switch (javaScript, orientationAndMotion, mediaCapture) {
-		case (true, true, true):
+	init(_ javaScript: Bool?, _ lockdownMode: Bool?, _ orientationAndMotion: Bool?, _ mediaCapture: Bool?) {
+		switch (javaScript, lockdownMode, orientationAndMotion, mediaCapture) {
+		case (true, false, true, true):
 			self = .insecure
 
-		case (true, false, false):
+		case (true, true, false, false):
 			self = .medium
 
-		case (false, false, false):
+		case (false, true, false, false):
 			self = .secure
 
 		default:
@@ -124,7 +124,7 @@ enum SecurityPreset: Int, CustomStringConvertible {
 	}
 
 	init(_ settings: HostSettings?) {
-		self = .init(settings?.javaScript, settings?.orientationAndMotion, settings?.mediaCapture)
+		self = .init(settings?.javaScript, settings?.lockdownMode, settings?.orientationAndMotion, settings?.mediaCapture)
 	}
 }
 

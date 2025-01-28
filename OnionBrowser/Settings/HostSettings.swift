@@ -34,6 +34,7 @@ class HostSettings: NSObject {
 	private static let followOnionLocationHeaderKey = "follow_onion_location_header"
 	private static let userAgentKey = "user_agent"
 	private static let javaScriptKey = "javascript"
+	private static let lockdownModeKey = "lockdown_mode"
 	private static let orientationAndMotionKey = "orientation_and_motion"
 	private static let mediaCaptureKey = "media_capture"
 
@@ -52,7 +53,7 @@ class HostSettings: NSObject {
 	}
 
 	static var hosts: [String] {
-		return raw.keys.filter({ $0 != HostSettings.defaultHost }).sorted()
+		return raw.keys.filter({ $0 != Self.defaultHost }).sorted()
 	}
 
 	/**
@@ -151,12 +152,10 @@ class HostSettings: NSObject {
 	*/
 	var ignoreTlsErrors: Bool {
 		get {
-			return get(HostSettings.ignoreTlsErrorsKey) == HostSettings.true
+			return get(Self.ignoreTlsErrorsKey) == Self.true
 		}
 		set {
-			raw[HostSettings.ignoreTlsErrorsKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.ignoreTlsErrorsKey] = newValue ? Self.true : Self.false
 		}
 	}
 
@@ -168,12 +167,10 @@ class HostSettings: NSObject {
 	*/
 	var whitelistCookies: Bool {
 		get {
-			return get(HostSettings.whitelistCookiesKey) == HostSettings.true
+			return get(Self.whitelistCookiesKey) == Self.true
 		}
 		set {
-			raw[HostSettings.whitelistCookiesKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.whitelistCookiesKey] = newValue ? Self.true : Self.false
 		}
 	}
 
@@ -185,23 +182,19 @@ class HostSettings: NSObject {
 	*/
 	var universalLinkProtection: Bool {
 		get {
-			return get(HostSettings.universalLinkProtectionKey) == HostSettings.true
+			return get(Self.universalLinkProtectionKey) == Self.true
 		}
 		set {
-			raw[HostSettings.universalLinkProtectionKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.universalLinkProtectionKey] = newValue ? Self.true : Self.false
 		}
 	}
 
 	var followOnionLocationHeader: Bool {
 		get {
-			get(HostSettings.followOnionLocationHeaderKey) == HostSettings.true
+			get(Self.followOnionLocationHeaderKey) == Self.true
 		}
 		set {
-			raw[HostSettings.followOnionLocationHeaderKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.followOnionLocationHeaderKey] = newValue ? Self.true : Self.false
 		}
 	}
 
@@ -213,48 +206,56 @@ class HostSettings: NSObject {
 	*/
 	var userAgent: String {
 		get {
-			return get(HostSettings.userAgentKey)
+			return get(Self.userAgentKey)
 		}
 		set {
-			raw[HostSettings.userAgentKey] = newValue
+			raw[Self.userAgentKey] = newValue
 		}
 	}
 
 	/**
 	 True, if JavaScript should be allowed.
 
-	Setting this will always set the value explicitly for this host.
+	 Setting this will always set the value explicitly for this host.
 	*/
 	var javaScript: Bool {
 		get {
-			return get(HostSettings.javaScriptKey) == HostSettings.true
+			return get(Self.javaScriptKey) == Self.true
 		}
 		set {
-			raw[HostSettings.javaScriptKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.javaScriptKey] = newValue ? Self.true : Self.false
+		}
+	}
+
+	/**
+	 True, if lockdown mode should be enabled.
+
+	 Setting this will always set the value explicitly for this host.
+	 */
+	var lockdownMode: Bool {
+		get {
+			return get(Self.lockdownModeKey) == Self.true
+		}
+		set {
+			raw[Self.lockdownModeKey] = newValue ? Self.true : Self.false
 		}
 	}
 
 	var orientationAndMotion: Bool {
 		get {
-			return get(HostSettings.orientationAndMotionKey) == HostSettings.true
+			return get(Self.orientationAndMotionKey) == Self.true
 		}
 		set {
-			raw[HostSettings.orientationAndMotionKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.orientationAndMotionKey] = newValue ? Self.true : Self.false
 		}
 	}
 
 	var mediaCapture: Bool {
 		get {
-			return get(HostSettings.mediaCaptureKey) == HostSettings.true
+			return get(Self.mediaCaptureKey) == Self.true
 		}
 		set {
-			raw[HostSettings.mediaCaptureKey] = newValue
-				? HostSettings.true
-				: HostSettings.false
+			raw[Self.mediaCaptureKey] = newValue ? Self.true : Self.false
 		}
 	}
 
@@ -284,7 +285,7 @@ class HostSettings: NSObject {
 	init(for host: String, withDefaults: Bool) {
 		self.host = host
 
-		if host == HostSettings.defaultHost {
+		if host == Self.defaultHost {
 			raw = [
 				Self.ignoreTlsErrorsKey: Self.false,
 				Self.whitelistCookiesKey: Self.false,
@@ -292,13 +293,14 @@ class HostSettings: NSObject {
 				Self.followOnionLocationHeaderKey: Self.false,
 				Self.userAgentKey: "",
 				Self.javaScriptKey: Self.true,
+				Self.lockdownModeKey: Self.false,
 				Self.orientationAndMotionKey: Self.false,
 				Self.mediaCaptureKey: Self.false,
 			]
 		}
 		else {
 			if withDefaults {
-				raw = HostSettings.forDefault().raw
+				raw = Self.forDefault().raw
 			}
 			else {
 				raw = [:]
@@ -317,9 +319,9 @@ class HostSettings: NSObject {
 	@discardableResult
 	@objc
 	func save() -> HostSettings.Type {
-		HostSettings.raw[host] = raw
+		Self.raw[host] = raw
 
-		let host = self.host == HostSettings.defaultHost ? nil : self.host
+		let host = self.host == Self.defaultHost ? nil : self.host
 
 		DispatchQueue.main.async {
 			NotificationCenter.default.post(name: .hostSettingsChanged, object: host)
@@ -342,7 +344,7 @@ class HostSettings: NSObject {
 
 		// Stop endless recursion. This might happen if you search for
 		// a setting which is not defined.
-		if host == HostSettings.defaultHost {
+		if host == Self.defaultHost {
 			return ""
 		}
 
@@ -355,11 +357,11 @@ class HostSettings: NSObject {
 
 			let superhost = parts.joined(separator: ".")
 
-			if HostSettings.has(superhost) {
-				return HostSettings.for(superhost).get(key)
+			if Self.has(superhost) {
+				return Self.for(superhost).get(key)
 			}
 		}
 
-		return HostSettings.forDefault().get(key)
+		return Self.forDefault().get(key)
 	}
 }

@@ -80,6 +80,19 @@ extension Tab: WKNavigationDelegate {
 
 		preferences.allowsContentJavaScript = HostSettings.for(url.host).javaScript
 
+		if #available(iOS 16.0, *) {
+#if DEBUG
+			// There is no web-browser entitlement in debugging, and without that,
+			// *disabling* lockdown mode is disallowed and we would crash here.
+			// Hence, only try to enable it, if it's *not* enabled, yet, but it should.
+			if !preferences.isLockdownModeEnabled && HostSettings.for(url.host).lockdownMode {
+				preferences.isLockdownModeEnabled = true
+			}
+#else
+			preferences.isLockdownModeEnabled = HostSettings.for(url.host).lockdownMode
+#endif
+		}
+
 		if navigationAction.shouldPerformDownload {
 			decisionHandler(.download, preferences)
 		}

@@ -32,6 +32,12 @@ class SecurityViewController: FixedFormViewController {
 		$0.cell.textLabel?.numberOfLines = 0
 	}
 
+	private let lockdownModeRow = SwitchRow() {
+		$0.title = NSLocalizedString("Enable Lockdown Mode", comment: "Option title")
+		$0.cell.switchControl.onTintColor = .accent
+		$0.cell.textLabel?.numberOfLines = 0
+	}
+
 	private let orientationAndMotionRow = SwitchRow() {
 		$0.title = NSLocalizedString("Allow Access to Orientation and Motion Data", comment: "Option title")
 		$0.cell.switchControl.onTintColor = .accent
@@ -60,6 +66,7 @@ class SecurityViewController: FixedFormViewController {
 		securityPresetsRow.value = SecurityPreset(hostSettings)
 
 		javaScriptRow.value = hostSettings.javaScript
+		lockdownModeRow.value = hostSettings.lockdownMode
 		orientationAndMotionRow.value = hostSettings.orientationAndMotion
 		mediaCaptureRow.value = hostSettings.mediaCapture
 
@@ -78,14 +85,17 @@ class SecurityViewController: FixedFormViewController {
 				// still being configured for default values, although these should
 				// be set hard.
 				self?.hostSettings.javaScript = values.javaScript
+				self?.hostSettings.lockdownMode = values.lockdownMode
 				self?.hostSettings.orientationAndMotion = values.orientationAndMotion
 				self?.hostSettings.mediaCapture = values.mediaCapture
 
 				self?.javaScriptRow.value = values.javaScript
+				self?.lockdownModeRow.value = values.lockdownMode
 				self?.orientationAndMotionRow.value = values.orientationAndMotion
 				self?.mediaCaptureRow.value = values.mediaCapture
 
 				self?.javaScriptRow.updateCell()
+				self?.lockdownModeRow.updateCell()
 				self?.orientationAndMotionRow.updateCell()
 				self?.mediaCaptureRow.updateCell()
 			}
@@ -99,10 +109,27 @@ class SecurityViewController: FixedFormViewController {
 
 			self?.alertBeforeChange(
 				row.value ?? false,
+				hostSettings.lockdownMode,
 				hostSettings.orientationAndMotion,
 				hostSettings.mediaCapture)
 		}
 
+		if #available(iOS 16.0, *) {
+			form.last! <<< lockdownModeRow
+				.onChange { [weak self] row in
+					guard let hostSettings = self?.hostSettings else {
+						return
+					}
+
+					self?.alertBeforeChange(
+						hostSettings.javaScript,
+						row.value ?? false,
+						hostSettings.orientationAndMotion,
+						hostSettings.mediaCapture)
+				}
+		}
+
+		form.last!
 		<<< orientationAndMotionRow
 		.onChange { [weak self] row in
 			guard let hostSettings = self?.hostSettings else {
@@ -111,6 +138,7 @@ class SecurityViewController: FixedFormViewController {
 
 			self?.alertBeforeChange(
 				hostSettings.javaScript,
+				hostSettings.lockdownMode,
 				row.value ?? false,
 				hostSettings.mediaCapture)
 		}
@@ -123,6 +151,7 @@ class SecurityViewController: FixedFormViewController {
 
 			self?.alertBeforeChange(
 				hostSettings.javaScript,
+				hostSettings.lockdownMode,
 				hostSettings.orientationAndMotion,
 				row.value ?? false)
 		}
@@ -256,12 +285,13 @@ class SecurityViewController: FixedFormViewController {
 
 	private var calledTwice = false
 
-	private func alertBeforeChange(_ javaScript: Bool, _ orientationAndMotion: Bool, _ mediaCapture: Bool) {
+	private func alertBeforeChange(_ javaScript: Bool, _ lockdownMode: Bool, _ orientationAndMotion: Bool, _ mediaCapture: Bool) {
 
-		let preset = SecurityPreset(javaScript, orientationAndMotion, mediaCapture)
+		let preset = SecurityPreset(javaScript, lockdownMode, orientationAndMotion, mediaCapture)
 
 		let okHandler = { [weak self] in
 			self?.hostSettings.javaScript = javaScript
+			self?.hostSettings.lockdownMode = lockdownMode
 			self?.hostSettings.orientationAndMotion = orientationAndMotion
 			self?.hostSettings.mediaCapture = mediaCapture
 
@@ -272,10 +302,12 @@ class SecurityViewController: FixedFormViewController {
 		if !calledTwice && preset == .custom && securityPresetsRow.value != .custom {
 			let cancelHandler = { [weak self] in
 				self?.javaScriptRow.value = self?.hostSettings.javaScript
+				self?.lockdownModeRow.value = self?.hostSettings.lockdownMode
 				self?.orientationAndMotionRow.value = self?.hostSettings.orientationAndMotion
 				self?.mediaCaptureRow.value = self?.hostSettings.mediaCapture
 
 				self?.javaScriptRow.updateCell()
+				self?.lockdownModeRow.updateCell()
 				self?.orientationAndMotionRow.updateCell()
 				self?.mediaCaptureRow.updateCell()
 
