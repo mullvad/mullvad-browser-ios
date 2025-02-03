@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Pilih berapa lama aplikasi mengingat tab yang terbuka.";
 
-/* CertificateViewController */
-"Cipher" = "Cipher";
-
 /* AppDelegate */
 "Close Tab" = "Tutup Tab";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Hubungkan ke situs web untuk melihat sirkuit Anda.";
-
-/* CertificateViewController */
-"Connection Information" = "Informasi Koneksi ";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Koneksi ke Server Nextcloud Gagal";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Kerahasiaan & Keamanan";
-
-/* CertificateViewController */
-"Protocol" = "Protokol";
 
 /* Tab */
 "Pull to Refresh Page" = "Tarik untuk Memperbaharui Halaman";

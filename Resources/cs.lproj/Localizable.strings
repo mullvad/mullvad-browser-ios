@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Vyberte, jak dlouho si aplikace pamatuje otevřené panely.";
 
-/* CertificateViewController */
-"Cipher" = "Šifra";
-
 /* AppDelegate */
 "Close Tab" = "Zavřít panel";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Ke zobrazení vašeho Tor okruhu se připojte k nějaké webové stránce.";
-
-/* CertificateViewController */
-"Connection Information" = "Informace o spojení";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Spojení s serverem Nextcloud selhalo";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Soukromí a zabezpečení";
-
-/* CertificateViewController */
-"Protocol" = "Protokol";
 
 /* Tab */
 "Pull to Refresh Page" = "Táhnutím znovu načtete";

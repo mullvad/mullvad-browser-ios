@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Escolha por quanto tempo a aplicação se lembra dos separadores abertos.";
 
-/* CertificateViewController */
-"Cipher" = "Cifra";
-
 /* AppDelegate */
 "Close Tab" = "Fechar Separador";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Ligue-se a um ''site'' da Web  para ver seu circuito.";
-
-/* CertificateViewController */
-"Connection Information" = "Informação da Ligação";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "A ligação ao «Servidor» da Nextcloud falhou";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Privacidade e Segurança";
-
-/* CertificateViewController */
-"Protocol" = "Protocolo";
 
 /* Tab */
 "Pull to Refresh Page" = "Deslizar para Baixo para Atualizar Página";

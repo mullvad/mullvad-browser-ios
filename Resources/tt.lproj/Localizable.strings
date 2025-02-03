@@ -89,7 +89,7 @@
 "Add Site" = "Сайтны өстәү";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "%@-га өстәү";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Шуның өстенә, Onion Browser кушымтасыннан кыстыргычлар серверда ясалачак, әгәр алар элек булмаган булса.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Кушымта ачык кыстыргычларны хәтерли озаккамы икәнен сайлагыз.";
 
-/* CertificateViewController */
-"Cipher" = "Шифр";
-
 /* AppDelegate */
 "Close Tab" = "Табны ябу";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Схемагызны карау өчен вебсайтка тоташыгыз.";
-
-/* CertificateViewController */
-"Connection Information" = "Бәйләнеш турында мәгълүмат";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Nextcloud серверга тоташу уңышсыз";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "Хосусыйлык & Хәвефсезлек";
 
-/* CertificateViewController */
-"Protocol" = "Протокол";
-
 /* Tab */
 "Pull to Refresh Page" = "Битне яңарту өчен тартыгыз";
 
@@ -476,7 +467,7 @@
 "Retry" = "Кабатлау";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "%@-га аутентификация ачкычын өстәгәннән соң тырышып карагыз.";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Хәзерге биттә кулланыла торган кагыйдәләр";

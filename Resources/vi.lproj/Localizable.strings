@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Chọn cách ứng dụng nhớ cửa sổ đang mở.";
 
-/* CertificateViewController */
-"Cipher" = "Mã hóa";
-
 /* AppDelegate */
 "Close Tab" = "Đóng cửa sổ";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Kết nối tới một trang web để xem mạch Tor của bạn.";
-
-/* CertificateViewController */
-"Connection Information" = "Thông tin kết nối";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Không thể kết nối tới máy chủ Nextcloud";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Riêng tư & Bảo mật";
-
-/* CertificateViewController */
-"Protocol" = "Giao thức";
 
 /* Tab */
 "Pull to Refresh Page" = "Kéo để tải lại trang";

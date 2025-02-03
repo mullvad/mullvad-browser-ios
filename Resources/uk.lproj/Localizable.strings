@@ -89,7 +89,7 @@
 "Add Site" = "Додати Сайт";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Додати до %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Крім того, там будуть створені усі закладки, яких немає на сервері, але які є в Onion Browser.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Налаштування запам'ятовування відкритих вкладок.";
 
-/* CertificateViewController */
-"Cipher" = "Шифрування";
-
 /* AppDelegate */
 "Close Tab" = "Закрити вкладку";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Під'єднайтесь до вебсайту, щоб побачити свій ланцюг.";
-
-/* CertificateViewController */
-"Connection Information" = "Інформація про підключення";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Не вдалось під'єднатись до сервера Nextcloud";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Конфіденційність та безпека";
-
-/* CertificateViewController */
-"Protocol" = "Протокол";
 
 /* Tab */
 "Pull to Refresh Page" = "Потягніть, щоб оновити сторінку";

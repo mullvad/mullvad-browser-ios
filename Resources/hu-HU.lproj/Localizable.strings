@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Adja meg, hogy milyen sokéig jegyezze meg az app a füleket.";
 
-/* CertificateViewController */
-"Cipher" = "Kódolás";
-
 /* AppDelegate */
 "Close Tab" = "Fül bezárása";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Csatlakozzon egy weboldalhoz, hogy megtekinthesse áramkörét.";
-
-/* CertificateViewController */
-"Connection Information" = "Csatlakozási információ";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Csatlakozás a Nextcloud szerverhez sikertelen";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Adatvédelem & Biztonság";
-
-/* CertificateViewController */
-"Protocol" = "Protokoll";
 
 /* Tab */
 "Pull to Refresh Page" = "Húzzon az oldal frissítéséhez";

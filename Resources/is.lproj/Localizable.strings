@@ -89,7 +89,7 @@
 "Add Site" = "Bæta vefsvæði við";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Bæta við %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Að auki verða öll bókamerki, sem ekki eru á netþjóninum en finnast í Onion vafranum, búin til hér.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Veldu hve lengi forritið man opna flipa.";
 
-/* CertificateViewController */
-"Cipher" = "Dulritunaraðferð";
-
 /* AppDelegate */
 "Close Tab" = "Loka flipa";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Tengstu við vefsvæði til að sjá rásina þína.";
-
-/* CertificateViewController */
-"Connection Information" = "Upplýsingar um tengingar";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Tenging við Nextcloud-þjón gekk ekki";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "Gagnaleynd og öryggi";
 
-/* CertificateViewController */
-"Protocol" = "Samskiptamáti";
-
 /* Tab */
 "Pull to Refresh Page" = "Toga til að endurhlaða síðu";
 
@@ -476,7 +467,7 @@
 "Retry" = "Reyna aftur";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Prófaðu aftur þegar þú hefur bætt auðkenningarlykli við %@.";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Reglur í notkun á núverandi síðu";

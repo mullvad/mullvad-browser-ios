@@ -89,7 +89,7 @@
 "Add Site" = "サイトを追加";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "%@に追加";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "サーバー上にないがOnion Browserには保存されているお気に入りが作成されます。";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "タブの記憶期間を選択";
 
-/* CertificateViewController */
-"Cipher" = "暗号（Cipher）";
-
 /* AppDelegate */
 "Close Tab" = "タブを閉じる";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "ウェブサイトに接続して、経路を確認して下さい。";
-
-/* CertificateViewController */
-"Connection Information" = "接続情報";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "NextCloudサーバーへの接続に失敗しました。";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "プライバシー";
 
-/* CertificateViewController */
-"Protocol" = "プロトコール";
-
 /* Tab */
 "Pull to Refresh Page" = "引っ張ってページ更新";
 
@@ -476,7 +467,7 @@
 "Retry" = "再試行";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "%@に認証鍵を追加して再接続";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "現在のページに使用中のルール";

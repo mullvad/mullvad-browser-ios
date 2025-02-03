@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Velg hvor lenge appen husker åpne faner.";
 
-/* CertificateViewController */
-"Cipher" = "Chiffrering";
-
 /* AppDelegate */
 "Close Tab" = "Lukk fane";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Connect to a website to see your circuit.";
-
-/* CertificateViewController */
-"Connection Information" = "Tilkoblingsinformasjon";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Connection to Nextcloud Server Failed";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Personvern og sikkerhet";
-
-/* CertificateViewController */
-"Protocol" = "Protokoll";
 
 /* Tab */
 "Pull to Refresh Page" = "Dra for å laste inn siden på nytt.";

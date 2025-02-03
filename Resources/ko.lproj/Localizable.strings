@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "앱이 열린 탭을 기억하는 시간을 선택합니다.";
 
-/* CertificateViewController */
-"Cipher" = "암호";
-
 /* AppDelegate */
 "Close Tab" = "탭 닫기";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "웹사이트에 연결하여 우회로를 확인합니다.";
-
-/* CertificateViewController */
-"Connection Information" = "연결 정보";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Nextcloud서버에 연결하지 못함";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "개인정보 보호 & 보안";
-
-/* CertificateViewController */
-"Protocol" = "프로토콜";
 
 /* Tab */
 "Pull to Refresh Page" = "당겨서 페이지 새로 고침";

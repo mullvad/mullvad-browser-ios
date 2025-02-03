@@ -89,7 +89,7 @@
 "Add Site" = "Добавить сайт";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Добавить в %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Кроме того, на сервере будут созданы закладки из Onion Browser, если ранее они отсутствовали.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Выберите, как надолго приложение запомнит открытые вкладки.";
 
-/* CertificateViewController */
-"Cipher" = "Шифрование";
-
 /* AppDelegate */
 "Close Tab" = "Закрыть вкладку";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Подключитесь к веб-сайту, чтобы увидеть вашу схему.";
-
-/* CertificateViewController */
-"Connection Information" = "Информация о подключении";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Не удалось подключиться к серверу Nextcloud";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "Конфиденциальность и безопасность";
 
-/* CertificateViewController */
-"Protocol" = "Протокол";
-
 /* Tab */
 "Pull to Refresh Page" = "Потяните для обновления страницы";
 
@@ -476,7 +467,7 @@
 "Retry" = "Повторить";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Повторите попытку после добавления ключа аутентификации в %@";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Правила, используемые на текущей странице";

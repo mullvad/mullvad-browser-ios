@@ -89,7 +89,7 @@
 "Add Site" = "添加站点";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "添加到 %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "同时，服务器中没有却在洋葱浏览器中存在的书签将被上传。";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "选择应用记住打开的标签页多久";
 
-/* CertificateViewController */
-"Cipher" = "加密";
-
 /* AppDelegate */
 "Close Tab" = "关闭标签页";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "连接到一个网页以查看您的链路。";
-
-/* CertificateViewController */
-"Connection Information" = "连接信息";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "与 Nextcloud 服务器连接失败";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "隐私与安全";
 
-/* CertificateViewController */
-"Protocol" = "协议";
-
 /* Tab */
 "Pull to Refresh Page" = "拉动以刷新页面";
 
@@ -476,7 +467,7 @@
 "Retry" = "重试";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "将在您为 %@ 新增认证密钥后重试。";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "当前页面使用的规则";

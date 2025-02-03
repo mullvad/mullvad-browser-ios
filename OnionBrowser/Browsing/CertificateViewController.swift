@@ -12,7 +12,7 @@ import UIKit
 
 class CertificateViewController: UITableViewController {
 
-	var certificate: SSLCertificate?
+	var certificate: TlsCertificate?
 
 	private var sections = [String]()
 
@@ -36,25 +36,16 @@ class CertificateViewController: UITableViewController {
 
 		tableView.allowsSelection = false
 
-		if certificate?.negotiatedProtocol != .sslProtocolUnknown {
-			sections.append(NSLocalizedString("Connection Information", comment: ""))
-
-			data.append([
-				kv(NSLocalizedString("Protocol", comment: ""), certificate?.negotiatedProtocolString()),
-				kv(NSLocalizedString("Cipher", comment: ""), certificate?.negotiatedCipherString()),
-			])
-		}
-
 		sections.append(NSLocalizedString("Certificate Information", comment: ""))
 
 		var group: [[String: String?]] = [
 			kv(NSLocalizedString("Version", comment: ""), certificate?.version.description),
 			kv(NSLocalizedString("Serial Number", comment: ""), certificate?.serialNumber),
 			kv(NSLocalizedString("Signature Algorithm", comment: ""), certificate?.signatureAlgorithm,
-			   certificate?.hasWeakSignatureAlgorithm() ?? false ? NSLocalizedString("Error", comment: "") : nil),
+			   certificate?.hasWeakSignatureAlgorithm ?? false ? NSLocalizedString("Error", comment: "") : nil),
 		]
 
-		if certificate?.isEV ?? false {
+		if certificate?.isEv ?? false {
 			group.append(kv(NSLocalizedString("Extended Validation: Organization", comment: ""),
 							certificate?.evOrgName, "Ok"))
 		}
@@ -64,8 +55,7 @@ class CertificateViewController: UITableViewController {
 		if let subject = certificate?.subject {
 			sections.append(NSLocalizedString("Issued To", comment: ""))
 
-			data.append(orderly(from: subject, wellKnows:
-				[X509_KEY_CN, X509_KEY_O, X509_KEY_OU, X509_KEY_STREET, X509_KEY_L, X509_KEY_ST, X509_KEY_ZIP, X509_KEY_C]))
+			data.append(subject.getAll().map({ kv($0.label, $0.value) }))
 		}
 
 		sections.append(NSLocalizedString("Period of Validity", comment: ""))
@@ -80,8 +70,7 @@ class CertificateViewController: UITableViewController {
 		if let issuer = certificate?.issuer {
 			sections.append(NSLocalizedString("Issued By", comment: ""))
 
-			data.append(orderly(from: issuer, wellKnows:
-				[X509_KEY_CN, X509_KEY_O, X509_KEY_OU, X509_KEY_STREET, X509_KEY_L, X509_KEY_ST, X509_KEY_ZIP, X509_KEY_C]))
+			data.append(issuer.getAll().map({ kv($0.label, $0.value) }))
 		}
 	}
 
@@ -135,25 +124,5 @@ class CertificateViewController: UITableViewController {
 		}
 
 		return ["k": key, "v": value]
-	}
-
-	private func orderly(from dict: [AnyHashable: Any], wellKnows: [String]) -> [[String: String?]] {
-		var group = [[String: String?]]()
-		var dict = dict
-
-		// Read well-knowns in a defined order.
-		for k in wellKnows {
-			if let v = dict[k] as? String {
-				group.append(kv(k, v))
-				dict.removeValue(forKey: k)
-			}
-		}
-
-		// Add the rest.
-		for (k, v) in dict {
-			group.append(kv(k as? String, v as? String))
-		}
-
-		return group
 	}
 }

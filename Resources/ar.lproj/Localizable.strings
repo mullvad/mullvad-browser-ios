@@ -89,7 +89,7 @@
 "Add Site" = "أضف موقع";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "أضف إلى %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "بالإضافة إلى ذلك ، سيتم إنشاء جميع الإشارات المرجعية غير الموجودة على الخادم ولكن في Onion Browser هناك.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "قم باختيار المدة التي يتذكر فيها التطبيق التبويبات المفتوحة.";
 
-/* CertificateViewController */
-"Cipher" = "الشيفرة";
-
 /* AppDelegate */
 "Close Tab" = "إغلاق التبويبة ";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "اتصل بموقع على شبكة الإنترنت لرؤية دائرتك.";
-
-/* CertificateViewController */
-"Connection Information" = "معلومات الإتصال";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "فشل الاتصال بخادم Nextcloud";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "الخصوصية والأمن";
 
-/* CertificateViewController */
-"Protocol" = "بروتوكول";
-
 /* Tab */
 "Pull to Refresh Page" = "اسحب/ي لتحديث الصفحة";
 
@@ -476,7 +467,7 @@
 "Retry" = "إعادة المحاولة";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "أعد المحاولة بعد إضافة مفتاح المصادقة إلى %@.";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "القواعد المستخدمة في الصفحة الحالية";

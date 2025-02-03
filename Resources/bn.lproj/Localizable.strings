@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "অ্যাপে খোলা ট্যাবগুলো কতক্ষণ মনে রাখা হবে তা চয়ন করুন।";
 
-/* CertificateViewController */
-"Cipher" = "গোপনীয় কোড";
-
 /* AppDelegate */
 "Close Tab" = "ট্যাব বন্ধ করুন";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Connect to a website to see your circuit.";
-
-/* CertificateViewController */
-"Connection Information" = "সংযোগ সম্পর্কিত তথ্য";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Connection to Nextcloud Server Failed";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "গোপনীয়তা ও নিরাপত্তা";
-
-/* CertificateViewController */
-"Protocol" = "প্রোটোকল";
 
 /* Tab */
 "Pull to Refresh Page" = "পাতা সতেজ করতে টান দিন";

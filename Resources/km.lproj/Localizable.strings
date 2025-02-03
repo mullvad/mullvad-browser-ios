@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "ជ្រើសរើស​រយៈពេល​ដែល​កម្មវិធី​ចងចាំ​ផ្ទាំង​ដែល​បើក។";
 
-/* CertificateViewController */
-"Cipher" = "Cipher";
-
 /* AppDelegate */
 "Close Tab" = "បិទផ្ទាំង";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "តភ្ជាប់​ទៅកាន់​វែបសាយ​ដើម្បី​មើល​ច្រក​របស់​អ្នក។";
-
-/* CertificateViewController */
-"Connection Information" = "ព័ត៌មាន​ការ​តភ្ជាប់";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "ការតភ្ជាប់​ទៅកាន់​ម៉ាស៊ីនមេ Nextcloud បានបរាជ័យ";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "ឯកជនភាព និង​សន្តិសុខ";
-
-/* CertificateViewController */
-"Protocol" = "វិធីការ";
 
 /* Tab */
 "Pull to Refresh Page" = "ទាញ​ដើម្បី​ធ្វើឱ្យ​ទំព័រ​ថ្មី​ឡើងវិញ";

@@ -89,7 +89,7 @@
 "Add Site" = "Afegeix un lloc";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Afegeix a %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Addicionalment, totes les adreces d'interès que no existeixin al servidor però sí a l'Onion Browser es crearan aquí.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Trieu quant de temps recorda l'aplicació les pestanyes obertes.";
 
-/* CertificateViewController */
-"Cipher" = "Xifra";
-
 /* AppDelegate */
 "Close Tab" = "Tanca la pestanya";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Connecteu a un lloc web per a veure el vostre circuit.";
-
-/* CertificateViewController */
-"Connection Information" = "Informació de la connexió";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Ha fallat la connexió amb el servidor del Nextcloud";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "Privadesa i seguretat";
 
-/* CertificateViewController */
-"Protocol" = "Protocol";
-
 /* Tab */
 "Pull to Refresh Page" = "Llisqueu per a actualitzar";
 
@@ -476,7 +467,7 @@
 "Retry" = "Torna-ho a intentar";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Torneu a provar després d'afegir la clau d'autenticació a %@.";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Regles a utilitzar en la pàgina actual";

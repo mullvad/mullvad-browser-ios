@@ -34,9 +34,8 @@ extension Tab: WKNavigationDelegate {
 			}
 		}
 
-		if let blocker = URLBlocker.blockingTarget(for: url, fromMainDocumentURL: self.url) {
-
-			self.applicableUrlBlockerTargets[blocker] = true
+		if let rule = UrlBlocker.shared.blockRule(for: url, withMain: self.url) {
+			applicableUrlBlockerRules.insert(rule)
 
 			return decisionHandler(.cancel, preferences)
 		}
@@ -213,9 +212,11 @@ extension Tab: WKNavigationDelegate {
 				completionHandler(.performDefaultHandling, nil)
 			}
 
-			if let trust = challenge.protectionSpace.serverTrust {
-				DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-					self?.tlsCertificate = SSLCertificate(secTrustRef: trust)
+			if let trust = space.serverTrust {
+				if url.host == space.host {
+					DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+						self?.tlsCertificate = TlsCertificate.load(trust: trust)
+					}
 				}
 			}
 

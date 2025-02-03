@@ -89,7 +89,7 @@
 "Add Site" = "เพิ่มไซต์";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "เพิ่มไปที่ %@";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "นอกจากนั้น ที่คั่นหน้าทั้งหมดที่ไม่มีอยู่ในเซิร์ฟเวอร์ แต่มีอยู่ใน Onion Browser จะถูกสร้างไว้ที่นั่น";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "เลือกว่าจะให้แอปจำแท็บที่เปิดไว้นานแค่ไหน";
 
-/* CertificateViewController */
-"Cipher" = "ไซเฟอร์";
-
 /* AppDelegate */
 "Close Tab" = "ปิดแถบ";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Connect to a website to see your circuit.";
-
-/* CertificateViewController */
-"Connection Information" = "ข้อมูลการเชื่อมต่อ";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Connection to Nextcloud Server Failed";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "ความเป็นส่วนตัวและความปลอดภัย";
-
-/* CertificateViewController */
-"Protocol" = "โพรโทคอล";
 
 /* Tab */
 "Pull to Refresh Page" = "ดึงลงเพื่อเรียกหน้าใหม่";

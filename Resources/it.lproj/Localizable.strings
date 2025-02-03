@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Scegli per quanto tempo l'app ricorda le schede aperte.";
 
-/* CertificateViewController */
-"Cipher" = "Cifratura";
-
 /* AppDelegate */
 "Close Tab" = "Chiudi scheda";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Collegarsi ad un sito web per vedere il tuo circuito.";
-
-/* CertificateViewController */
-"Connection Information" = "Informaizoni connessione";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Connessione a Nextcloud Server fallita";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Privacy & Sicurezza";
-
-/* CertificateViewController */
-"Protocol" = "Protocollo";
 
 /* Tab */
 "Pull to Refresh Page" = "trascina verso il basso per ricaricare la pagina";

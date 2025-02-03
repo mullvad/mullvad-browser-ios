@@ -89,7 +89,7 @@
 "Add Site" = "Lisää sivusto";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Lisää %@iin";
+"Add to %@" = "Add to %@";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Lisäksi kaikki palvelimelta puuttuvat Onion-selaimen kirjamerkit luodaan sinne.";
@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Valitse miten kauan sovellus muistaa avoimet välilehdet.";
 
-/* CertificateViewController */
-"Cipher" = "Salaus";
-
 /* AppDelegate */
 "Close Tab" = "Sulje välilehti";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Yhdistä sivustoon nähdäksesi ketjusi.";
-
-/* CertificateViewController */
-"Connection Information" = "Yhteystiedot";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Yhteyden muodostus Nextcloud-palvelimeen epäonnistui";
@@ -436,9 +430,6 @@
 /* SettingsViewController */
 "Privacy & Security" = "Tietosuoja ja -turva";
 
-/* CertificateViewController */
-"Protocol" = "Protokolla";
-
 /* Tab */
 "Pull to Refresh Page" = "Päivitä sivu vetämällä";
 
@@ -476,7 +467,7 @@
 "Retry" = "Yritä uudelleen";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Yritä uudelleen lisättyäsi todennusavaimen %@iin.";
+"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Nyikyisellä sivulla käytetyt säännöt";

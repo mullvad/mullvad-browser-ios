@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "انتخاب کنید که برنامه چه مدت پنجره‌های باز را به خاطر بسپارد.";
 
-/* CertificateViewController */
-"Cipher" = "رمز";
-
 /* AppDelegate */
 "Close Tab" = "بستن تب";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "اتصال به یک سایت برای دیدن چرخه خود.";
-
-/* CertificateViewController */
-"Connection Information" = "اطلاعات اتصال";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "اتصال به سرور Nextcloud انجام نشد";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "امنیت و حریم خصوصی";
-
-/* CertificateViewController */
-"Protocol" = "پروتکل";
 
 /* Tab */
 "Pull to Refresh Page" = "برای بازآوری صفحه بکشید";

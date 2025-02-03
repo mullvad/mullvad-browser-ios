@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Alege pentru cât timp aplicația reține ferestrele deschise.";
 
-/* CertificateViewController */
-"Cipher" = "Cifru";
-
 /* AppDelegate */
 "Close Tab" = "Închide Fereastra";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Conectează-te la un site web pentru a-ți vedea circuitul.";
-
-/* CertificateViewController */
-"Connection Information" = "Informații despre conexiune";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Conexiunea la serverul Nextcloud a eșuat";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Intimitate și Securitate";
-
-/* CertificateViewController */
-"Protocol" = "Protocol";
 
 /* Tab */
 "Pull to Refresh Page" = "Trage pentru a reîncărca pagina";

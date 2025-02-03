@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Επιλέξτε για πόσο χρόνο θα θυμάται η εφαρμογή τις ανοιχτές καρτέλες.";
 
-/* CertificateViewController */
-"Cipher" = "Κρυπτογράφημα";
-
 /* AppDelegate */
 "Close Tab" = "Κλείσιμο καρτέλας";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Συνδεθείτε σε μία ιστοσελίδα για να δείτε τη διαδρομή σας.";
-
-/* CertificateViewController */
-"Connection Information" = "Πληροφορίες σύνδεσης";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Απέτυχε η σύνδεση στον Nextcloud Server";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Ιδιωτικότητα & Ασφάλεια";
-
-/* CertificateViewController */
-"Protocol" = "Πρωτόκολλο";
 
 /* Tab */
 "Pull to Refresh Page" = "Τραβήξτε για ανανέωση της σελίδας";

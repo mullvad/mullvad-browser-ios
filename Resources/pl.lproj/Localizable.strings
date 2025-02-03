@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Wybierz jak długo aplikacja będzie zapamiętywać otwarte karty.";
 
-/* CertificateViewController */
-"Cipher" = "Szyfr";
-
 /* AppDelegate */
 "Close Tab" = "Zamknij Kartę";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Połącz się z witryną, aby zobaczyć swój obwód.";
-
-/* CertificateViewController */
-"Connection Information" = "Informacje o Połączeniu";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Połączenie z Nextcloud Server Nie Powiodło Się";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Prywatność & Bezpieczeństwo";
-
-/* CertificateViewController */
-"Protocol" = "Protokół";
 
 /* Tab */
 "Pull to Refresh Page" = "Przeciągnij aby Odświeżyć Stronę";

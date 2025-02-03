@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Choisir la durée de mémorisation des onglets ouverts par l’appli";
 
-/* CertificateViewController */
-"Cipher" = "Chiffre";
-
 /* AppDelegate */
 "Close Tab" = "Fermer l’onglet";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Connectez-vous à un site Web pour visualiser votre circuit.";
-
-/* CertificateViewController */
-"Connection Information" = "Renseignements sur la connexion";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Échec de connexion au serveur Nextcloud";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Confidentialité et sécurité";
-
-/* CertificateViewController */
-"Protocol" = "Protocole";
 
 /* Tab */
 "Pull to Refresh Page" = "Tirer pour actualiser la page";

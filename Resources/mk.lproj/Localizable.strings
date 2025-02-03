@@ -169,9 +169,6 @@
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Избери колку долго апликацијата да ги памети отворените табови.";
 
-/* CertificateViewController */
-"Cipher" = "Лозинка";
-
 /* AppDelegate */
 "Close Tab" = "Затвори таб";
 
@@ -186,9 +183,6 @@
 
 /* CircuitViewController */
 "Connect to a website to see your circuit." = "Поврзи се на веб страна за да го видите вашиот круг.";
-
-/* CertificateViewController */
-"Connection Information" = "Информации за поврзувањето";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Поврзувањето со Nextcloud серверот не успеа";
@@ -435,9 +429,6 @@
 
 /* SettingsViewController */
 "Privacy & Security" = "Приватност и Безбедност";
-
-/* CertificateViewController */
-"Protocol" = "Протокол";
 
 /* Tab */
 "Pull to Refresh Page" = "Повлечи за да ја освежиш страната";
