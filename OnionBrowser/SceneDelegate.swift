@@ -62,6 +62,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 			// Never to be used again.
 			Settings.openTabs = nil
 		}
+		else if Settings.tabSecurity == .forgetOnShutdown {
+			// We still need to clean up website storage.
+			// There was no trigger if the app was just sent into the background and forgotten.
+			// AppDelegate.applicationWillTerminate() mostly won't be called.
+			WebsiteStorage.shared.cleanup()
+		}
 
 		AppDelegate.shared?.firstScene = false
 
