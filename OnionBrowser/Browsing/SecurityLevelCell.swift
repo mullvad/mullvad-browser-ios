@@ -40,6 +40,7 @@ class SecurityLevelCell: UITableViewCell {
 	@IBOutlet weak var radioLb: UILabel! {
 		didSet {
 			radioLb.layer.borderColor = UIColor.accent.cgColor
+			radioLb.clipsToBounds = true
 		}
 	}
 
