@@ -13,11 +13,11 @@ target 'OnionBrowser' do
   pod 'SDCAlertView', '~> 12'
   pod 'FavIcon', :git => 'https://github.com/tladesignz/FavIcon.git'
   pod 'MBProgressHUD', '~> 1.2'
-  pod 'Eureka', '~> 5.3'
-  pod 'ImageRow', '~> 4.1'
+  pod 'Eureka', '~> 5.5'
+  pod 'ImageRow', :git => 'https://github.com/erickyim/ImageRow.git', :commit => 'd38369b8894425a9225ccf1e267226833b1950f0'
 
   pod 'Tor/GeoIP',
-    '~> 408.13'
+    '~> 408.14'
 #    :path => '../Tor.framework'
 
   pod 'IPtProxyUI',
