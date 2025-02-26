@@ -70,6 +70,16 @@ class SecurityViewController: FixedFormViewController {
 		orientationAndMotionRow.value = hostSettings.orientationAndMotion
 		mediaCaptureRow.value = hostSettings.mediaCapture
 
+		// We need to hide the lockdown mode setting here. If we try to do it inline
+		// below, there's a weird bug, were row.section?.host == nil which makes the
+		// onChange callback not fire. Super strange.
+		if #available(iOS 16.0, *) {
+			// All good
+		}
+		else {
+			lockdownModeRow.hidden = true
+		}
+
 
 		form
 		+++ (host != nil ? Section() : Section("to be replaced in #willDisplayHeaderView to avoid capitalization"))
@@ -114,22 +124,19 @@ class SecurityViewController: FixedFormViewController {
 				hostSettings.mediaCapture)
 		}
 
-		if #available(iOS 16.0, *) {
-			form.last! <<< lockdownModeRow
-				.onChange { [weak self] row in
-					guard let hostSettings = self?.hostSettings else {
-						return
-					}
+		<<< lockdownModeRow
+		.onChange { [weak self] row in
+			guard let hostSettings = self?.hostSettings else {
+				return
+			}
 
-					self?.alertBeforeChange(
-						hostSettings.javaScript,
-						row.value ?? false,
-						hostSettings.orientationAndMotion,
-						hostSettings.mediaCapture)
-				}
+			self?.alertBeforeChange(
+				hostSettings.javaScript,
+				row.value ?? false,
+				hostSettings.orientationAndMotion,
+				hostSettings.mediaCapture)
 		}
 
-		form.last!
 		<<< orientationAndMotionRow
 		.onChange { [weak self] row in
 			guard let hostSettings = self?.hostSettings else {
