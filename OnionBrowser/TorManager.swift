@@ -21,12 +21,16 @@ class TorManager {
 	}
 
 	enum Errors: Error, LocalizedError {
+		case noTorController
 		case cookieUnreadable
 		case noSocksAddr
 		case smartConnectFailed
 
 		var errorDescription: String? {
 			switch self {
+
+			case .noTorController:
+				return "No Tor controller"
 
 			case .cookieUnreadable:
 				return "Tor cookie unreadable"
@@ -44,9 +48,19 @@ class TorManager {
 
 	static let localhost = "127.0.0.1"
 
-	var status = Status.stopped
+	var status: Status {
+		if !torRunning {
+			return .stopped
+		}
 
-	var torSocks5: Network.NWEndpoint? = nil
+		if (torController?.isConnected ?? false) && torSocks5 != nil {
+			return .started
+		}
+
+		return .starting
+	}
+
+	private(set) var torSocks5: Network.NWEndpoint? = nil
 
 	private var torThread: Thread?
 
@@ -54,9 +68,8 @@ class TorManager {
 
 	private var torConf: TorConfiguration?
 
-	private var _torRunning = false
 	private var torRunning: Bool {
-		 ((torThread?.isExecuting ?? false) && (torConf?.isLocked ?? false)) || _torRunning
+		 (torThread?.isExecuting ?? false) && (torConf?.isLocked ?? false)
 	}
 
 	private lazy var controllerQueue = DispatchQueue.global(qos: .userInitiated)
@@ -90,8 +103,6 @@ class TorManager {
 			   _ progressCallback: @escaping (_ progress: Int?) -> Void,
 			   _ completion: @escaping (Error?) -> Void)
 	{
-		status = .starting
-
 		self.transport = transport
 
 		if !torRunning {
@@ -121,14 +132,22 @@ class TorManager {
 				self.torController = TorController(controlPortFile: url)
 			}
 
-			if !(self.torController?.isConnected ?? false) {
+			guard let torController = self.torController else {
+				self.log("#startTunnel error=\(Errors.noTorController)")
+
+				self.stop()
+
+				return completion(Errors.noTorController)
+			}
+
+			if !torController.isConnected {
 				do {
-					try self.torController?.connect()
+					try torController.connect()
 				}
 				catch let error {
 					self.log("#startTunnel error=\(error)")
 
-					self.status = .stopped
+					self.stop()
 
 					return completion(error)
 				}
@@ -142,7 +161,7 @@ class TorManager {
 				return completion(Errors.cookieUnreadable)
 			}
 
-			self.torController?.authenticate(with: cookie) { success, error in
+			torController.authenticate(with: cookie) { success, error in
 				if let error = error {
 					self.log("#startTunnel error=\(error)")
 
@@ -151,7 +170,7 @@ class TorManager {
 					return completion(error)
 				}
 
-				self.progressObs = self.torController?.addObserver(forStatusEvents: {
+				self.progressObs = torController.addObserver(forStatusEvents: {
 					[weak self] (type, severity, action, arguments) -> Bool in
 
 					if type == "STATUS_CLIENT" && action == "BOOTSTRAP" {
@@ -169,7 +188,7 @@ class TorManager {
 						progressCallback(progress)
 
 						if progress ?? 0 >= 100 {
-							self?.torController?.removeObserver(self?.progressObs)
+							torController.removeObserver(self?.progressObs)
 						}
 
 						return true
@@ -178,15 +197,15 @@ class TorManager {
 					return false
 				})
 
-				self.establishedObs = self.torController?.addObserver(forCircuitEstablished: { [weak self] established in
+				self.establishedObs = torController.addObserver(forCircuitEstablished: { [weak self] established in
 					guard established else {
 						return
 					}
 
-					self?.torController?.removeObserver(self?.establishedObs)
-					self?.torController?.removeObserver(self?.progressObs)
+					torController.removeObserver(self?.establishedObs)
+					torController.removeObserver(self?.progressObs)
 
-					self?.torController?.getInfoForKeys(["net/listeners/socks"]) { response in
+					torController.getInfoForKeys(["net/listeners/socks"]) { response in
 						guard let parts = response.first?.split(separator: ":"),
 							  let host = parts.first,
 							  let host = IPv4Address(String(host)),
@@ -199,8 +218,6 @@ class TorManager {
 						}
 
 						self?.torSocks5 = .hostPort(host: NWEndpoint.Host.ipv4(host), port: port)
-
-						self?.status = .started
 
 						completion(nil)
 					}
@@ -246,7 +263,7 @@ class TorManager {
 	}
 
 	func stop() {
-		status = .stopped
+		torSocks5 = nil
 
 		torController?.removeObserver(self.establishedObs)
 		torController?.removeObserver(self.progressObs)
