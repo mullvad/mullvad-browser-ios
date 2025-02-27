@@ -33,7 +33,7 @@ class SecurityViewController: FixedFormViewController {
 	}
 
 	private let lockdownModeRow = SwitchRow() {
-		$0.title = NSLocalizedString("Enable Lockdown Mode", comment: "Option title")
+		$0.title = NSLocalizedString("Lockdown Mode", comment: "Option title")
 		$0.cell.switchControl.onTintColor = .accent
 		$0.cell.textLabel?.numberOfLines = 0
 	}

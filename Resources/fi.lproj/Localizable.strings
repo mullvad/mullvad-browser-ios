@@ -259,9 +259,6 @@
 /* RuleEditorController */
 "Enable" = "Ota käyttöön";
 
-/* Option title */
-"Enable Lockdown Mode" = "Enable Lockdown Mode";
-
 /* AlertHelper */
 "Error" = "Virhe";
 
@@ -363,6 +360,9 @@
 
 /* SettingsViewController */
 "Lock App with Touch ID or Device Passcode" = "Lukitse sovellus Touch ID:llä tai laitteen pääsykoodilla";
+
+/* Option title */
+"Lockdown Mode" = "Lockdown Mode";
 
 /* AppDelegate */
 "Log In" = "Kirjaudu";

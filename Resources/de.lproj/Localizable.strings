@@ -89,7 +89,7 @@
 "Add Site" = "Seite hinzufügen";
 
 /* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
+"Add to %@" = "Zu %@ hinzufügen";
 
 /* SyncViewController */
 "Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Zusätzlich werden alle Lesezeichen, die am Server nicht existieren, aber in Onion Browser, dort erstellt.";
@@ -259,9 +259,6 @@
 /* RuleEditorController */
 "Enable" = "Aktivieren";
 
-/* Option title */
-"Enable Lockdown Mode" = "Enable Lockdown Mode";
-
 /* AlertHelper */
 "Error" = "Fehler";
 
@@ -363,6 +360,9 @@
 
 /* SettingsViewController */
 "Lock App with Touch ID or Device Passcode" = "App mit Touch ID oder Gerätepasswort sperren";
+
+/* Option title */
+"Lockdown Mode" = "Blockierungsmodus";
 
 /* AppDelegate */
 "Log In" = "Einloggen";
@@ -467,7 +467,7 @@
 "Retry" = "Erneut versuchen";
 
 /* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
+"Retry after you added the authentication key to %@." = "Versuchs nochmal, nachdem Du den Authentifizierungsschlüssel zu %@ hinzugefügt hast.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Auf dieser Seite benutzte Regeln";

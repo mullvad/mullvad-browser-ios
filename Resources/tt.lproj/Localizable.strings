@@ -259,9 +259,6 @@
 /* RuleEditorController */
 "Enable" = "Кабызу";
 
-/* Option title */
-"Enable Lockdown Mode" = "Enable Lockdown Mode";
-
 /* AlertHelper */
 "Error" = "Хата";
 
@@ -363,6 +360,9 @@
 
 /* SettingsViewController */
 "Lock App with Touch ID or Device Passcode" = "Җиһазыгызның серсүзе яки Touch ID белән кушымтаны бикләү";
+
+/* Option title */
+"Lockdown Mode" = "Lockdown Mode";
 
 /* AppDelegate */
 "Log In" = "Керү";

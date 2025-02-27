@@ -259,9 +259,6 @@
 /* RuleEditorController */
 "Enable" = "Activa";
 
-/* Option title */
-"Enable Lockdown Mode" = "Enable Lockdown Mode";
-
 /* AlertHelper */
 "Error" = "Error";
 
@@ -363,6 +360,9 @@
 
 /* SettingsViewController */
 "Lock App with Touch ID or Device Passcode" = "Bloca l'aplicació amb el Touch ID o el codi del dispositiu";
+
+/* Option title */
+"Lockdown Mode" = "Lockdown Mode";
 
 /* AppDelegate */
 "Log In" = "Inicieu la sessió";

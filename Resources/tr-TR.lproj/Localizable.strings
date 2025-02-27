@@ -259,9 +259,6 @@
 /* RuleEditorController */
 "Enable" = "Etkinleştir";
 
-/* Option title */
-"Enable Lockdown Mode" = "Enable Lockdown Mode";
-
 /* AlertHelper */
 "Error" = "Hata";
 
@@ -363,6 +360,9 @@
 
 /* SettingsViewController */
 "Lock App with Touch ID or Device Passcode" = "Uygulama Touch ID ya da Aygıt Parolası ile kilitlensin";
+
+/* Option title */
+"Lockdown Mode" = "Lockdown Mode";
 
 /* AppDelegate */
 "Log In" = "Oturum aç";

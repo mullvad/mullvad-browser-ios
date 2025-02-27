@@ -10,7 +10,7 @@ FUNCIONALIDADES:
 - Proteja o seu tráfego de redes sem fio e ISPs inseguros.
 - Aceda aos "sites" .onion que só são acessíveis com o Tor.
 
-• Combata a monitorização on-line: bloqueie scripts e limpe automaticamente os cookies e separadores, com base nas suas preferências.
+• Combata a monitorização ''on-line'': bloqueie ''scripts'' e limpe automaticamente os ''cookies'' e os separadores, com base nas suas preferências.
 
 • E mais funcionalidades para melhorar a privacidade!
 
@@ -19,6 +19,6 @@ LIMITAÇÃO DE RESPONSABILIDADE:
 
 - O Onion Browser pode não funcionar nas redes com restrições de rede avançadas. Se a aplicação não se ligar, tente usar pontes (ou um tipo diferente de ponte), force o parar, e reinicie a aplicação.
 
-- Use o Onion Browser por sua conta e risco; lembre-se de que os dados confidenciais nem sempre pertencem a um dispositivo móvel.
+- Utilize o Onion Browser por sua conta e risco; lembre-se que os dados confidenciais nem sempre pertencem a um dispositivo móvel.
 
-** Onion Browser é software de código aberto e gratuito. Pode ler mais sobre o Onion Browser e como apoiar o desenvolvimento do Tor no iOS, visitando onionbrowser.com **
+** Onion Browser é programa de código aberto e gratuito. Pode ler mais sobre o Onion Browser e como apoiar o desenvolvimento do Tor no iOS, visitando onionbrowser.com **
