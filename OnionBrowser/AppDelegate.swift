@@ -114,7 +114,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 		}
 
 		if Settings.stateRestoreLock {
-			print("[\(String(describing: type(of: self)))] Previous startup failed, not restoring application state.")
+			Log.debug(for: Self.self, "Previous startup failed, not restoring application state.")
 
 			Settings.stateRestoreLock = false
 

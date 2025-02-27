@@ -200,8 +200,7 @@ import StoreKit
 			case .purchased:
 				paymentQueue.finishTransaction(transaction)
 
-
-				print(productToPay.productIdentifier)
+				Log.debug(for: Self.self, productToPay.productIdentifier)
 
 				// Get its price from iTunes Connect
 				numberFormatter.locale = productToPay.priceLocale
@@ -253,7 +252,7 @@ import StoreKit
 			SKPaymentQueue.default().add(self)
 			SKPaymentQueue.default().add(payment)
 
-			print("PRODUCT TO PURCHASE: \(product.productIdentifier)")
+			Log.debug(for: Self.self, "PRODUCT TO PURCHASE: \(product.productIdentifier)")
 			productToPay = product
 		}
 		else {

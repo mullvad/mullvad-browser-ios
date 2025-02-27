@@ -24,7 +24,7 @@ class DownloadHelper {
 				try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: false)
 			}
 			catch {
-				print("[\(String(describing: self))]#getDirectory error=\(error)")
+				Log.error(for: Self.self, "#getDirectory error=\(error)")
 
 				return nil
 			}

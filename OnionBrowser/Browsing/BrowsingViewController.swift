@@ -611,7 +611,7 @@ class BrowsingViewController: UIViewController, TabDelegate {
 	}
 
 	func debug(_ msg: String) {
-		print("[\(String(describing: type(of: self)))] \(msg)")
+		Log.debug(for: Self.self, msg)
 	}
 
 

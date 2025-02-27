@@ -54,7 +54,7 @@ extension Tab: UIActivityItemSource {
 	func activityViewController(_ activityViewController: UIActivityViewController,
 								itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
 
-		print("[\(String(describing: type(of: self)))] activityType=\(String(describing: activityType))")
+		Log.debug(for: Self.self, "activityType=\(String(describing: activityType))")
 
 		if let downloadedFile = downloadedFile,
 			let activityType = activityType,

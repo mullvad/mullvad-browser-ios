@@ -15,7 +15,7 @@ public extension URLSession {
 	func apiTask<T: Codable>(with request: URLRequest, _ completion: ((T?, Error?) -> Void)? = nil) -> URLSessionDataTask {
 		return dataTask(with: request) { data, response, error in
 
-//			print("[\(String(describing: type(of: self)))]#apiTask data=\(String(describing: String(data: data ?? Data(), encoding: .utf8))), response=\(String(describing: response)), error=\(String(describing: error))")
+//			Log.log(for: Self.self, "#apiTask data=\(String(describing: String(data: data ?? Data(), encoding: .utf8))), response=\(String(describing: response)), error=\(String(describing: error))")
 			
 			if let error = error {
 				completion?(nil, error)

@@ -121,22 +121,22 @@ class LiveSearchViewController: UITableViewController {
 
 		let task = URLSession.shared.dataTask(with: request) { data, response, error in
 			if let error = error {
-				print("[\(String(describing: type(of: self)))] failed auto-completing: \(error)")
+				Log.error(for: Self.self, "failed auto-completing: \(error)")
 				return
 			}
 
 			if self.lastQuery != query {
-				print("[\(String(describing: type(of: self)))] stale query results, ignoring")
+				Log.debug(for: Self.self, "stale query results, ignoring")
 				return
 			}
 
 			guard let response = response as? HTTPURLResponse else {
-				print("[\(String(describing: type(of: self)))] not a HTTP response")
+				Log.error(for: Self.self, "not a HTTP response")
 				return
 			}
 
 			if response.statusCode != 200 {
-				print("[\(String(describing: type(of: self)))] failed auto-completing, status \(response.statusCode)")
+				Log.error(for: Self.self, "failed auto-completing, status \(response.statusCode)")
 				return
 			}
 
@@ -150,7 +150,7 @@ class LiveSearchViewController: UITableViewController {
 						self.results = result[1] as? [String] ?? []
 					}
 					else {
-						print("[\(String(describing: type(of: self)))] failed parsing JSON: \(data)")
+						Log.error(for: Self.self, "failed parsing JSON: \(data)")
 					}
 				}
 				else {

@@ -38,7 +38,7 @@ class Nextcloud: NSObject {
 
 		execute(request) { items, error in
 			if let error = error {
-				print("[\(String(describing: self))]#sync error=\(error)")
+				Log.error(for: Self.self, "#sync error=\(error)")
 				completion?(error)
 				return
 			}
@@ -102,7 +102,7 @@ class Nextcloud: NSObject {
 
 		execute(request) { items, error in
 			if let error = error {
-				print("[\(String(describing: self))]#store error=\(error)")
+				Log.error(for: Self.self, "#store error=\(error)")
 				completion?(error)
 				return
 			}

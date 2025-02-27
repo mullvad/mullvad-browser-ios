@@ -65,7 +65,7 @@ extension Tab: WKDownloadDelegate, QLPreviewControllerDelegate, QLPreviewControl
 	}
 
 	func download(_ download: WKDownload, didFailWithError error: Error, resumeData: Data?) {
-		print(error)
+		Log.error(for: Self.self, error.localizedDescription)
 	}
 
 	func downloadDidFinish(_ download: WKDownload) {

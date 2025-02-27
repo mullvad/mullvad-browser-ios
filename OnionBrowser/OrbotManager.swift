@@ -36,7 +36,7 @@ class OrbotManager : NSObject, OrbotStatusChangeListener {
 
 			OrbotKit.shared.closeCircuit(circuit: circuit) { success, error in
 				if let error = error {
-					print("[\(String(describing: type(of: self)))]#closeCircuits error=\(error)")
+					Log.error(for: Self.self, "#closeCircuits error=\(error)")
 				}
 
 				// If only one call succeeds, we count that as a success.
@@ -62,7 +62,7 @@ class OrbotManager : NSObject, OrbotStatusChangeListener {
 	func getCircuits(host: String?, _ callback: @escaping ((_ circuits: [OrbotKit.TorCircuit]) -> Void)) {
 		OrbotKit.shared.circuits(host: host) { circuits, error in
 			if let error = error {
-				print("[\(String(describing: type(of: self)))]#getCircuits error=\(error)")
+				Log.error(for: Self.self, "#getCircuits error=\(error)")
 			}
 
 			callback(circuits ?? [])

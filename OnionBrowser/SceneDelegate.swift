@@ -253,7 +253,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 			completion?(true)
 		}
 		else {
-			print("[\(String(describing: type(of: self)))] Unable to handle shortcut type '\(shortcut.type)'!")
+			Log.debug(for: Self.self, "Unable to handle shortcut type '\(shortcut.type)'!")
 			completion?(false)
 		}
 	}

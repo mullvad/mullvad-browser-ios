@@ -390,7 +390,7 @@ class Tab: UIView {
 			let string = result as? String
 
 			if let error = error {
-				print("[\(String(describing: type(of: self)))]#stringByEvaluatingJavaScript error=\(error)")
+				Log.error(for: Self.self, "#stringByEvaluatingJavaScript error=\(error)")
 			}
 
 			completion(string)

@@ -105,7 +105,7 @@ class TorManager {
 			torConf = getTorConf()
 
 //			if let debug = torConf?.compile().joined(separator: ", ") {
-//				print(debug)
+//				Log.debug(for: Self.self, debug)
 //			}
 
 			torThread = TorThread(configuration: torConf)
@@ -293,7 +293,7 @@ class TorManager {
 	// MARK: Private Methods
 
 	private func log(_ message: String) {
-		print("[\(String(describing: type(of: self)))] \(message)")
+		Log.log(for: Self.self, message)
 	}
 
 	private func getTorConf() -> TorConfiguration {

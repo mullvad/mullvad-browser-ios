@@ -77,12 +77,12 @@ extension Tab: WKScriptMessageHandler {
 		case "error":
 			let args = message.body as? NSDictionary
 
-			print("[Tab \(index)] error in \"\(args?["url"] ?? "(nil)")\" on line \(args?["line"] ?? "-1"): \(args?["msg"] ?? "(no message)")")
+			Log.error(for: Self.self, "[Tab \(index)] error in \"\(args?["url"] ?? "(nil)")\" on line \(args?["line"] ?? "-1"): \(args?["msg"] ?? "(no message)")")
 
 		case "log":
 			let args = message.body as? NSDictionary
 
-			print("[Tab \(index)] [\(args?["severity"] as? String ?? "log")] \(args?["arguments"] ?? "(nil)")")
+			Log.log(for: Self.self, "[Tab \(index)] [\(args?["severity"] ?? "log") \(args?["arguments"] ?? "(nil)")]")
 
 		case "showDonate":
 			let navC = sceneDelegate?.browsingUi.showSettings()

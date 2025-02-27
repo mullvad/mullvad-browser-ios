@@ -47,13 +47,13 @@ extension Tab: WKNavigationDelegate {
 
 		if HostSettings.for(url.host).universalLinkProtection {
 			if iframe {
-				print("[Tab \(index)] not doing universal link workaround for iframe \(url).")
+				Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for iframe \(url).")
 			}
 			else if navigationType == .backForward {
-				print("[Tab \(index)] not doing universal link workaround for back/forward navigation to \(url).")
+				Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for back/forward navigation to \(url).")
 			}
 			else if navigationType == .formSubmitted {
-				print("[Tab \(index)] not doing universal link workaround for form submission to \(url).")
+				Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for form submission to \(url).")
 			}
 			else if (url.scheme?.lowercased().hasPrefix("http") ?? false)
 						&& (URLProtocol.property(forKey: Tab.universalLinksWorkaroundKey, in: navigationAction.request) == nil)
@@ -61,7 +61,7 @@ extension Tab: WKNavigationDelegate {
 				if let tr = navigationAction.request as? NSMutableURLRequest {
 					URLProtocol.setProperty(true, forKey: Tab.universalLinksWorkaroundKey, in: tr)
 
-					print("[Tab \(index)] doing universal link workaround for \(url).")
+					Log.debug(for: Self.self, "[Tab \(index)] doing universal link workaround for \(url).")
 
 					load(tr as URLRequest)
 
@@ -70,7 +70,7 @@ extension Tab: WKNavigationDelegate {
 			}
 		}
 		else {
-			print("[Tab \(index)] not doing universal link workaround for \(url) due to HostSettings.")
+			Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for \(url) due to HostSettings.")
 		}
 
 		if !iframe {
@@ -123,7 +123,7 @@ extension Tab: WKNavigationDelegate {
 		   ["http", "https"].contains(onionLocation.scheme?.lowercased())
 			&& onionLocation.host?.lowercased().hasSuffix(".onion") ?? false
 		{
-			print("[\(String(describing: type(of: self)))] Redirect to Onion-Location=\(onionLocation.absoluteString)")
+			Log.debug(for: Self.self, "Redirect to Onion-Location=\(onionLocation.absoluteString)")
 
 			decisionHandler(.cancel)
 
@@ -382,7 +382,7 @@ extension Tab: WKNavigationDelegate {
 			msg += "\n\n\(url)"
 		}
 
-		print("[Tab \(index)] showing error dialog: \(msg) (\(error)")
+		Log.error(for: Self.self, "[Tab \(index)] showing error dialog: \(msg) (\(error)")
 
 		var alert = AlertHelper.build(message: msg)
 
