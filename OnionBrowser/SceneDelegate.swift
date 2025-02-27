@@ -78,6 +78,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	}
 
 	func sceneDidBecomeActive(_ scene: UIScene) {
+		AppDelegate.shared?.dontStopApp()
+
 		if !verified, let privateKey = SecureEnclave.loadKey() {
 			var counter = 0
 
@@ -162,11 +164,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		if Settings.hideContent {
 			BlurredSnapshot.create(window)
 		}
+
+		// Prepare to stop Tor properly, in case we get shut down.
+		AppDelegate.shared?.maybeStopApp()
 	}
 
 	func sceneDidDisconnect(_ scene: UIScene) {
-		// Stop Tor, if no other scenes around anymore.
-		AppDelegate.shared?.maybeStopTor()
+		// Stop app, if no other scenes around anymore.
+		AppDelegate.shared?.maybeStopApp()
 	}
 
 	func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? {
