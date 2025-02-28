@@ -34,6 +34,11 @@ class WelcomeViewController: UIViewController {
 	func next() {
 		Settings.didWelcome = true
 
+		// Do not get in the way of the user after a fresh install.
+		// Advertising the new lockdown mode support will only be done,
+		// when this installation is an update.
+		Settings.updateAdvertiseLockdownMode = true
+
 		view.sceneDelegate?.show(OrbotManager.shared.checkStatus())
 	}
 }

@@ -61,10 +61,7 @@ class SettingsViewController: FixedFormViewController {
 		form
 		+++ defaultSecurityRow
 		.onCellSelection { [weak self] _, _ in
-			AppDelegate.shared?.dismissModals(of: SecurityViewController.self)
-
-			self?.navigationController?.pushViewController(
-				SecurityViewController(), animated: true)
+			self?.showDefaultSecurity()
 		}
 
 		+++ Section(header: NSLocalizedString("Search", comment: "Section header"),
@@ -345,6 +342,14 @@ class SettingsViewController: FixedFormViewController {
 
 		searchEngineRow.value = Settings.searchEngine.name
 		searchEngineRow.updateCell()
+	}
+
+
+	func showDefaultSecurity() {
+		AppDelegate.shared?.dismissModals(of: SecurityViewController.self)
+
+		navigationController?.pushViewController(
+			SecurityViewController(), animated: true)
 	}
 
 	@objc private func dismsiss_() {

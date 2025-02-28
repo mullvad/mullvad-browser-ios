@@ -30,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	 */
 	private var verified = false
 
+	private var firstRun = true
+
 
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
 			   options connectionOptions: UIScene.ConnectionOptions)
@@ -114,12 +116,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let vc = OrbotManager.shared.checkStatus()
 
 		show(vc)
-
-		// Seems, we're running via Tor. Set up bookmarks, if not done, yet.
-		if vc == nil {
-			Bookmark.firstRunSetup()
-			Bookmark.migrateToV3()
-		}
 	}
 
 	func windowScene(_ windowScene: UIWindowScene,
@@ -208,6 +204,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 			completion = { [weak self] finished in
 				self?.browsingUi.becomesVisible()
+
+				// Seems, we're running via Tor. Set up bookmarks, if not done, yet.
+				if self?.firstRun ?? false {
+					self?.firstRun = false
+
+					Bookmark.firstRunSetup()
+					Bookmark.migrateToV3()
+
+					if let vc = self?.browsingUi {
+						UpdateAdvertisement.lockdownMode(vc)
+					}
+				}
 
 				outerCompletion?(finished)
 			}

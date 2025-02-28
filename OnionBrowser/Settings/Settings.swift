@@ -195,6 +195,15 @@ class Settings: IPtProxyUI.Settings {
 		}
 	}
 
+	class var updateAdvertiseLockdownMode: Bool {
+		get {
+			UserDefaults.standard.bool(forKey: "update_advertise_lockdown_mode")
+		}
+		set {
+			UserDefaults.standard.set(newValue, forKey: "update_advertise_lockdown_mode")
+		}
+	}
+
 	class var searchEngine: SearchEngine {
 		get {
 			let type = SearchEngine.EngineType(rawValue: UserDefaults.standard.integer(forKey: "search_engine_type")) ?? .builtIn
