@@ -1,4 +1,6 @@
-- Corregido error donde un transporte seleccionado era ignorado durante el arranque y sólo tenía efecto después de cambiarlo.
-- Actualizado Tor a la última versión 0.4.8.13.
-- Actualizado Snowflake a la última versión 2.10.1.
-- Actualizado Lyrebird a la última versión 0.5.0.
+- Actualizado Tor a la última versión 0.4.8.14.
+- Añadido soporte de Modo de Bloqueo para iOS 16 y superiores.
+- Añadida la función «bloquear peticiones HTTP inseguras».
+- Corregida la purga de caché cuando se está en modo «olvidar pestañas al cerrar».
+- Tor integrado: arreglado el estado roto cuando la aplicación estaba en segundo plano durante demasiado tiempo.
+- Corregidos algunos problemas menores de interfaz de usuario. 

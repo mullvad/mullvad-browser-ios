@@ -1,5 +1,16 @@
 #  Onion Browser Changelog
 
+## 3.2.0
+- Updated Tor to latest version 0.4.8.14.
+- Added Lockdown Mode support for iOS 16 and up.
+- Added "block insecure HTTP requests" feature.
+- Fixed cache purge when in "forget tabs at shutdown" mode.
+- Built-in Tor: fixed broken state when app was in background for too long.
+- Fixed some minor UI issues. 
+
+- Replaced old Endless Objective-C code with rewrite in Swift.
+- Replaced print with OSLog.
+
 ## 3.1.5
 - Fixed bug where a selected transport was ignored during startup and only took effect after changing it.
 - Updated Tor to latest version 0.4.8.13.

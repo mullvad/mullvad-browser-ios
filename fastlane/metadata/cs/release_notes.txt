@@ -1,4 +1,6 @@
-- Opravena chyba, kdy byl vybraný transport při spuštění ignorován a projevil se až po jeho změně.
-- Aktualizováno na nejnovější verzi 0.4.8.13.
-- Aktualizována verze Snowflake na nejnovější verzi 2.10.1.
-- Aktualizován Lyrebird na nejnovější verzi 0.5.0.
+- Aktualizován Tor na nejnovější verzi 0.4.8.14.
+- Přidána podpora režimu uzamčení pro iOS 16 a novější.
+- Přidána funkce „blokovat nezabezpečené požadavky HTTP“.
+- Opraveno čištění mezipaměti v režimu „zapomenout karty při vypnutí“.
+- Vestavěný Tor: opraven nefunkční stav, když byla aplikace příliš dlouho na pozadí.
+- Opraveno několik drobných problémů s uživatelským rozhraním. 

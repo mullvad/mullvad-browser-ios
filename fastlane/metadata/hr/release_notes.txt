@@ -1,4 +1,6 @@
-- Ispravljena greška gdje je odabrani prijenos zanemaren tijekom pokretanja i stupio je na snagu tek nakon promjene.
-- Ažuriran Tor na najnoviju verziju 0.4.8.13.
-- Snowflake je ažuriran na najnoviju verziju 2.10.1.
-- Ažuriran Lyrebird na najnoviju verziju 0.5.0.
+- Ažuriran Tor na najnoviju verziju 0.4.8.14.
+- Dodana podrška za način zaključavanja za iOS 16 i novije.
+- Dodana značajka "blokiraj nesigurne HTTP zahtjeve".
+- Popravljeno čišćenje predmemorije u načinu rada "zaboravi kartice pri gašenju".
+- Ugrađeni Tor: popravljeno pokvareno stanje kada je aplikacija predugo bila u pozadini.
+- Popravljeni su neki manji problemi korisničkog sučelja.

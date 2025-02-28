@@ -1,4 +1,6 @@
-- Bug opgelost waarbij een geselecteerd transport werd genegeerd tijdens het opstarten en pas van kracht werd na het wijzigen ervan.
-- Tor bijgewerkt naar de nieuwste versie 0.4.8.13.
-- Snowflake bijgewerkt naar de nieuwste versie 2.10.1.
-- Lyrebird bijgewerkt naar de nieuwste versie 0.5.0.
+- Tor bijgewerkt naar de nieuwste versie 0.4.8.14.
+- Ondersteuning voor vergrendelingsmodus toegevoegd voor iOS 16 en hoger.
+- Functie “onveilige HTTP-verzoeken blokkeren” toegevoegd.
+- Cache wissen in de modus “tabbladen vergeten bij afsluiten” opgelost.
+- Ingebouwde Tor: kapotte status hersteld wanneer app te lang op de achtergrond was.
+- Enkele kleine problemen met de UI opgelost. 

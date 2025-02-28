@@ -1,4 +1,6 @@
-- Seçilen bir aktarımın başlangıç sırasında yok sayılması ve yalnızca değiştirildikten sonra etkili olması hatası düzeltildi.
-- Tor en son 0.4.8.13 sürümüne güncellendi.
-- Snowflake en son 2.10.1 sürümüne güncellendi.
-- Lyrebird en son 0.5.0 sürümüne güncellendi.
+- Tor en son 0.4.8.14 sürümüne güncellendi.
+- iOS 16 ve üstü için Kilitleme Modu desteği eklendi.
+- “Güvensiz HTTP isteklerini engelle” özelliği eklendi.
+- “Kapatma sırasında sekmeleri unut” modundayken önbelleğin temizlenmesi düzeltildi.
+- Yerleşik Tor: uygulama çok uzun süre arka planda kaldığında bozuk durum düzeltildi.
+- Bazı küçük kullanıcı arayüzü sorunları düzeltildi. 

@@ -1,4 +1,6 @@
-- Memperbaiki bug di mana transportasi yang dipilih diabaikan selama startup dan hanya berlaku setelah mengubahnya.
-- Memperbarui Tor ke versi terbaru 0.4.8.13.
-- Memperbarui Snowflake ke versi terbaru 2.10.1.
-- Memperbarui Lyrebird ke versi terbaru 0.5.0.
+- Memperbarui Tor ke versi terbaru 0.4.8.14.
+- Menambahkan dukungan Mode Penguncian untuk iOS 16 ke atas.
+- Menambahkan fitur “blokir permintaan HTTP yang tidak aman”.
+- Memperbaiki pembersihan cache saat dalam mode “lupakan tab saat dimatikan”.
+- Tor bawaan: memperbaiki keadaan rusak saat aplikasi berada di latar belakang terlalu lama.
+- Memperbaiki beberapa masalah UI kecil. 

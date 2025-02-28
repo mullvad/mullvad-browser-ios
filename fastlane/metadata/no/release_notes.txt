@@ -1,4 +1,6 @@
-- Rettet en feil der en valgt transport ble ignorert under oppstart og først trådte i kraft etter at den ble endret.
-- Oppdatert Tor til siste versjon 0.4.8.13.
-- Oppdaterte Snowflake til siste versjon 2.10.1.
-- Oppdaterte Lyrebird til siste versjon 0.5.0.
+- Oppdatert Tor til nyeste versjon 0.4.8.14.
+- Lagt til støtte for Lockdown Mode for iOS 16 og nyere.
+- Lagt til funksjonen «blokker usikre HTTP-forespørsler».
+- Fikset hurtigbufferrensing når du er i «glem faner ved avslutning»-modus.
+- Innebygd Tor: fikset ødelagt tilstand når appen var i bakgrunnen for lenge.
+- Fikset noen mindre UI-problemer. 

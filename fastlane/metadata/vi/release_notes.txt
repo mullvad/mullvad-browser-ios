@@ -1,4 +1,6 @@
-- Đã sửa lỗi khi một phương tiện vận chuyển được chọn bị bỏ qua trong quá trình khởi động và chỉ có hiệu lực sau khi thay đổi.
-- Đã cập nhật Tor lên phiên bản mới nhất 0.4.8.13.
-- Đã cập nhật Snowflake lên phiên bản mới nhất 2.10.1.
-- Đã cập nhật Lyrebird lên phiên bản mới nhất 0.5.0.
+- Đã cập nhật Tor lên phiên bản mới nhất 0.4.8.14.
+- Đã thêm hỗ trợ Chế độ khóa cho iOS 16 trở lên.
+- Đã thêm tính năng "chặn các yêu cầu HTTP không an toàn".
+- Đã sửa lỗi xóa bộ nhớ đệm khi ở chế độ "quên tab khi tắt máy".
+- Tor tích hợp: đã sửa lỗi trạng thái bị hỏng khi ứng dụng ở chế độ nền quá lâu.
+- Đã sửa một số sự cố nhỏ về giao diện người dùng.
