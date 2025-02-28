@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstallViewController" customModule="OnionBrowser" customModuleProvider="target">
             <connections>
+                <outlet property="backBt" destination="WSf-0h-juY" id="40K-Pf-fo6"/>
                 <outlet property="bodyLb" destination="KyP-qJ-s8I" id="GQj-qW-csg"/>
                 <outlet property="getOrbotBt" destination="Wci-Bx-8ER" id="6Me-Ay-Lfb"/>
                 <outlet property="titleLb" destination="gNq-H1-Atz" id="Eva-Zz-CfY"/>
@@ -30,6 +31,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svz-st-qmA">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="389.5"/>
                             <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-0h-juY">
+                                    <rect key="frame" x="8" y="8" width="40" height="34"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                    <connections>
+                                        <action selector="back" destination="-1" eventType="touchUpInside" id="hpY-xu-f2y"/>
+                                    </connections>
+                                </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wET-hY-yeX">
                                     <rect key="frame" x="16" y="64" width="288" height="64"/>
                                     <subviews>
@@ -123,6 +132,7 @@
                             <constraints>
                                 <constraint firstItem="KyP-qJ-s8I" firstAttribute="leading" secondItem="svz-st-qmA" secondAttribute="leading" constant="16" id="0ri-Tf-8fs"/>
                                 <constraint firstItem="wET-hY-yeX" firstAttribute="top" secondItem="svz-st-qmA" secondAttribute="top" constant="64" id="B6z-6K-9vy"/>
+                                <constraint firstItem="WSf-0h-juY" firstAttribute="top" secondItem="svz-st-qmA" secondAttribute="top" constant="8" id="C0S-dX-PTw"/>
                                 <constraint firstAttribute="bottom" secondItem="kCz-il-GlH" secondAttribute="bottom" constant="20" symbolic="YES" id="FRw-O4-S2D"/>
                                 <constraint firstItem="Wci-Bx-8ER" firstAttribute="centerX" secondItem="svz-st-qmA" secondAttribute="centerX" id="JDo-2C-nsf"/>
                                 <constraint firstItem="kCz-il-GlH" firstAttribute="width" secondItem="Wci-Bx-8ER" secondAttribute="width" id="MRJ-Zy-2aj"/>
@@ -132,6 +142,7 @@
                                 <constraint firstAttribute="trailing" secondItem="wET-hY-yeX" secondAttribute="trailing" constant="16" id="YXU-xx-eId"/>
                                 <constraint firstAttribute="trailing" secondItem="KyP-qJ-s8I" secondAttribute="trailing" constant="16" id="h4Y-sL-afF"/>
                                 <constraint firstItem="wET-hY-yeX" firstAttribute="leading" secondItem="svz-st-qmA" secondAttribute="leading" constant="16" id="mwH-8N-xqs"/>
+                                <constraint firstItem="WSf-0h-juY" firstAttribute="leading" secondItem="svz-st-qmA" secondAttribute="leading" constant="8" id="oNS-UV-hvn"/>
                                 <constraint firstItem="gNq-H1-Atz" firstAttribute="top" secondItem="wET-hY-yeX" secondAttribute="bottom" constant="8" symbolic="YES" id="sqK-F4-Ift"/>
                                 <constraint firstItem="gNq-H1-Atz" firstAttribute="leading" secondItem="svz-st-qmA" secondAttribute="leading" constant="16" id="tzV-gX-eGL"/>
                                 <constraint firstItem="Wci-Bx-8ER" firstAttribute="top" secondItem="KyP-qJ-s8I" secondAttribute="bottom" constant="32" id="xAd-Fv-zGu"/>
@@ -162,6 +173,7 @@
         </view>
     </objects>
     <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="icon-onion-browser" width="64" height="64"/>
         <image name="icon-orbot" width="64" height="64"/>
         <namedColor name="Accent">
@@ -171,7 +183,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

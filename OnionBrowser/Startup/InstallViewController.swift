@@ -13,6 +13,12 @@ import OrbotKit
 
 class InstallViewController: UIViewController, WhyDelegate {
 
+	@IBOutlet weak var backBt: UIButton! {
+		didSet {
+			backBt.accessibilityLabel = NSLocalizedString("Back", comment: "")
+		}
+	}
+
 	@IBOutlet weak var titleLb: UILabel! {
 		didSet {
 			titleLb.text = String(format: NSLocalizedString(
@@ -67,6 +73,13 @@ class InstallViewController: UIViewController, WhyDelegate {
 
 
 	// MARK: Actions
+
+	@IBAction
+	func back() {
+		Settings.useBuiltInTor = nil
+
+		view.sceneDelegate?.show(OrbotManager.shared.checkStatus())
+	}
 
 	@IBAction
 	func action() {

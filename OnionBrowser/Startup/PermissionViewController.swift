@@ -15,6 +15,12 @@ class PermissionViewController: UIViewController, WhyDelegate {
 
 	var error: Error?
 
+	@IBOutlet weak var backtBt: UIButton! {
+		didSet {
+			backtBt.accessibilityLabel = NSLocalizedString("Back", comment: "")
+		}
+	}
+
 	@IBOutlet weak var statusIv: UIImageView!
 
 	@IBOutlet weak var titleLb: UILabel! {
@@ -165,6 +171,13 @@ class PermissionViewController: UIViewController, WhyDelegate {
 
 
 	// MARK: Actions
+
+	@IBAction
+	func back() {
+		Settings.useBuiltInTor = nil
+
+		view.sceneDelegate?.show(OrbotManager.shared.checkStatus())
+	}
 
 	@IBAction
 	func action() {

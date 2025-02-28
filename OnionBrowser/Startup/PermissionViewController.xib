@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermissionViewController" customModule="OnionBrowser" customModuleProvider="target">
             <connections>
+                <outlet property="backtBt" destination="pfi-ku-BzN" id="Idu-SJ-XyL"/>
                 <outlet property="body1Lb" destination="kO6-fg-zbJ" id="gcD-gr-Vmc"/>
                 <outlet property="body2Lb" destination="Xli-bc-FBf" id="UNW-5m-FIO"/>
                 <outlet property="body2Top" destination="iId-Xw-94c" id="p6C-Ri-4Ac"/>
@@ -35,6 +36,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUD-3I-mA1">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="556"/>
                             <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-ku-BzN">
+                                    <rect key="frame" x="8" y="8" width="40" height="34"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                    <connections>
+                                        <action selector="back" destination="-1" eventType="touchUpInside" id="Pju-af-Ha3"/>
+                                    </connections>
+                                </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xeq-d5-e11">
                                     <rect key="frame" x="16" y="64" width="288" height="80"/>
                                     <subviews>
@@ -51,6 +60,7 @@
                                             <color key="tintColor" name="Ok"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="5At-dU-OFf"/>
+                                                <constraint firstAttribute="width" secondItem="A6e-KQ-z5Q" secondAttribute="height" multiplier="1:1" id="Y2G-Vo-dcV"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -63,7 +73,6 @@
                                     <constraints>
                                         <constraint firstItem="yHG-fb-c0k" firstAttribute="top" secondItem="Xeq-d5-e11" secondAttribute="top" id="DCj-km-Or3"/>
                                         <constraint firstItem="A6e-KQ-z5Q" firstAttribute="trailing" secondItem="yHG-fb-c0k" secondAttribute="trailing" id="Mim-34-f7x"/>
-                                        <constraint firstItem="A6e-KQ-z5Q" firstAttribute="width" secondItem="A6e-KQ-z5Q" secondAttribute="height" multiplier="1:1" id="Y2G-Vo-dcV"/>
                                         <constraint firstItem="yHG-fb-c0k" firstAttribute="centerX" secondItem="Xeq-d5-e11" secondAttribute="centerX" id="fLN-UF-QCn"/>
                                         <constraint firstAttribute="bottom" secondItem="yHG-fb-c0k" secondAttribute="bottom" id="h0h-24-GwU"/>
                                         <constraint firstItem="A6e-KQ-z5Q" firstAttribute="bottom" secondItem="yHG-fb-c0k" secondAttribute="bottom" id="vRo-WP-VDH"/>
@@ -156,6 +165,7 @@
                                 <constraint firstItem="Xli-bc-FBf" firstAttribute="width" secondItem="Sga-kK-Vku" secondAttribute="width" id="eBV-vB-ixl"/>
                                 <constraint firstItem="fmb-CL-Xz8" firstAttribute="top" secondItem="xmu-ek-pwH" secondAttribute="bottom" constant="32" id="eQV-Rs-Cnu"/>
                                 <constraint firstItem="Xeq-d5-e11" firstAttribute="top" secondItem="GUD-3I-mA1" secondAttribute="top" constant="64" id="ec8-bp-Eu3"/>
+                                <constraint firstItem="pfi-ku-BzN" firstAttribute="leading" secondItem="GUD-3I-mA1" secondAttribute="leading" constant="8" id="f5c-ku-S6s"/>
                                 <constraint firstAttribute="trailing" secondItem="Xeq-d5-e11" secondAttribute="trailing" constant="16" id="g9E-NB-bGc"/>
                                 <constraint firstItem="Sga-kK-Vku" firstAttribute="top" secondItem="Xli-bc-FBf" secondAttribute="bottom" constant="8" symbolic="YES" id="hKN-aI-sC3"/>
                                 <constraint firstItem="Xli-bc-FBf" firstAttribute="top" secondItem="kO6-fg-zbJ" secondAttribute="bottom" constant="32" id="iId-Xw-94c"/>
@@ -163,6 +173,7 @@
                                 <constraint firstAttribute="trailing" secondItem="Zmu-a0-CCn" secondAttribute="trailing" constant="16" id="n29-BH-wpB"/>
                                 <constraint firstAttribute="bottom" secondItem="hia-Rp-vCe" secondAttribute="bottom" constant="20" symbolic="YES" id="nJf-lg-TzK"/>
                                 <constraint firstItem="xmu-ek-pwH" firstAttribute="centerX" secondItem="GUD-3I-mA1" secondAttribute="centerX" id="obd-LV-c4N"/>
+                                <constraint firstItem="pfi-ku-BzN" firstAttribute="top" secondItem="GUD-3I-mA1" secondAttribute="top" constant="8" id="q4f-r6-aIV"/>
                                 <constraint firstItem="Zmu-a0-CCn" firstAttribute="leading" secondItem="GUD-3I-mA1" secondAttribute="leading" constant="16" id="qUp-20-vtH"/>
                                 <constraint firstItem="xmu-ek-pwH" firstAttribute="width" secondItem="Sga-kK-Vku" secondAttribute="width" id="rT9-Fk-pG0"/>
                                 <constraint firstItem="xmu-ek-pwH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GUD-3I-mA1" secondAttribute="leading" constant="20" symbolic="YES" id="teT-1i-zyM"/>
@@ -194,6 +205,7 @@
     </objects>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="icon-orbot" width="64" height="64"/>
         <namedColor name="Accent">
             <color red="0.24699999392032623" green="0.16899999976158142" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -205,7 +217,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
