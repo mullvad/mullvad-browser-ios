@@ -139,6 +139,9 @@
 /* CertificateViewController */
 "Begins On" = "Fillon Më";
 
+/* Option title */
+"Block Insecure HTTP Requests" = "Block Insecure HTTP Requests";
+
 /* URLBlockerRuleController */
 "Blocked 3rd-Party Hosts" = "Hoste të Palëve të Treta të Bllokuara";
 

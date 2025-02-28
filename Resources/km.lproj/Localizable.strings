@@ -139,6 +139,9 @@
 /* CertificateViewController */
 "Begins On" = "ចាប់ផ្ដើមនៅ";
 
+/* Option title */
+"Block Insecure HTTP Requests" = "Block Insecure HTTP Requests";
+
 /* URLBlockerRuleController */
 "Blocked 3rd-Party Hosts" = "ម៉ាស៊ីន​ភាគី​ទី3 ត្រូវបាន​រាំងខ្ទប់";
 

@@ -139,6 +139,9 @@
 /* CertificateViewController */
 "Begins On" = "শুরুর সময়";
 
+/* Option title */
+"Block Insecure HTTP Requests" = "Block Insecure HTTP Requests";
+
 /* URLBlockerRuleController */
 "Blocked 3rd-Party Hosts" = "3rd-Party হোস্টগুলি ব্লক করা হয়েছে";
 

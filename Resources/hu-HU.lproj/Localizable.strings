@@ -139,6 +139,9 @@
 /* CertificateViewController */
 "Begins On" = "Kezdődik ekkor";
 
+/* Option title */
+"Block Insecure HTTP Requests" = "Block Insecure HTTP Requests";
+
 /* URLBlockerRuleController */
 "Blocked 3rd-Party Hosts" = "Tiltott 3. fél kiszolgálók";
 

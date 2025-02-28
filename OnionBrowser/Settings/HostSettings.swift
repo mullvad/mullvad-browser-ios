@@ -30,6 +30,7 @@ class HostSettings: NSObject {
 	private static let `false` = "0"
 	private static let ignoreTlsErrorsKey = "ignore_tls_errors"
 	private static let whitelistCookiesKey = "whitelist_cookies"
+	private static let blockInsecureHttpKey = "block_insecure_http"
 	private static let universalLinkProtectionKey = "universal_link_protection"
 	private static let followOnionLocationHeaderKey = "follow_onion_location_header"
 	private static let userAgentKey = "user_agent"
@@ -174,6 +175,15 @@ class HostSettings: NSObject {
 		}
 	}
 
+	var blockInsecureHttp: Bool {
+		get {
+			get(Self.blockInsecureHttpKey) == Self.true
+		}
+		set {
+			raw[Self.blockInsecureHttpKey] = newValue ? Self.true : Self.false
+		}
+	}
+
 	/**
 	True, if universal link protection should be applied. Will walk up the domain levels ending at the default settings,
 	if not explicitly set for this host.
@@ -289,6 +299,7 @@ class HostSettings: NSObject {
 			raw = [
 				Self.ignoreTlsErrorsKey: Self.false,
 				Self.whitelistCookiesKey: Self.false,
+				Self.blockInsecureHttpKey: Self.true,
 				Self.universalLinkProtectionKey: Self.true,
 				Self.followOnionLocationHeaderKey: Self.false,
 				Self.userAgentKey: "",

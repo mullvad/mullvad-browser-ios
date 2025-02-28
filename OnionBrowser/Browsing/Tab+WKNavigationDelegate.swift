@@ -34,6 +34,12 @@ extension Tab: WKNavigationDelegate {
 			}
 		}
 
+		let hs = HostSettings.for(url.host)
+
+		if hs.blockInsecureHttp && url.isHttp && !url.isOnion {
+			return decisionHandler(.cancel, preferences)
+		}
+
 		if let rule = UrlBlocker.shared.blockRule(for: url, withMain: self.url) {
 			applicableUrlBlockerRules.insert(rule)
 
@@ -45,7 +51,7 @@ extension Tab: WKNavigationDelegate {
 		// Try to prevent universal links from triggering by refusing the initial request and starting a new one.
 		let iframe = url.absoluteString != navigationAction.request.mainDocumentURL?.absoluteString
 
-		if HostSettings.for(url.host).universalLinkProtection {
+		if hs.universalLinkProtection {
 			if iframe {
 				Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for iframe \(url).")
 			}
@@ -77,18 +83,18 @@ extension Tab: WKNavigationDelegate {
 			reset(navigationAction.request.mainDocumentURL)
 		}
 
-		preferences.allowsContentJavaScript = HostSettings.for(url.host).javaScript
+		preferences.allowsContentJavaScript = hs.javaScript
 
 		if #available(iOS 16.0, *) {
 #if DEBUG
 			// There is no web-browser entitlement in debugging, and without that,
 			// *disabling* lockdown mode is disallowed and we would crash here.
 			// Hence, only try to enable it, if it's *not* enabled, yet, but it should.
-			if !preferences.isLockdownModeEnabled && HostSettings.for(url.host).lockdownMode {
+			if !preferences.isLockdownModeEnabled && hs.lockdownMode {
 				preferences.isLockdownModeEnabled = true
 			}
 #else
-			preferences.isLockdownModeEnabled = HostSettings.for(url.host).lockdownMode
+			preferences.isLockdownModeEnabled = hs.lockdownMode
 #endif
 		}
 
@@ -322,8 +328,11 @@ extension Tab: WKNavigationDelegate {
 	 TLS testing site: https://badssl.com/
 	 */
 	private func handle(error: Error, _ webView: WKWebView, _ navigation: WKNavigation?) {
+		var failedUrl = url
+
 		if let url = webView.url {
 			self.url = url
+			self.progress = 1
 		}
 
 		let error = error as NSError
@@ -376,21 +385,20 @@ extension Tab: WKNavigationDelegate {
 			msg += "\n(code: \(error.code), domain: \(error.domain))"
 		}
 
-		let url = error.userInfo[NSURLErrorFailingURLStringErrorKey] as? String
-
-		if let url = url {
-			msg += "\n\n\(url)"
+		// Get the URL of the *failed* request from the error, in case that one has a different opinion.
+		if let u = error.userInfo[NSURLErrorFailingURLErrorKey] as? String,
+		   let u = URL(string: u)
+		{
+			failedUrl = u
 		}
+
+		msg += "\n\n\(failedUrl.absoluteString)"
 
 		Log.error(for: Self.self, "[Tab \(index)] showing error dialog: \(msg) (\(error)")
 
 		var alert = AlertHelper.build(message: msg)
 
-		// self.url will hold the URL of the WKWebView which is the last
-		// *successful* request.
-		// We need the URL of the *failed* request, which should be in
-		// `error`'s `userInfo` dictionary.
-		if isTLSError, let u = url, let url = URL(string: u), let host = url.host {
+		if isTLSError, let host = failedUrl.host {
 			alert.addAction(AlertHelper.destructiveAction(
 				NSLocalizedString("Ignore for this host", comment: ""),
 				handler: { _ in
@@ -399,7 +407,7 @@ extension Tab: WKNavigationDelegate {
 					hs.save().store()
 
 					// Retry the failed request.
-					self.load(url)
+					self.load(failedUrl)
 				}))
 		}
 
@@ -407,8 +415,8 @@ extension Tab: WKNavigationDelegate {
 		// Allow the user to enter an authentication key in that case.
 		if error.domain == NSURLErrorDomain
 			&& (error.code == NSURLErrorNetworkConnectionLost /* iOS 14/15 */ || error.code == NSURLErrorNotConnectedToInternet /* iOS 13 */),
-			let u = url, let url = URL(string: u), let host = url.host,
-		   host.lowercased().hasSuffix(".onion")
+		   let host = failedUrl.host,
+		   failedUrl.isOnion
 		{
 			msg += "\n\n"
 			msg += String(format: NSLocalizedString(
@@ -434,7 +442,7 @@ extension Tab: WKNavigationDelegate {
 							AlertHelper.cancelAction(),
 							AlertHelper.defaultAction(NSLocalizedString("Retry", comment: ""), handler: { _ in
 								DispatchQueue.main.async {
-									self?.load(url)
+									self?.load(failedUrl)
 								}
 							})
 						])

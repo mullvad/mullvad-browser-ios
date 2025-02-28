@@ -167,6 +167,16 @@ class SecurityViewController: FixedFormViewController {
 											  comment: "Option description"))
 
 		<<< SwitchRow() {
+			$0.title = NSLocalizedString("Block Insecure HTTP Requests", comment: "Option title")
+			$0.value = hostSettings.blockInsecureHttp
+			$0.cell.switchControl.onTintColor = .accent
+			$0.cell.textLabel?.numberOfLines = 0
+		}
+		.onChange { [weak self] row in
+			self?.hostSettings.blockInsecureHttp = row.value ?? false
+		}
+
+		<<< SwitchRow() {
 			$0.title = NSLocalizedString("Universal Link Protection", comment: "Option title")
 			$0.value = hostSettings.universalLinkProtection
 			$0.cell.switchControl.onTintColor = .accent
@@ -325,7 +335,7 @@ class SecurityViewController: FixedFormViewController {
 			let cv = alert.contentView
 
 			let illustration = UIImageView(image: UIImage(named: "custom-shield"))
-            illustration.translatesAutoresizingMaskIntoConstraints = false
+			illustration.translatesAutoresizingMaskIntoConstraints = false
 			cv.addSubview(illustration)
 			illustration.topAnchor.constraint(equalTo: cv.topAnchor, constant: -16).isActive = true
 			illustration.widthAnchor.constraint(equalToConstant: 24).isActive = true

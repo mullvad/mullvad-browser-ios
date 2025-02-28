@@ -139,6 +139,9 @@
 /* CertificateViewController */
 "Begins On" = "Begins On";
 
+/* Option title */
+"Block Insecure HTTP Requests" = "Block Insecure HTTP Requests";
+
 /* URLBlockerRuleController */
 "Blocked 3rd-Party Hosts" = "Host Pihak Ke-3 yang di Blokir";
 
