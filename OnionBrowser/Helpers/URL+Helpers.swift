@@ -71,7 +71,7 @@ extension URL {
 	}
 
 	var isSpecial: Bool {
-		switch scheme {
+		switch scheme?.lowercased() {
 		case "http", "https", "onionhttp", "onionhttps":
 			break
 
@@ -96,6 +96,18 @@ extension URL {
 		default:
 			return true
 		}
+	}
+
+	var isHttp: Bool {
+		["http", "onionhttp"].contains(scheme?.lowercased())
+	}
+
+	var isHttps: Bool {
+		["https", "onionhttps"].contains(scheme?.lowercased())
+	}
+
+	var isOnion: Bool {
+		host?.lowercased().hasSuffix(".onion") ?? false
 	}
 
 	var exists: Bool {

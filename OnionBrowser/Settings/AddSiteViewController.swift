@@ -75,8 +75,7 @@ class AddSiteViewController: FixedFormViewController {
 	*/
 	public class func getCurrentTabInfo(_ sceneDelegate: SceneDelegate?) -> (url: URL, title: String?)? {
 		if let tab = sceneDelegate?.browsingUi.currentTab,
-		   let scheme = tab.url.scheme?.lowercased(),
-		   scheme == "http" || scheme == "https"
+		   tab.url.isHttp || tab.url.isHttps
 		{
 			return (url: tab.url, title: tab.title)
 		}

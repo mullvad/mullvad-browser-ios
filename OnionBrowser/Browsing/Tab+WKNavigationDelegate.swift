@@ -55,7 +55,7 @@ extension Tab: WKNavigationDelegate {
 			else if navigationType == .formSubmitted {
 				Log.debug(for: Self.self, "[Tab \(index)] not doing universal link workaround for form submission to \(url).")
 			}
-			else if (url.scheme?.lowercased().hasPrefix("http") ?? false)
+			else if (url.isHttp || url.isHttps)
 						&& (URLProtocol.property(forKey: Tab.universalLinksWorkaroundKey, in: navigationAction.request) == nil)
 			{
 				if let tr = navigationAction.request as? NSMutableURLRequest {
@@ -114,14 +114,14 @@ extension Tab: WKNavigationDelegate {
 		// - is a valid URL with http: or https: protocol and a .onion hostname,
 		//
 		// https://community.torproject.org/onion-services/advanced/onion-location/
-		if !(url?.host?.lowercased().hasSuffix(".onion") ?? false)
-			&& url?.scheme?.lowercased() == "https"
+		if !(url?.isOnion ?? false)
+			&& (url?.isHttps ?? false)
 			&& HostSettings.for(url?.host).followOnionLocationHeader,
 		   let headers = (navigationResponse.response as? HTTPURLResponse)?.allHeaderFields,
 		   let olHeader = headers.first(where: { ($0.key as? String)?.lowercased() == "onion-location" })?.value as? String,
 		   let onionLocation = URL(string: olHeader),
-		   ["http", "https"].contains(onionLocation.scheme?.lowercased())
-			&& onionLocation.host?.lowercased().hasSuffix(".onion") ?? false
+		   (onionLocation.isHttp || onionLocation.isHttps)
+			&& onionLocation.isOnion
 		{
 			Log.debug(for: Self.self, "Redirect to Onion-Location=\(onionLocation.absoluteString)")
 
