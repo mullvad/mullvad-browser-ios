@@ -17,4 +17,4 @@ PROVISIONING_PROFILE_SPECIFIER[config=Debug] =
 
 PRODUCT_BUNDLE_IDENTIFIER[config=Release] = com.miketigas.OnionBrowser
 DEVELOPMENT_TEAM[config=Release] = 68QUP6KP2C
-PROVISIONING_PROFILE_SPECIFIER[config=Release] = 2023b Onion Browser Distribution
+PROVISIONING_PROFILE_SPECIFIER[config=Release] = 202501 Onion Browser Dist
