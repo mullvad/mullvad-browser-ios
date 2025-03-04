@@ -3,4 +3,5 @@
 - “Güvenli olmayan HTTP istekleri engellensin” özelliği eklendi.
 - “Kapatıldığında sekmeler unutulsun” modunda ön belleğin temizlenmesi düzeltildi.
 - İç Tor: Uygulamanın çok uzun süre arka planda kaldığında bozulması durumu düzeltildi.
-- Bazı küçük kullanıcı arayüzü sorunları düzeltildi. 
+- İç Tor: Yer imi favicon'larını isterken, Nextcloud Yer İmleri sunucusuyla konuşurken, canlı arama sonuçları yaparken ve öğeleri indirirken yaşanan sızıntılar düzeltildi.
+- Bazı küçük kullanıcı arayüzü sorunları düzeltildi.

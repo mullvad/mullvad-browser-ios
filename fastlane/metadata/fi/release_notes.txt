@@ -3,4 +3,5 @@
 - Lisätty ”estä turvattomat HTTP-pyynnöt” -toiminto.
 - Korjattu välimuistin tyhjennys ”unohda välilehdet sulkemisen yhteydessä” -tilassa.
 - Sisäänrakennettu Tor: korjattu rikkinäinen tila, kun sovellus oli taustalla liian kauan.
+- Sisäänrakennettu Tor: Nextcloudin kirjanmerkkipalvelimelle puhuttaessa, live-hakutuloksia tehtäessä ja kohteita ladattaessa.
 - Korjattu joitakin pieniä käyttöliittymäongelmia. 

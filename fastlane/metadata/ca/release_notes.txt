@@ -3,4 +3,5 @@
 - S'ha afegit la funció "bloqueja les sol·licituds HTTP no segures".
 - S'ha corregit la purga de la memòria cau quan es trobava en el mode "Oblida les pestanyes a l'apagada".
 - Tor integrat: s'ha corregit l'estat trencat quan l'aplicació estava en segon pla durant massa temps.
+- Tor integrat: s'han solucionat les fuites en sol·licitar els favorits d'adreces d'interès, en parlar amb un servidor d'adreces d'interès de Nextcloud, en fer resultats de cerca en directe i en baixar elements.
 - S'han solucionat alguns problemes menors de la interfície d'usuari.

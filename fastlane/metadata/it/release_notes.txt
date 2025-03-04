@@ -3,4 +3,5 @@
 - Aggiunta la funzione “blocca le richieste HTTP non sicure”.
 - Corretta la cancellazione della cache quando si è in modalità “dimentica le schede allo spegnimento”.
 - Tor incorporato: corretto lo stato di rottura quando l'app rimaneva in background per troppo tempo.
+- Tor incorporato: Corretto il leak quando si richiedono le favicon dei segnalibri, quando si parla con un server Nextcloud Bookmarks, quando si eseguono risultati di ricerca live e quando si scaricano elementi.
 - Risolti alcuni problemi minori dell'interfaccia utente. 

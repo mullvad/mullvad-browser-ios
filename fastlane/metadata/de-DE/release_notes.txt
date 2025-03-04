@@ -3,5 +3,6 @@
 - Funktion „unsichere HTTP-Anfragen blockieren“ hinzugefügt.
 - Cache-Löschung im Modus „Tabs beim Herunterfahren vergessen“ behoben.
 - Eingebautes Tor: Fehler behoben, der auftrat, wenn die Anwendung zu lange im Hintergrund war.
+- Eingebautes Tor: Leck bei der Abfrage von Lesezeichen-Favicons, bei der Kommunikation mit einem Nextcloud-Lesezeichenserver, bei Live-Suchergebnissen und beim Herunterladen von Objekten behoben.
 - Einige kleinere UI-Probleme behoben.
 

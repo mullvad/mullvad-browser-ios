@@ -3,4 +3,5 @@
 - Añadida la función «bloquear peticiones HTTP inseguras».
 - Corregida la purga de caché cuando se está en modo «olvidar pestañas al cerrar».
 - Tor integrado: arreglado el estado roto cuando la aplicación estaba en segundo plano durante demasiado tiempo.
+- Tor incorporado: Corregidas fugas al solicitar favicons de Marcadores, al hablar con un servidor de Marcadores Nextcloud, al hacer resultados de búsqueda en vivo y al descargar elementos.
 - Corregidos algunos problemas menores de interfaz de usuario. 

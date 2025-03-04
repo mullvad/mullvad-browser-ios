@@ -6,7 +6,8 @@
 - Added "block insecure HTTP requests" feature.
 - Fixed cache purge when in "forget tabs at shutdown" mode.
 - Built-in Tor: fixed broken state when app was in background for too long.
-- Fixed some minor UI issues. 
+- Built-in Tor: Fixed leaking when requesting Bookmark favicons, when talking to a Nextcloud Bookmarks server, when doing live search results and when downloading items.
+- Fixed some minor UI issues.
 
 - Replaced old Endless Objective-C code with rewrite in Swift.
 - Replaced print with OSLog.

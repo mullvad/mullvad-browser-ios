@@ -3,4 +3,5 @@
 - Functie “onveilige HTTP-verzoeken blokkeren” toegevoegd.
 - Cache wissen in de modus “tabbladen vergeten bij afsluiten” opgelost.
 - Ingebouwde Tor: kapotte status hersteld wanneer app te lang op de achtergrond was.
-- Enkele kleine problemen met de UI opgelost. 
+- Ingebouwde Tor: Lekkage verholpen bij het opvragen van bladwijzer-favorieten, bij het praten met een Nextcloud Bladwijzerserver, bij het doen van live zoekresultaten en bij het downloaden van items.
+- Enkele kleine problemen met de UI opgelost.

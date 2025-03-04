@@ -3,4 +3,5 @@
 - Dodana značajka "blokiraj nesigurne HTTP zahtjeve".
 - Popravljeno čišćenje predmemorije u načinu rada "zaboravi kartice pri gašenju".
 - Ugrađeni Tor: popravljeno pokvareno stanje kada je aplikacija predugo bila u pozadini.
+- Ugrađeni Tor: popravljeno curenje kada se traže ikone oznaka, kada se razgovara s poslužiteljem Nextcloud Bookmarks, kada se rade rezultati pretraživanja uživo i kada se preuzimaju stavke.
 - Popravljeni su neki manji problemi korisničkog sučelja.

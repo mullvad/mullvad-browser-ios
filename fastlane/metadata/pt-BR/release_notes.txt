@@ -3,4 +3,5 @@
 - Adicionado o recurso “bloquear solicitações HTTP inseguras”.
 - Correção da limpeza do cache quando no modo “esquecer abas no desligamento”.
 - Tor integrado: corrigido o estado quebrado quando o aplicativo ficava em segundo plano por muito tempo.
+- Tor incorporado: Corrigido vazamento ao solicitar favicons de marcadores, ao conversar com um servidor de marcadores Nextcloud, ao fazer resultados de pesquisa ao vivo e ao fazer download de itens.
 - Correção de alguns problemas menores na interface do usuário.

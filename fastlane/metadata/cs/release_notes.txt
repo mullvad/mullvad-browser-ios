@@ -3,4 +3,5 @@
 - Přidána funkce „blokovat nezabezpečené požadavky HTTP“.
 - Opraveno čištění mezipaměti v režimu „zapomenout karty při vypnutí“.
 - Vestavěný Tor: opraven nefunkční stav, když byla aplikace příliš dlouho na pozadí.
+- Vestavěný přístroj Tor: Opraveno unikání při vyžádání oblíbených záložek, při komunikaci se serverem Nextcloud Bookmarks, při živých výsledcích vyhledávání a při stahování položek.
 - Opraveno několik drobných problémů s uživatelským rozhraním. 

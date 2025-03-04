@@ -3,4 +3,5 @@
 - Hozzáadva a „Bizonytalan HTTP-kérések blokkolása” funkció.
 - Javítottuk a gyorsítótár törlését a „lapok elfelejtése kikapcsoláskor” módban.
 - Beépített Tor: javítottuk a törött állapotot, amikor az alkalmazás túl sokáig volt a háttérben.
+- Beépített Tor: Nextcloud Bookmarks szerverrel való beszélgetéskor, élő keresési eredmények és elemek letöltésekor.
 - Néhány kisebb UI-probléma javítása. 
