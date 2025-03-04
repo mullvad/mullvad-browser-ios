@@ -13,9 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>%d çerez</string>
+			<string>%d tanımlama bilgisi</string>
 			<key>other</key>
-			<string>%d çerez</string>
+			<string>%d tanımlama bilgisi</string>
 		</dict>
 	</dict>
 </dict>
