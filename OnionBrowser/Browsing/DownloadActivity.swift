@@ -96,14 +96,7 @@ class DownloadActivity: UIActivity, URLSessionDownloadDelegate {
 		hud.show(animated: true)
 
 		webView.configuration.websiteDataStore.httpCookieStore.getAllCookies { cookies in
-
-			let conf = URLSessionConfiguration.ephemeral
-			conf.httpCookieStorage?.setCookies(cookies, for: url, mainDocumentURL: nil)
-			conf.waitsForConnectivity = true
-			conf.allowsConstrainedNetworkAccess = true
-			conf.allowsExpensiveNetworkAccess = true
-
-			let session = URLSession(configuration: conf, delegate: self, delegateQueue: .main)
+			let session = TorManager.shared.session(cookies, for: url, delegate: self)
 
 			self.task = session.downloadTask(with: URLRequest(url: url))
 			self.task?.resume()

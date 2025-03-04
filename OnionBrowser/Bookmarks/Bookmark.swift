@@ -60,10 +60,6 @@ open class Bookmark: NSObject {
 	private static var startPageNeedsUpdate = true
 
 	static var all: [Bookmark] = {
-
-		// Init FavIcon config here, because all code having to do with bookmarks should come along here anyway.
-		FavIcon.downloadSession = URLSession.shared
-
 		var bookmarks = [Bookmark]()
 
 		if let path = bookmarkFilePath {
@@ -340,6 +336,8 @@ open class Bookmark: NSObject {
 	// MARK: Public Methods
 
 	class func icon(for url: URL, _ completion: @escaping (_ image: UIImage?) -> Void) {
+		FavIcon.downloadSession = TorManager.shared.session()
+
 		do {
 			try FavIcon.downloadPreferred(url, width: 128, height: 128) { result in
 				if case let .success(image) = result {

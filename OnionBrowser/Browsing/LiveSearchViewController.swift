@@ -36,6 +36,8 @@ class LiveSearchViewController: UITableViewController {
 		return button
 	}()
 
+	private lazy var session: URLSession = TorManager.shared.session()
+
 
 	// MARK: UITableViewDataSource
 
@@ -119,7 +121,7 @@ class LiveSearchViewController: UITableViewController {
 
 		browserTab = tab
 
-		let task = URLSession.shared.dataTask(with: request) { data, response, error in
+		let task = session.dataTask(with: request) { data, response, error in
 			if let error = error {
 				Log.error(for: Self.self, "failed auto-completing: \(error)")
 				return

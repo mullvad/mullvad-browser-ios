@@ -306,6 +306,26 @@ class TorManager {
 		}
 	}
 
+	func session(_ cookies: [HTTPCookie]? = nil, for url: URL? = nil, delegate: URLSessionDelegate? = nil) -> URLSession {
+		let conf = URLSessionConfiguration.ephemeral
+		conf.waitsForConnectivity = true
+		conf.allowsConstrainedNetworkAccess = true
+		conf.allowsExpensiveNetworkAccess = true
+
+		if let cookies = cookies {
+			conf.httpCookieStorage?.setCookies(cookies, for: url, mainDocumentURL: nil)
+		}
+
+		if #available(iOS 17.0, *), Settings.useBuiltInTor == true {
+			// There should be a started Tor and the correct proxy configuration available.
+			// If not, use an invalid one to make the request fail and not leak.
+			let proxy = torSocks5 ?? NWEndpoint.hostPort(host: .ipv4(.loopback), port: .any)
+			conf.proxyConfigurations.append(.init(socksv5Proxy: proxy))
+		}
+
+		return .init(configuration: conf, delegate: delegate, delegateQueue: .main)
+	}
+
 
 	// MARK: Private Methods
 

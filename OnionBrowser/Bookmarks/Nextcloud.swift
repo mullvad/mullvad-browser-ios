@@ -169,7 +169,7 @@ class Nextcloud: NSObject {
 	}
 
 	private class func execute(_ request: URLRequest, _ completion: ((_ items: [Item]?, _ error: Error?) -> ())? = nil) {
-		let task = URLSession.shared.apiTask(with: request) { (response: Response?, error) in
+		let task = TorManager.shared.session().apiTask(with: request) { (response: Response?, error) in
 			if let error = error {
 				completion?(nil, error)
 				return
