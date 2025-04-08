@@ -157,12 +157,14 @@ class UrlBlocker: NSObject {
 			// now for x.y.z.example.com, try *.y.z.example.com, *.z.example.com, *.example.com, etc.
 			let p = host.components(separatedBy: ".")
 
-			for i in 1 ..< p.count - 1 {
-				let domain = p[i ..< p.count].joined(separator: ".")
+			if p.count > 2 {
+				for i in 1 ..< p.count - 1 {
+					let domain = p[i ..< p.count].joined(separator: ".")
 
-				if targets[domain] != nil {
-					rule = domain
-					break
+					if targets[domain] != nil {
+						rule = domain
+						break
+					}
 				}
 			}
 		}
