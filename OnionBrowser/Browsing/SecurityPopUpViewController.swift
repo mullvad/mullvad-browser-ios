@@ -134,6 +134,7 @@ UITableViewDataSource, UITableViewDelegate {
 
 		let values = current.values
 		hostSettings.javaScript = values?.javaScript ?? false
+		hostSettings.lockdownMode = values?.lockdownMode ?? false
 		hostSettings.orientationAndMotion = values?.orientationAndMotion ?? false
 		hostSettings.mediaCapture = values?.mediaCapture ?? false
 
