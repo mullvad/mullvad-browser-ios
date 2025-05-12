@@ -6,7 +6,7 @@ platform :ios, '15.0'
 #source 'https://cocoapods-cdn.netlify.app/'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'OnionBrowser' do
+target 'MullvadBrowser' do
   pod 'DTFoundation/DTASN1'
   pod 'TUSafariActivity'
 
@@ -16,19 +16,9 @@ target 'OnionBrowser' do
   pod 'Eureka', '~> 5.5'
   pod 'ImageRow', :git => 'https://github.com/erickyim/ImageRow.git', :commit => 'd38369b8894425a9225ccf1e267226833b1950f0'
 
-  pod 'Tor/GeoIP',
-    '~> 408.14'
-#    :path => '../Tor.framework'
-
-  pod 'IPtProxyUI',
-    '~> 4.7'
-#    :git => 'https://github.com/tladesignz/IPtProxyUI-ios'
-#    :path => '../IPtProxyUI'
-
-  pod 'OrbotKit', '~> 1.1'
 end
 
-target 'OnionBrowser Tests' do
+target 'MullvadBrowser Tests' do
   pod 'OCMock'
   pod 'DTFoundation/DTASN1'
 end

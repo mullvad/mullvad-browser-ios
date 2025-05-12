@@ -1,7 +1,0 @@
-- Zaktualizowano aplikację Tor do najnowszej wersji 0.4.8.14.
-- Dodano obsługę trybu Lockdown dla iOS 16 i nowszych.
-- Dodano funkcję „blokuj niezabezpieczone żądania HTTP”.
-- Naprawiono czyszczenie pamięci podręcznej w trybie „zapomnij karty przy zamykaniu”.
-- Wbudowany Tor: naprawiono uszkodzony stan, gdy aplikacja działała w tle zbyt długo.
-- Wbudowany Tor: Naprawiono wycieki podczas żądania ikon ulubionych zakładek, podczas rozmowy z serwerem zakładek Nextcloud, podczas wykonywania wyników wyszukiwania na żywo i podczas pobierania elementów.
-- Naprawiono kilka drobnych błędów w interfejsie użytkownika.

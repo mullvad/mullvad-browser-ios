@@ -1,7 +1,0 @@
-- Tor son 0.4.8.14 sürümüne güncellendi.
-- iOS 16 ve üzeri için Kilit Modu desteği eklendi.
-- “Güvenli olmayan HTTP istekleri engellensin” özelliği eklendi.
-- “Kapatıldığında sekmeler unutulsun” modunda ön belleğin temizlenmesi düzeltildi.
-- İç Tor: Uygulamanın çok uzun süre arka planda kaldığında bozulması durumu düzeltildi.
-- İç Tor: Yer imi favicon'larını isterken, Nextcloud Yer İmleri sunucusuyla konuşurken, canlı arama sonuçları yaparken ve öğeleri indirirken yaşanan sızıntılar düzeltildi.
-- Bazı küçük kullanıcı arayüzü sorunları düzeltildi.

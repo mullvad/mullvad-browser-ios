@@ -1,7 +1,0 @@
-- Atualização do Tor para a versão mais recente 0.4.8.14.
-- Adicionado suporte ao modo Lockdown para iOS 16 e superior.
-- Adicionada a funcionalidade “bloquear pedidos HTTP inseguros”.
-- Corrigida a limpeza da cache quando no modo “esquecer separadores ao desligar”.
-- Tor incorporado: corrigido o estado quebrado quando a aplicação estava em segundo plano durante demasiado tempo.
-- Tor incorporado: Corrigida a fuga de informação quando se pediam favicons dos Marcadores, quando se falava com um servidor de Marcadores Nextcloud, quando se faziam resultados de pesquisa ao vivo e quando se descarregavam itens.
-- Correção de alguns problemas menores da interface do utilizador. 

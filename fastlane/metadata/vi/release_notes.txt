@@ -1,7 +1,0 @@
-- Đã cập nhật Tor lên phiên bản mới nhất 0.4.8.14.
-- Đã thêm hỗ trợ Chế độ khóa cho iOS 16 trở lên.
-- Đã thêm tính năng "chặn các yêu cầu HTTP không an toàn".
-- Đã sửa lỗi xóa bộ nhớ đệm khi ở chế độ "quên tab khi tắt máy".
-- Tor tích hợp: đã sửa lỗi trạng thái bị hỏng khi ứng dụng ở chế độ nền quá lâu.
-- Tor tích hợp: Đã khắc phục lỗi rò rỉ khi yêu cầu biểu tượng Bookmark, khi kết nối với máy chủ Nextcloud Bookmarks, khi thực hiện kết quả tìm kiếm trực tiếp và khi tải xuống các mục.
-- Đã sửa một số sự cố nhỏ về giao diện người dùng.

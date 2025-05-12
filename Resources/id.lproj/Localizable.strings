@@ -1,80 +1,11 @@
 /* RuleEditorController */
 "%1$@ (Disabled: %2$@)" = "%1$@ (Di-non-aktifkan: %2$@)";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems." = "%1$@ bisa mengandalkan pada %2$@ untuk suatu koneksi aman ke Tor atau menjalankan Tor bawaannya sendiri. Tor bawaan punya masalah keamanan.";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ If you have connectivity issues with %2$@" = "%1$@ bila Anda punya masalah konektivitas dengan %2$@";
-
-/* Placeholder 1 is bullet point, Placeholder 2 is 'Onion Browser' */
-"%1$@ if you want to use %2$@ over another VPN" = "%1$@ bila Anda ingin memakai %2$@ di atas VPN lain";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ now relies on %2$@ for a secure connection to Tor." = "%1$@ kini mengandalkan %2$@ untuk suatu koneksi aman ke Tor.";
-
-/* 1. placeholder is 'Onion Browser', 2. is translated 'Lockdown Mode', 3. is two line breaks, 4. is translated 'Default Security', 5. is translated 'Block Insecure HTTP Requests'. */
-"%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature." = "%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature.";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue." = "%1$@ mengandalkan %2$@ untuk suatu koneksi aman ke Tor. Pasang aplikasi %2$@ untuk melanjutkan.";
-
-/* Placeholder 1 is 'Orbot', placeholder 2 is 'Onion Browser' */
-"%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!" = "%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ Use %2$@ to connect to the official Tor network." = "%1$@ Use %2$@ to connect to the official Tor network.";
-
-/* Placeholder is bullet point */
-"%@ a little more speed" = "%@ a little more speed";
-
-/* Placeholder is 'Orbot' */
-"%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked." = "%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked.";
-
-/* Placeholder is bullet point */
-"%@ Get updates on the status of the connection." = "%@ Get updates on the status of the connection.";
-
-/* Placeholder is 'Orbot' */
-"%@ installed! One more step." = "%@ installed! One more step.";
-
-/* Placeholder is bullet point */
-"%@ more protection from IP leaks" = "%@ more protection from IP leaks";
-
-/* Placeholder is bullet point */
-"%@ new standards" = "%@ new standards";
-
-/* Placeholder is 'Orbot' */
-"%@ or built-in Tor" = "%@ or built-in Tor";
-
-/* Placeholder is bullet point */
-"%@ video and audio streaming" = "%@ video and audio streaming";
-
-/* Placeholder is bullet point */
-"%@ video and audio streams don't go through Tor and might get blocked" = "%@ video and audio streams don't go through Tor and might get blocked";
-
-/* Placeholder is bullet point */
-"%@ Websites can uncover your real IP address using JavaScript" = "%@ Websites can uncover your real IP address using JavaScript";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(tidak direkomendasikan)";
 
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH1__" = "Browser Onion adalah aplikasi gratis, tetapi perlu waktu dan sumber daya untuk mengembangkan dan memeliharanya.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH2__" = "Anda dapat mendukung aplikasi ini dengan mengirimkan sedikit tip melalui pembelian in-app di bawah ini.  Ini adalah transaksi satu kali, tidak berulang, tapi Anda dapat kembali kapanpun untuk mengirimkan lagi. Pengembang Onion Browser tidak mengumpulkan atau menyimpan informasi apapun mengenai pembelian in-app Anda.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH3__" = "Anda dapat mempelajari tentang cara lainnya untuk membantu (termasuk Patreon, PayPal, Bitcoin, dan Zcash) di bagian 'Tentang' di halaman 'Pengaturan'.";
-
-/* DonationViewController */
-"__DONATE_THANKS__" = "Terima kasih! Tiap bantuan berharga! Pembayaran Anda sebesar %@ membantu memastikan pengembangan yang berkelanjutan pada Onion Browser dan alat yang membuat Tor lebih mudah untuk diintegrasikan ke dalam aplikasi iOS lainnya.";
-
 /* SettingsViewController */
 "About" = "Tentang";
-
-/* Placeholder is 'Orbot' */
-"Access to %@ was Denied" = "Access to %@ was Denied";
 
 /* SearchEnginesViewController, AddSearchEngineViewController */
 "Add" = "Add";
@@ -91,11 +22,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "Tambahkan Situs";
 
-/* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
-
-/* SyncViewController */
-"Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Sebagai tambahan, semua penada akan dibaca melalui server dan ditambahkan/diperbarui di Onion Browser.";
+/* No comment provided by engineer. */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
 "Address" = "Alamat";
@@ -121,15 +49,6 @@
 /* SecurityViewController */
 "Allow Persistent Cookies" = "Allow Persistent Cookies";
 
-/* DonationViewController */
-"Are you sure you want to send a %@ tip?" = "Apakah Anda yakin ingin mengirimkan tip sebesar %@?";
-
-/* Placeholder is 'Orbot' */
-"Ask %@ for permission to access it." = "Ask %@ for permission to access it.";
-
-/* No comment provided by engineer. */
-"Ask again to continue." = "Ask again to continue.";
-
 /* AppDelegate */
 "Authentication Required" = "Autentikasi Dibutuhkan";
 
@@ -138,9 +57,6 @@
 
 /* AddSearchEngineViewController */
 "Autocomplete URL" = "Autocomplete URL";
-
-/* No comment provided by engineer. */
-"Back" = "Back";
 
 /* CertificateViewController */
 "Begins On" = "Begins On";
@@ -153,12 +69,6 @@
 
 /* BookmarksViewController */
 "Bookmarks" = "Penanda";
-
-/* No comment provided by engineer. */
-"Both are free to use. Free of tracking. Code is open source." = "Both are free to use. Free of tracking. Code is open source.";
-
-/* CircuitViewController */
-"Bridge Configuration" = "Konfigurasi Jembatan";
 
 /* SecurityPresetsRow; a security level */
 "Bronze" = "Perunggu";
@@ -180,18 +90,6 @@
 
 /* AppDelegate */
 "Close Tab" = "Tutup Tab";
-
-/* No comment provided by engineer. */
-"Configure Bridges" = "Konfigurasikan Jembatan";
-
-/* DonationViewController */
-"Confirm %@" = "Konfirmasi %@";
-
-/* DonationViewController */
-"Confirm Purchase" = "Konfirmasi Pembelian";
-
-/* CircuitViewController */
-"Connect to a website to see your circuit." = "Hubungkan ke situs web untuk melihat sirkuit Anda.";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Koneksi ke Server Nextcloud Gagal";
@@ -241,20 +139,11 @@
 /* No comment provided by engineer. */
 "Disk Cache" = "Singgahan Diska";
 
-/* DonationViewController */
-"Donate" = "Donasi";
-
-/* Bookmark, placeholder is app name "Onion Browser" */
-"Donate to %@" = "Donasi ke%@";
-
 /* BrowsingViewController */
 "Done" = "Selesai";
 
 /* No comment provided by engineer. */
 "Download" = "Unduh";
-
-/* No comment provided by engineer. */
-"Drawbacks:" = "Kekurangan:";
 
 /* SecurityPresetsRow */
 "Easy breezy. Though it could be dangerous." = "Sangat mudah. Tapi dapat menjadi berbahaya.";
@@ -295,26 +184,14 @@
 /* SettingsViewController */
 "Forget in Background" = "Lupakan di Latar Belakang";
 
-/* SettingsViewController */
-"Fund Development" = "Pengembangan Dana";
-
-/* Placeholder is 'Orbot' */
-"Get %@" = "Ambil %@";
-
 /* AppDelegate */
 "Go Back" = "Kembali";
 
 /* AppDelegate */
 "Go Forward" = "Maju";
 
-/* Placeholder is 'Orbot' */
-"Go to %@" = "Ke %@";
-
 /* SecurityPresetsRow; a security level */
 "Gold" = "Emas";
-
-/* CircuSitsViewController */
-"Guard" = "Guard";
 
 /* SecurityViewController */
 "Handle tapping on links in a non-standard way to avoid possibly opening external applications." = "Handle tapping on links in a non-standard way to avoid possibly opening external applications.";
@@ -328,8 +205,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "Host";
 
-/* SyncViewController */
-"If you sync, all bookmarks will be read from the server and added/updated in Onion Browser." = "If you sync, all bookmarks will be read from the server and added/updated in Onion Browser.";
+/* No comment provided by engineer. */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "Acuhkan host ini";
@@ -339,9 +216,6 @@
 
 /* No comment provided by engineer. */
 "IndexedDB Databases" = "IndexedDB Databases";
-
-/* Placeholder is 'Orbot' */
-"Install %@" = "Pasang %@";
 
 /* CertificateViewController */
 "Issued By" = "Diterbitkan Oleh";
@@ -354,9 +228,6 @@
 
 /* Bookmark, placeholder is app name "Onion Browser" */
 "Learn more about %@" = "Pelajari lebih lanjut tentang %@";
-
-/* DonationViewController */
-"Loading in-app purchase data…" = "Loading in-app purchase data…";
 
 /* Storage2ViewController */
 "Local Storage" = "Penyimpanan Lokal";
@@ -391,15 +262,6 @@
 /* AddSearchEngineViewController */
 "Name" = "Nama";
 
-/* CircuSitsViewController */
-"New Circuit for this Site" = "Sirkuit Baru bagi Situs ini";
-
-/* No comment provided by engineer. */
-"New Security Features" = "New Security Features";
-
-/* No comment provided by engineer. */
-"Next" = "Berikutnya";
-
 /* No comment provided by engineer. */
 "No success, but \"%@\" instead." = "Tidak berhasil, tetapi \"%@\" sebagai gantinya.";
 
@@ -427,9 +289,6 @@
 /* AppDelegate, SyncViewController */
 "Password" = "Kata sandi";
 
-/* DonationViewController */
-"Payment Sent" = "Pembayaran Terkirim";
-
 /* CertificateViewController */
 "Period of Validity" = "Masa Validitas";
 
@@ -445,15 +304,6 @@
 /* Tab */
 "Pull to Refresh Page" = "Tarik untuk Memperbaharui Halaman";
 
-/* DonationViewController */
-"Purchase Failure" = "Pembelian Gagal";
-
-/* SettingsViewController */
-"Rate on App Store" = "Beri peringkat di App Store";
-
-/* No comment provided by engineer. */
-"Reasons to use the built-in Tor (iOS 17 only)" = "Reasons to use the built-in Tor (iOS 17 only)";
-
 /* AppDelegate */
 "Reload Tab" = "Muat Ulang Tab";
 
@@ -467,19 +317,10 @@
 "Report a Bug" = "Laporkan Bug";
 
 /* No comment provided by engineer. */
-"Request Access" = "Minta Akses";
-
-/* No comment provided by engineer. */
 "Request could not be formed. Please check host and username/password!" = "Permintaan tidak dapat dibentuk. Silakan periksa host dan nama pengguna/kata sandi!";
 
 /* No comment provided by engineer. */
 "Response body missing." = "Badan respon menghilang.";
-
-/* No comment provided by engineer. */
-"Retry" = "Coba Lagi";
-
-/* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Aturan yang berlaku di halaman ini";
@@ -523,24 +364,6 @@
 /* SecurityPresetsRow; a security level */
 "Silver" = "Perak";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:" = "So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:";
-
-/* DonationViewController */
-"Sorry, in-app purchase is disabled on your device!" = "Maaf, pembelian dalam aplikasi dinonaktifkan di perangkat Anda!";
-
-/* Placeholder is 'Orbot' */
-"Start %@" = "Start %@";
-
-/* No comment provided by engineer. */
-"Start built-in Tor" = "Start built-in Tor";
-
-/* Placeholder is 'Orbot' */
-"Start Tor in %@." = "Start Tor in %@.";
-
-/* No comment provided by engineer. */
-"Starting Tor…" = "Starting Tor…";
-
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "Stop Auto-Complete at First Dot";
 
@@ -549,12 +372,6 @@
 
 /* SettingsViewController */
 "Support" = "Bantuan";
-
-/* DonationViewController */
-"Support Onion Browser Development" = "Support Onion Browser Development";
-
-/* Placeholder is 'Orbot' */
-"Switch back to %@" = "Switch back to %@";
 
 /* AppDelegate */
 "Switch to Tab %d" = "Ganti ke Tab %d";
@@ -577,26 +394,11 @@
 /* No comment provided by engineer. */
 "The encryption method for this server is outdated." = "The encryption method for this server is outdated.";
 
-/* No comment provided by engineer. */
-"Then come back for private browsing." = "Then come back for private browsing.";
-
 /* SecurityViewController */
 "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers." = "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers.";
 
-/* CircuitsViewController */
-"This browser" = "Browser ini";
-
 /* SecurityViewController, placeholder is app name "Onion Browser" */
 "This is your default security setting for every website you visit in %@." = "Ini adalah pengaturan keamanan bawaan Anda untuk setiap website yang Anda kunjungi dalam %@.";
-
-/* Placeholder is 'Orbot' */
-"This site may need authentication. If you received an authentication key for this site, add it to %@!" = "This site may need authentication. If you received an authentication key for this site, add it to %@!";
-
-/* Placeholder is 'Onion Browser' */
-"This will allow %@ to:" = "This will allow %@ to:";
-
-/* DonationViewController */
-"Tip: %@" = "Tip: %@";
 
 /* BookmarkViewController */
 "Title" = "Judul";
@@ -610,9 +412,6 @@
 /* Tab+UIWebViewDelegate */
 "TLS protocol error" = "Galat protokol TLS";
 
-/* CircuitsViewController */
-"Tor Circuit" = "Sirkuit Tor";
-
 /* SyncViewController */
 "Try Again" = "Coba Lagi";
 
@@ -624,12 +423,6 @@
 
 /* SettingsViewController */
 "URL Blocker" = "Pemblokir URL";
-
-/* Placeholder is 'Orbot' */
-"Use %@" = "Pakai %@";
-
-/* No comment provided by engineer. */
-"Use built-in Tor" = "Pakai Tor bawaan";
 
 /* SecurityViewController */
 "User Agent" = "Agen Pengguna";
@@ -655,29 +448,11 @@
 /* No comment provided by engineer. */
 "WebSQL Databases" = "Basis Data WebSQL";
 
-/* Placeholder is 'Onion Browser' */
-"Welcome to %@" = "Selamat datang ke %@";
-
 /* SettingsViewController */
 "When disabled, all text entered in search bar will be sent to the search engine unless it starts with \"http\"." = "Ketika dinonaktifkan, semua teks yang dimasukkan di bilah pencarian akan dikirim ke mesin pencarian kecuali diawali dengan \"http\".";
-
-/* No comment provided by engineer. */
-"Why" = "Mengapa";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"Why %1$@ needs %2$@" = "Mengapa %1$@ perlu %2$@";
 
 /* SecurityPresetsRow */
 "Works pretty well. Your identity is mostly protected." = "Bekerja cukup baik. Identitas Anda sebagian besar dilindungi.";
 
 /* Placeholder is server domain */
 "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk." = "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk.";
-
-/* DonationViewController */
-"You most recently donated %1$@ on %2$@." = "Anda baru saja mendonasikan %1$@pada %2$@";
-
-/* No comment provided by engineer. */
-"You're one step closer to private browsing." = "You're one step closer to private browsing.";
-
-/* CircuitViewController */
-"Your traffic goes to 3 different parts of the world." = "Your traffic goes to 3 different parts of the world.";

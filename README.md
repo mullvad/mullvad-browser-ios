@@ -1,11 +1,9 @@
-# Onion Browser
+# Mullvad Browser
   
-[Official Site][official] | [Support][help] | [Release History][releases] | [Donate][donate]  
+[Official Site][official] | [Support][help] | [Release History][releases]  
 &copy; 2012-2024, Tigas Ventures, LLC ([Mike Tigas][miketigas])
 
-*This is the Onion Browser <strong>3.X branch</strong>. The older versions of Onion Browser can be found [here][2.X] and [here][1.X].*
-
-**Onion Browser** is a free web browser for iPhone and iPad that encrypts and tunnels web traffic through the [Tor network][tor] with the help of [Orbot iOS][orbot]. See the [official site][official] for more details and App Store links.
+**Mullvad Browser** is a free web browser for iPhone and iPad that helps you staying safe on the Internet.
 
 Please see the [LICENSE][license] file for usage and redistribution terms.
 
@@ -17,7 +15,6 @@ Please see the [LICENSE][license] file for usage and redistribution terms.
 [help]: https://github.com/OnionBrowser/OnionBrowser/wiki/Help
 [releases]: https://github.com/OnionBrowser/OnionBrowser/releases
 [changelog]: https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/3.X/CHANGELOG.md
-[donate]: https://onionbrowser.com/donate
 [miketigas]: https://mike.tig.as/
 [license]: https://github.com/OnionBrowser/OnionBrowser/blob/3.X/LICENSE
 [orbot]: https://orbot.app/

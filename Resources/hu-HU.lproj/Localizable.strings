@@ -1,80 +1,11 @@
 /* RuleEditorController */
 "%1$@ (Disabled: %2$@)" = "%1$@ (Letiltva: %2$@)";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems." = "%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems.";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ If you have connectivity issues with %2$@" = "%1$@ If you have connectivity issues with %2$@";
-
-/* Placeholder 1 is bullet point, Placeholder 2 is 'Onion Browser' */
-"%1$@ if you want to use %2$@ over another VPN" = "%1$@ if you want to use %2$@ over another VPN";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ now relies on %2$@ for a secure connection to Tor." = "%1$@ now relies on %2$@ for a secure connection to Tor.";
-
-/* 1. placeholder is 'Onion Browser', 2. is translated 'Lockdown Mode', 3. is two line breaks, 4. is translated 'Default Security', 5. is translated 'Block Insecure HTTP Requests'. */
-"%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature." = "%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature.";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue." = "%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue.";
-
-/* Placeholder 1 is 'Orbot', placeholder 2 is 'Onion Browser' */
-"%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!" = "%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ Use %2$@ to connect to the official Tor network." = "%1$@ Use %2$@ to connect to the official Tor network.";
-
-/* Placeholder is bullet point */
-"%@ a little more speed" = "%@ a little more speed";
-
-/* Placeholder is 'Orbot' */
-"%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked." = "%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked.";
-
-/* Placeholder is bullet point */
-"%@ Get updates on the status of the connection." = "%@ Get updates on the status of the connection.";
-
-/* Placeholder is 'Orbot' */
-"%@ installed! One more step." = "%@ installed! One more step.";
-
-/* Placeholder is bullet point */
-"%@ more protection from IP leaks" = "%@ more protection from IP leaks";
-
-/* Placeholder is bullet point */
-"%@ new standards" = "%@ new standards";
-
-/* Placeholder is 'Orbot' */
-"%@ or built-in Tor" = "%@ or built-in Tor";
-
-/* Placeholder is bullet point */
-"%@ video and audio streaming" = "%@ video and audio streaming";
-
-/* Placeholder is bullet point */
-"%@ video and audio streams don't go through Tor and might get blocked" = "%@ video and audio streams don't go through Tor and might get blocked";
-
-/* Placeholder is bullet point */
-"%@ Websites can uncover your real IP address using JavaScript" = "%@ Websites can uncover your real IP address using JavaScript";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(nem ajánlott)";
 
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH1__" = "Az Onion Browser egy ingyenes alkalmazás, de időt és erőforrást igényel a fejlesztése és fenntartása.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH2__" = "Támogathatja az appot egy kis támogatás küldésével egy appon belüli vásárlással, alább. Ez egy egyszeri, nem ismétlődő tranzakció, de bármikor visszajöhet még egy küldésére. Nem kerül információ az alkalmazáson belüli vásárlásról gyűjtésre vagy tárolásra az Onion Browser fejlesztői által. ";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH3__" = "Meg tudhat többet arról, milyen módokon segíthet még (beleértve a Patreon, PayPal, Bitcoin, vagy Zcash szolgáltatásokat) a 'Névjegy' szekcióban a 'Beállítások' oldalon.";
-
-/* DonationViewController */
-"__DONATE_THANKS__" = "Köszönjük! Minden kis segítség számít. A %@ támogatás lehetővé teszi, hogy folytassuk az Onion Browser  és olyan eszközök fejlesztését, amivel a Tor könnyebben integrálható más iOS alkalmazásokba.";
-
 /* SettingsViewController */
 "About" = "Névjegy";
-
-/* Placeholder is 'Orbot' */
-"Access to %@ was Denied" = "Access to %@ was Denied";
 
 /* SearchEnginesViewController, AddSearchEngineViewController */
 "Add" = "Hozzáad";
@@ -91,11 +22,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "Oldal hozzáadása";
 
-/* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
-
-/* SyncViewController */
-"Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Továbbá, minden könyvjelző, ami nem létezik a szerveren, de létezik az Onion Browser-ben, itt lesz létre hozva.";
+/* No comment provided by engineer. */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
 "Address" = "Cím";
@@ -121,15 +49,6 @@
 /* SecurityViewController */
 "Allow Persistent Cookies" = "Állandó cookie-k engedélyezése";
 
-/* DonationViewController */
-"Are you sure you want to send a %@ tip?" = "Biztosan szeretne küldeni %@ támogatást?";
-
-/* Placeholder is 'Orbot' */
-"Ask %@ for permission to access it." = "Ask %@ for permission to access it.";
-
-/* No comment provided by engineer. */
-"Ask again to continue." = "Ask again to continue.";
-
 /* AppDelegate */
 "Authentication Required" = "Hitelesítés szükséges";
 
@@ -138,9 +57,6 @@
 
 /* AddSearchEngineViewController */
 "Autocomplete URL" = "URL-ek automatikus kiegészítése";
-
-/* No comment provided by engineer. */
-"Back" = "Back";
 
 /* CertificateViewController */
 "Begins On" = "Kezdődik ekkor";
@@ -153,12 +69,6 @@
 
 /* BookmarksViewController */
 "Bookmarks" = "Könyvjelzők";
-
-/* No comment provided by engineer. */
-"Both are free to use. Free of tracking. Code is open source." = "Both are free to use. Free of tracking. Code is open source.";
-
-/* CircuitViewController */
-"Bridge Configuration" = "Híd konfiguráció";
 
 /* SecurityPresetsRow; a security level */
 "Bronze" = "Bronz";
@@ -180,18 +90,6 @@
 
 /* AppDelegate */
 "Close Tab" = "Fül bezárása";
-
-/* No comment provided by engineer. */
-"Configure Bridges" = "Hidak konfigurálása";
-
-/* DonationViewController */
-"Confirm %@" = "%@ megerősítése";
-
-/* DonationViewController */
-"Confirm Purchase" = "Vásárlás megerősítése";
-
-/* CircuitViewController */
-"Connect to a website to see your circuit." = "Csatlakozzon egy weboldalhoz, hogy megtekinthesse áramkörét.";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Csatlakozás a Nextcloud szerverhez sikertelen";
@@ -241,20 +139,11 @@
 /* No comment provided by engineer. */
 "Disk Cache" = "Disk Cache";
 
-/* DonationViewController */
-"Donate" = "Támogatás";
-
-/* Bookmark, placeholder is app name "Onion Browser" */
-"Donate to %@" = "%@ támogatása";
-
 /* BrowsingViewController */
 "Done" = "Kész";
 
 /* No comment provided by engineer. */
 "Download" = "Letöltés";
-
-/* No comment provided by engineer. */
-"Drawbacks:" = "Drawbacks:";
 
 /* SecurityPresetsRow */
 "Easy breezy. Though it could be dangerous." = "Csak óvatosan. Ez veszélyes lehet.";
@@ -295,26 +184,14 @@
 /* SettingsViewController */
 "Forget in Background" = "Elfelejtés a háttérben";
 
-/* SettingsViewController */
-"Fund Development" = "Fejlesztés támogatása";
-
-/* Placeholder is 'Orbot' */
-"Get %@" = "Get %@";
-
 /* AppDelegate */
 "Go Back" = "Ugrás vissza";
 
 /* AppDelegate */
 "Go Forward" = "Ugrás előre";
 
-/* Placeholder is 'Orbot' */
-"Go to %@" = "Go to %@";
-
 /* SecurityPresetsRow; a security level */
 "Gold" = "Arany";
-
-/* CircuSitsViewController */
-"Guard" = "Őr";
 
 /* SecurityViewController */
 "Handle tapping on links in a non-standard way to avoid possibly opening external applications." = "A linkek érintésének kezelése nem standard módon, hogy elkerülhető legyen a külső alkalmazás megnyitása.";
@@ -328,8 +205,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "Kiszolgáló";
 
-/* SyncViewController */
-"If you sync, all bookmarks will be read from the server and added/updated in Onion Browser." = "Ha szinkronizál, minden könyvjelzője beolvasásra kerül a szerverről és frissítésre az Onion Browser-ben.";
+/* No comment provided by engineer. */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "Ignorálás ezen a kiszolgálón";
@@ -339,9 +216,6 @@
 
 /* No comment provided by engineer. */
 "IndexedDB Databases" = "IndexedDB Databases";
-
-/* Placeholder is 'Orbot' */
-"Install %@" = "Install %@";
 
 /* CertificateViewController */
 "Issued By" = "Kiállító:";
@@ -354,9 +228,6 @@
 
 /* Bookmark, placeholder is app name "Onion Browser" */
 "Learn more about %@" = "Tudjon meg többet az%@-ről";
-
-/* DonationViewController */
-"Loading in-app purchase data…" = "Az alaklmazáson belüli vásárlás adatainak betöltése...";
 
 /* Storage2ViewController */
 "Local Storage" = "Helyi tároló";
@@ -391,15 +262,6 @@
 /* AddSearchEngineViewController */
 "Name" = "Név";
 
-/* CircuSitsViewController */
-"New Circuit for this Site" = "Új áramkör ehhez az oldalhoz";
-
-/* No comment provided by engineer. */
-"New Security Features" = "New Security Features";
-
-/* No comment provided by engineer. */
-"Next" = "Tovább";
-
 /* No comment provided by engineer. */
 "No success, but \"%@\" instead." = "Nem sikerült, de \"%@\" helyette.";
 
@@ -427,9 +289,6 @@
 /* AppDelegate, SyncViewController */
 "Password" = "Jelszó";
 
-/* DonationViewController */
-"Payment Sent" = "Fizetés elküldve";
-
 /* CertificateViewController */
 "Period of Validity" = "Érvényesség időtartama";
 
@@ -445,15 +304,6 @@
 /* Tab */
 "Pull to Refresh Page" = "Húzzon az oldal frissítéséhez";
 
-/* DonationViewController */
-"Purchase Failure" = "Vásárlási hiba";
-
-/* SettingsViewController */
-"Rate on App Store" = "Értékelje az Alkalmazás boltban";
-
-/* No comment provided by engineer. */
-"Reasons to use the built-in Tor (iOS 17 only)" = "Reasons to use the built-in Tor (iOS 17 only)";
-
 /* AppDelegate */
 "Reload Tab" = "Fül újratöltése";
 
@@ -467,19 +317,10 @@
 "Report a Bug" = "Hiba jelentése";
 
 /* No comment provided by engineer. */
-"Request Access" = "Request Access";
-
-/* No comment provided by engineer. */
 "Request could not be formed. Please check host and username/password!" = "A kérés nem összeállítható. Kérjük ellenőrizze a kiszolgálót és a felhasználónevet/jelszót!";
 
 /* No comment provided by engineer. */
 "Response body missing." = "Válasz body hiányzik.";
-
-/* No comment provided by engineer. */
-"Retry" = "Újra";
-
-/* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Szabályok az aktuális oldalon";
@@ -523,24 +364,6 @@
 /* SecurityPresetsRow; a security level */
 "Silver" = "Ezüst";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:" = "So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:";
-
-/* DonationViewController */
-"Sorry, in-app purchase is disabled on your device!" = "Sajnos az appból vásárlás tiltott az Ön eszközén!";
-
-/* Placeholder is 'Orbot' */
-"Start %@" = "Start %@";
-
-/* No comment provided by engineer. */
-"Start built-in Tor" = "Start built-in Tor";
-
-/* Placeholder is 'Orbot' */
-"Start Tor in %@." = "Start Tor in %@.";
-
-/* No comment provided by engineer. */
-"Starting Tor…" = "Starting Tor…";
-
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "Az automatikus kiegészítés megállítása az első pontnál";
 
@@ -549,12 +372,6 @@
 
 /* SettingsViewController */
 "Support" = "Támogatás";
-
-/* DonationViewController */
-"Support Onion Browser Development" = "Támogassa az Onion Browser fejlesztését";
-
-/* Placeholder is 'Orbot' */
-"Switch back to %@" = "Switch back to %@";
 
 /* AppDelegate */
 "Switch to Tab %d" = "Váltás az %d fülre";
@@ -577,26 +394,11 @@
 /* No comment provided by engineer. */
 "The encryption method for this server is outdated." = "The encryption method for this server is outdated.";
 
-/* No comment provided by engineer. */
-"Then come back for private browsing." = "Then come back for private browsing.";
-
 /* SecurityViewController */
 "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers." = "Ezek befolyásolhatják a szerver működését. Például: megjelenjen vagy sem captcha vagy olyan visszatérő oldalak, amit asztali böngészőnek szántak.";
 
-/* CircuitsViewController */
-"This browser" = "Ez a böngésző";
-
 /* SecurityViewController, placeholder is app name "Onion Browser" */
 "This is your default security setting for every website you visit in %@." = "Ez az alapértelmezett beállítása minden weboldalhoz amit meglátogat az%@-ből.";
-
-/* Placeholder is 'Orbot' */
-"This site may need authentication. If you received an authentication key for this site, add it to %@!" = "This site may need authentication. If you received an authentication key for this site, add it to %@!";
-
-/* Placeholder is 'Onion Browser' */
-"This will allow %@ to:" = "This will allow %@ to:";
-
-/* DonationViewController */
-"Tip: %@" = "Támogatás: %@";
 
 /* BookmarkViewController */
 "Title" = "Cím";
@@ -610,9 +412,6 @@
 /* Tab+UIWebViewDelegate */
 "TLS protocol error" = "TLS protokoll hiba";
 
-/* CircuitsViewController */
-"Tor Circuit" = "Tor áramkör";
-
 /* SyncViewController */
 "Try Again" = "Próbálja újra";
 
@@ -624,12 +423,6 @@
 
 /* SettingsViewController */
 "URL Blocker" = "URL blokkoló";
-
-/* Placeholder is 'Orbot' */
-"Use %@" = "%@ használata";
-
-/* No comment provided by engineer. */
-"Use built-in Tor" = "Beépített Tor használata";
 
 /* SecurityViewController */
 "User Agent" = "Böngésző azonosítás";
@@ -655,29 +448,11 @@
 /* No comment provided by engineer. */
 "WebSQL Databases" = "WebSQL adatbázisok";
 
-/* Placeholder is 'Onion Browser' */
-"Welcome to %@" = "Welcome to %@";
-
 /* SettingsViewController */
 "When disabled, all text entered in search bar will be sent to the search engine unless it starts with \"http\"." = "Ha kikapcsolt, minden beírt szöveg a kereső sávban elküldésre kerül a kereső motornak, kivéve, ha \"http\"-vel kezdődik.";
-
-/* No comment provided by engineer. */
-"Why" = "Miért?";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"Why %1$@ needs %2$@" = "Why %1$@ needs %2$@";
 
 /* SecurityPresetsRow */
 "Works pretty well. Your identity is mostly protected." = "Elég jól dolgozik. Az identitása többnyire védett.";
 
 /* Placeholder is server domain */
 "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk." = "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk.";
-
-/* DonationViewController */
-"You most recently donated %1$@ on %2$@." = "Épp most küldött %1$@támogatást %2$@ úton.";
-
-/* No comment provided by engineer. */
-"You're one step closer to private browsing." = "You're one step closer to private browsing.";
-
-/* CircuitViewController */
-"Your traffic goes to 3 different parts of the world." = "A forgalma a világ 3 különböző részére utazik.";

@@ -1,7 +1,0 @@
-- Mise à jour de Tor vers la dernière version 0.4.8.14.
-- Ajout de la prise en charge du mode verrouillage pour iOS 16 et plus.
-- Ajout de la fonctionnalité « bloquer les requêtes HTTP non sécurisées ».
-- Correction de la purge du cache en mode « oubli des onglets à la fermeture ».
-- Tor intégré : correction de l'état cassé lorsque l'application était en arrière-plan depuis trop longtemps.
-- Tor intégré : Correction de fuites lors de la demande de favicons de signets, lors de la conversation avec un serveur de signets Nextcloud, lors de résultats de recherche en direct et lors du téléchargement d'éléments.
-- Correction de quelques problèmes mineurs d'interface utilisateur. 

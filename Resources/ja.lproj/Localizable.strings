@@ -1,80 +1,11 @@
 /* RuleEditorController */
 "%1$@ (Disabled: %2$@)" = "%1$@（無効化：%2$@）";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems." = "%1$@はTorへの安全な接続に%2$@か組み込みTorを使用できますが、組み込みTorにはセキュリティ上の問題があります。";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ If you have connectivity issues with %2$@" = "%1$@（%2$@には接続性に問題がある場合）";
-
-/* Placeholder 1 is bullet point, Placeholder 2 is 'Onion Browser' */
-"%1$@ if you want to use %2$@ over another VPN" = "%1$@ （別のVPNで%2$@を使いたい場合）";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ now relies on %2$@ for a secure connection to Tor." = "%1$@ は現在、Tor接続のため、%2$@ に依存しています";
-
-/* 1. placeholder is 'Onion Browser', 2. is translated 'Lockdown Mode', 3. is two line breaks, 4. is translated 'Default Security', 5. is translated 'Block Insecure HTTP Requests'. */
-"%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature." = "%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature.";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue." = "%1$@ はTor接続のため、%2$@ に依存しています。 %2$@ をインストールしてください。";
-
-/* Placeholder 1 is 'Orbot', placeholder 2 is 'Onion Browser' */
-"%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!" = "%1$@はオニオン限定モードです。リスクがあるため%2$@はサポートしていません。%2$@を使ってください。";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ Use %2$@ to connect to the official Tor network." = "%1$@ Torの公式ネットワークに接続するため、%2$@を使ってください。";
-
-/* Placeholder is bullet point */
-"%@ a little more speed" = "%@ 少し速くなります";
-
-/* Placeholder is 'Orbot' */
-"%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked." = "%@ だけでVPNプロキシーになり、ネットワークの監視からアプリを守り、ブロックされている情報へのアクセスを可能にします。";
-
-/* Placeholder is bullet point */
-"%@ Get updates on the status of the connection." = "%@ 最新の接続情報を利用できます";
-
-/* Placeholder is 'Orbot' */
-"%@ installed! One more step." = "%@がインストールされました。あと一歩です。";
-
-/* Placeholder is bullet point */
-"%@ more protection from IP leaks" = "%@ IPアドレスから情報が漏れることを防ぎます";
-
-/* Placeholder is bullet point */
-"%@ new standards" = "%@ 新しい標準です";
-
-/* Placeholder is 'Orbot' */
-"%@ or built-in Tor" = "%@か組み込みTor";
-
-/* Placeholder is bullet point */
-"%@ video and audio streaming" = "%@ 動画と音声のストリーミングに対応";
-
-/* Placeholder is bullet point */
-"%@ video and audio streams don't go through Tor and might get blocked" = "%@ 動画とオーディオはTorを通過せず、ブロックされる可能性があります。";
-
-/* Placeholder is bullet point */
-"%@ Websites can uncover your real IP address using JavaScript" = "%@ ウェブサイトがJavaScriptを使ってあなたのIPアドレスを取得できます。";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "（非推奨）";
 
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH1__" = "Onion Browserは無料ですが、開発と維持にはコストがかかっています。";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH2__" = "Onion Browserを支援するため、アプリ内課金で送金することができます。この課金は一度だけで、継続課金ではありません。もちろん、繰り返し送金していただいても構いません。課金に関する情報は開発者によって収集されることはありません。";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH3__" = "他の支援方法（Patreon, PayPal, Bitcoin, Zcash）については、一般設定のバージョン情報のページを確認してください。";
-
-/* DonationViewController */
-"__DONATE_THANKS__" = "%@の送金、ありがとうございます。支援は、Onion BrowserとTorがiOSに対応するために活用されます。";
-
 /* SettingsViewController */
 "About" = "バージョン情報";
-
-/* Placeholder is 'Orbot' */
-"Access to %@ was Denied" = "%@へのアクセスが拒否されました";
 
 /* SearchEnginesViewController, AddSearchEngineViewController */
 "Add" = "新規";
@@ -91,11 +22,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "サイトを追加";
 
-/* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
-
-/* SyncViewController */
-"Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "サーバー上にないがOnion Browserには保存されているお気に入りが作成されます。";
+/* No comment provided by engineer. */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
 "Address" = "アドレス";
@@ -121,15 +49,6 @@
 /* SecurityViewController */
 "Allow Persistent Cookies" = "永続的クッキーを許可";
 
-/* DonationViewController */
-"Are you sure you want to send a %@ tip?" = "本当に %@ チップを送金しますか？";
-
-/* Placeholder is 'Orbot' */
-"Ask %@ for permission to access it." = "%@ から許可をもらってください";
-
-/* No comment provided by engineer. */
-"Ask again to continue." = "もう一度許可を求めてください。";
-
 /* AppDelegate */
 "Authentication Required" = "認証が必要です";
 
@@ -138,9 +57,6 @@
 
 /* AddSearchEngineViewController */
 "Autocomplete URL" = "URLを自動補完";
-
-/* No comment provided by engineer. */
-"Back" = "Back";
 
 /* CertificateViewController */
 "Begins On" = "開始日時";
@@ -153,12 +69,6 @@
 
 /* BookmarksViewController */
 "Bookmarks" = "お気に入り";
-
-/* No comment provided by engineer. */
-"Both are free to use. Free of tracking. Code is open source." = "いずれも無料です。トラッキングの恐れがなく、オープンソースです。";
-
-/* CircuitViewController */
-"Bridge Configuration" = "ブリッジの設定";
 
 /* SecurityPresetsRow; a security level */
 "Bronze" = "ブロンズ";
@@ -180,18 +90,6 @@
 
 /* AppDelegate */
 "Close Tab" = "タブを閉じる";
-
-/* No comment provided by engineer. */
-"Configure Bridges" = "ブリッジの設定";
-
-/* DonationViewController */
-"Confirm %@" = "%@ を購入します";
-
-/* DonationViewController */
-"Confirm Purchase" = "購入確認";
-
-/* CircuitViewController */
-"Connect to a website to see your circuit." = "ウェブサイトに接続して、経路を確認して下さい。";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "NextCloudサーバーへの接続に失敗しました。";
@@ -241,20 +139,11 @@
 /* No comment provided by engineer. */
 "Disk Cache" = "ディスクキャッシュ";
 
-/* DonationViewController */
-"Donate" = "寄付のお願い";
-
-/* Bookmark, placeholder is app name "Onion Browser" */
-"Donate to %@" = "%@ に寄付";
-
 /* BrowsingViewController */
 "Done" = "完了";
 
 /* No comment provided by engineer. */
 "Download" = "ダウンロード";
-
-/* No comment provided by engineer. */
-"Drawbacks:" = "欠点:";
 
 /* SecurityPresetsRow */
 "Easy breezy. Though it could be dangerous." = "閲覧はスムースですが、リスクがあります。";
@@ -295,26 +184,14 @@
 /* SettingsViewController */
 "Forget in Background" = "バックグラウンド時に消去";
 
-/* SettingsViewController */
-"Fund Development" = "開発資金を支援";
-
-/* Placeholder is 'Orbot' */
-"Get %@" = "%@を入手";
-
 /* AppDelegate */
 "Go Back" = "戻る";
 
 /* AppDelegate */
 "Go Forward" = "進む";
 
-/* Placeholder is 'Orbot' */
-"Go to %@" = "%@を入手";
-
 /* SecurityPresetsRow; a security level */
 "Gold" = "ゴールド";
-
-/* CircuSitsViewController */
-"Guard" = "保護";
 
 /* SecurityViewController */
 "Handle tapping on links in a non-standard way to avoid possibly opening external applications." = "外部アプリケーションを開かないようにするために、リンクのタップを標準以外の方法で処理します";
@@ -328,8 +205,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "ホスト";
 
-/* SyncViewController */
-"If you sync, all bookmarks will be read from the server and added/updated in Onion Browser." = "同期すると、サーバー上のすべての「お気に入り」がOnion Browserに追加（更新）されます。";
+/* No comment provided by engineer. */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "このホストを無視";
@@ -339,9 +216,6 @@
 
 /* No comment provided by engineer. */
 "IndexedDB Databases" = "IndexedDBデータベース";
-
-/* Placeholder is 'Orbot' */
-"Install %@" = "%@をインストール";
 
 /* CertificateViewController */
 "Issued By" = "証明書発行局";
@@ -354,9 +228,6 @@
 
 /* Bookmark, placeholder is app name "Onion Browser" */
 "Learn more about %@" = "%@ の詳しい情報";
-
-/* DonationViewController */
-"Loading in-app purchase data…" = "購入データの読み込み中…";
 
 /* Storage2ViewController */
 "Local Storage" = "ローカル・ストレージ";
@@ -391,15 +262,6 @@
 /* AddSearchEngineViewController */
 "Name" = "名前";
 
-/* CircuSitsViewController */
-"New Circuit for this Site" = "新経路を設定する";
-
-/* No comment provided by engineer. */
-"New Security Features" = "New Security Features";
-
-/* No comment provided by engineer. */
-"Next" = "次に";
-
 /* No comment provided by engineer. */
 "No success, but \"%@\" instead." = "成功なし: \"%@\"";
 
@@ -427,9 +289,6 @@
 /* AppDelegate, SyncViewController */
 "Password" = "パスワード";
 
-/* DonationViewController */
-"Payment Sent" = "送金しました";
-
 /* CertificateViewController */
 "Period of Validity" = "有効期限";
 
@@ -445,15 +304,6 @@
 /* Tab */
 "Pull to Refresh Page" = "引っ張ってページ更新";
 
-/* DonationViewController */
-"Purchase Failure" = "支払いに失敗";
-
-/* SettingsViewController */
-"Rate on App Store" = "App Storeでレビューする";
-
-/* No comment provided by engineer. */
-"Reasons to use the built-in Tor (iOS 17 only)" = "組み込みTorを使う理由（iOS 17のみ）";
-
 /* AppDelegate */
 "Reload Tab" = "タブを再読み込み";
 
@@ -467,19 +317,10 @@
 "Report a Bug" = "バグを報告";
 
 /* No comment provided by engineer. */
-"Request Access" = "アクセス許可を求める";
-
-/* No comment provided by engineer. */
 "Request could not be formed. Please check host and username/password!" = "ブリッジ依頼を形成できませんでした。ホスト名・ユーザー名などを確認してください。";
 
 /* No comment provided by engineer. */
 "Response body missing." = "レスポンスが空です";
-
-/* No comment provided by engineer. */
-"Retry" = "再試行";
-
-/* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "現在のページに使用中のルール";
@@ -523,24 +364,6 @@
 /* SecurityPresetsRow; a security level */
 "Silver" = "シルバー";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:" = "もちろん、iOSでもTorが活用できるためです。%1$@では、%2$@を併用することによって:";
-
-/* DonationViewController */
-"Sorry, in-app purchase is disabled on your device!" = "アプリ内支払いが無効になっています";
-
-/* Placeholder is 'Orbot' */
-"Start %@" = "%@を開始";
-
-/* No comment provided by engineer. */
-"Start built-in Tor" = "組み込みTorを開始";
-
-/* Placeholder is 'Orbot' */
-"Start Tor in %@." = "%@でTorを開始";
-
-/* No comment provided by engineer. */
-"Starting Tor…" = "Torを開始…";
-
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "最初のドットでオートコンプリートを停止する";
 
@@ -549,12 +372,6 @@
 
 /* SettingsViewController */
 "Support" = "サポート";
-
-/* DonationViewController */
-"Support Onion Browser Development" = "Onion Browserの開発を支援してください。";
-
-/* Placeholder is 'Orbot' */
-"Switch back to %@" = "%@に戻る";
 
 /* AppDelegate */
 "Switch to Tab %d" = "タブ%dへ切り替え";
@@ -577,26 +394,11 @@
 /* No comment provided by engineer. */
 "The encryption method for this server is outdated." = "このサーバーの暗号方式は旧式です。";
 
-/* No comment provided by engineer. */
-"Then come back for private browsing." = "プライベートブラウジングができるようになります。";
-
 /* SecurityViewController */
 "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers." = "サーバーの動作に影響をもたらす可能性があります。例えば、キャプチャを表示したりしなかったり、およびデスクトップブラウザ用のページを表示したりするかもしれない。";
 
-/* CircuitsViewController */
-"This browser" = "このブラウザ";
-
 /* SecurityViewController, placeholder is app name "Onion Browser" */
 "This is your default security setting for every website you visit in %@." = "以下は %@ のセキュリティの初期設定です。";
-
-/* Placeholder is 'Orbot' */
-"This site may need authentication. If you received an authentication key for this site, add it to %@!" = "このサイトは認証が必要かもしれません。このサイトの認証鍵を入手したら、%@に追加登録してください。";
-
-/* Placeholder is 'Onion Browser' */
-"This will allow %@ to:" = "アクセス許可によって、%@は:";
-
-/* DonationViewController */
-"Tip: %@" = "チップ: %@";
 
 /* BookmarkViewController */
 "Title" = "タイトル";
@@ -610,9 +412,6 @@
 /* Tab+UIWebViewDelegate */
 "TLS protocol error" = "TLSプロトコールのエラー";
 
-/* CircuitsViewController */
-"Tor Circuit" = "Tor経路";
-
 /* SyncViewController */
 "Try Again" = "再試行する";
 
@@ -624,12 +423,6 @@
 
 /* SettingsViewController */
 "URL Blocker" = "URLブロッカー";
-
-/* Placeholder is 'Orbot' */
-"Use %@" = "%@を使う";
-
-/* No comment provided by engineer. */
-"Use built-in Tor" = "組み込みTorを使う";
 
 /* SecurityViewController */
 "User Agent" = "ユーザーエージェント";
@@ -655,29 +448,11 @@
 /* No comment provided by engineer. */
 "WebSQL Databases" = "WebSQLデータベース";
 
-/* Placeholder is 'Onion Browser' */
-"Welcome to %@" = "%@にようこそ";
-
 /* SettingsViewController */
 "When disabled, all text entered in search bar will be sent to the search engine unless it starts with \"http\"." = "無効にすると、\"http\"で始まらない限り、検索バーに入力されたテキストがすべて検索エンジンに送信されます";
-
-/* No comment provided by engineer. */
-"Why" = "理由は？";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"Why %1$@ needs %2$@" = "なぜ %1$@に%2$@が必要なのか？";
 
 /* SecurityPresetsRow */
 "Works pretty well. Your identity is mostly protected." = "完全に機能します。ほとんどの場合、あなたの身元も保護されます。";
 
 /* Placeholder is server domain */
 "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk." = "あなたが接続しているサーバーは\"%@\"を装っているだけかもしれません。機微に触れる情報にはリスクがあります。";
-
-/* DonationViewController */
-"You most recently donated %1$@ on %2$@." = "前回は %1$@ を %2$@ に寄付しています。";
-
-/* No comment provided by engineer. */
-"You're one step closer to private browsing." = "プライベートブラウジングまであと一歩";
-
-/* CircuitViewController */
-"Your traffic goes to 3 different parts of the world." = "あなたの通信は、世界の３つの異なる地域をたどります。";

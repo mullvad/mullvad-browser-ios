@@ -1,80 +1,11 @@
 /* RuleEditorController */
 "%1$@ (Disabled: %2$@)" = "%1$@ (Cүндерелгән: %2$@)";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems." = "%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems.";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ If you have connectivity issues with %2$@" = "%1$@ %2$@ белән тоташу проблемалары булса";
-
-/* Placeholder 1 is bullet point, Placeholder 2 is 'Onion Browser' */
-"%1$@ if you want to use %2$@ over another VPN" = "%1$@ %2$@-ны башка VPN өстендә кулланырга теләсәгез";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ now relies on %2$@ for a secure connection to Tor." = "%1$@ хәзер Tor-га хәвефсезле тоташу өчен %2$@ куллана.";
-
-/* 1. placeholder is 'Onion Browser', 2. is translated 'Lockdown Mode', 3. is two line breaks, 4. is translated 'Default Security', 5. is translated 'Block Insecure HTTP Requests'. */
-"%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature." = "%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature.";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue." = "%1$@ Tor-га хәвефсезле тоташу өчен %2$@ куллана. Дәвам итәр өчен %2$@ кушымтасын урнаштырыгыз.";
-
-/* Placeholder 1 is 'Orbot', placeholder 2 is 'Onion Browser' */
-"%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!" = "%1$@ onion-only режимында эшли. Бу куркыныч булырга мөмкин һәм %2$@ аны тәэмин итми. %2$@ куллану өчен аны сүндерегез!";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ Use %2$@ to connect to the official Tor network." = "%1$@ рәсми Tor челтәренә тоташу өчен %2$@ куллана.";
-
-/* Placeholder is bullet point */
-"%@ a little more speed" = "%@ бераз тизрәк эшли";
-
-/* Placeholder is 'Orbot' */
-"%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked." = "%@ үзе VPN прокси белән тәэмин итә. Ул кушымталарны челтәр мониторингыннан яшерәчәк һәм алар блокланган вакытта сезгә мөмкинлек бирәчәк.";
-
-/* Placeholder is bullet point */
-"%@ Get updates on the status of the connection." = "%@ Бәйләнеш халәте турында яңартулар алыгыз.";
-
-/* Placeholder is 'Orbot' */
-"%@ installed! One more step." = "%@ урнаштырылды! Тагын бер адым.";
-
-/* Placeholder is bullet point */
-"%@ more protection from IP leaks" = "%@ IP читкә таралулардан өстәмә яклау";
-
-/* Placeholder is bullet point */
-"%@ new standards" = "%@ яңа стандартлар";
-
-/* Placeholder is 'Orbot' */
-"%@ or built-in Tor" = "%@ яки кушымта эчендә булган Tor";
-
-/* Placeholder is bullet point */
-"%@ video and audio streaming" = "%@ агымлы видео һәм аудио";
-
-/* Placeholder is bullet point */
-"%@ video and audio streams don't go through Tor and might get blocked" = "%@ видео һәм аудио агымнар Тор аша үтми һәм алар блокланырга мөмкин";
-
-/* Placeholder is bullet point */
-"%@ Websites can uncover your real IP address using JavaScript" = "%@ Вебсайтлар JavaScript ярдәмендә сезнең чын IP адресыгызны ача ала";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(киңәш ителми)";
 
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH1__" = "Onion Browser - түләүсез бер кушымта, ләкин аны төзү һәм эшләтү өчен вакыт һәм ресурслар кирәк.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH2__" = "You can support the app by sending a small tip through an in-app purchase, below. This is a one-time, non-recurring transaction, but you can come back any time to send another. No information about your in-app purchase is collected or stored by the Onion Browser developers.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH3__" = "Сез \"Көйләүләр\" битенең \"Хакында\" бүлегендә булышуның башка ысуллары турында (шул исәптән Patreon, PayPal, Bitcoin, яки Zcash) белә аласыз.";
-
-/* DonationViewController */
-"__DONATE_THANKS__" = "Рәхмәт! Һәр иганә ярдәм итә! Сезнең %@ түләвегез Onion Browser-ның һәм башка iOS кушымталарына Tor-ны интеграцияләүне җиңеләйтә торган коралларның дәвамлы үсешен тәэмин итәргә ярдәм итәчәк.";
-
 /* SettingsViewController */
 "About" = "Хакында";
-
-/* Placeholder is 'Orbot' */
-"Access to %@ was Denied" = "%@-ка керү рөхсәт ителмәде";
 
 /* SearchEnginesViewController, AddSearchEngineViewController */
 "Add" = "Өстәү";
@@ -91,11 +22,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "Сайтны өстәү";
 
-/* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
-
-/* SyncViewController */
-"Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "Шуның өстенә, Onion Browser кушымтасыннан кыстыргычлар серверда ясалачак, әгәр алар элек булмаган булса.";
+/* No comment provided by engineer. */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
 "Address" = "Адрес";
@@ -121,15 +49,6 @@
 /* SecurityViewController */
 "Allow Persistent Cookies" = "Даими кукиларны рөхсәт итү";
 
-/* DonationViewController */
-"Are you sure you want to send a %@ tip?" = "Сез %@ күләмендә чәйлек җибәрүне раслыйсызмы?";
-
-/* Placeholder is 'Orbot' */
-"Ask %@ for permission to access it." = "%@-ка керү өчен рөхсәт сорагыз.";
-
-/* No comment provided by engineer. */
-"Ask again to continue." = "Дәвам итү өчен кабат сорау.";
-
 /* AppDelegate */
 "Authentication Required" = "Аутентификация таләп ителә";
 
@@ -138,9 +57,6 @@
 
 /* AddSearchEngineViewController */
 "Autocomplete URL" = "URL адресын автотөгәлләү";
-
-/* No comment provided by engineer. */
-"Back" = "Back";
 
 /* CertificateViewController */
 "Begins On" = "Башлангыч вакыты";
@@ -153,12 +69,6 @@
 
 /* BookmarksViewController */
 "Bookmarks" = "Кыстыргычлар";
-
-/* No comment provided by engineer. */
-"Both are free to use. Free of tracking. Code is open source." = "Икесе дә кулланырга ирекле. Күзәтүдән ирекле. Ачык чыганаклы код.";
-
-/* CircuitViewController */
-"Bridge Configuration" = "Күпер көйләве";
 
 /* SecurityPresetsRow; a security level */
 "Bronze" = "Бакыр";
@@ -180,18 +90,6 @@
 
 /* AppDelegate */
 "Close Tab" = "Табны ябу";
-
-/* No comment provided by engineer. */
-"Configure Bridges" = "Күперләрне көйләү";
-
-/* DonationViewController */
-"Confirm %@" = "%@-ны раслау";
-
-/* DonationViewController */
-"Confirm Purchase" = "Сатып алуны раслау";
-
-/* CircuitViewController */
-"Connect to a website to see your circuit." = "Схемагызны карау өчен вебсайтка тоташыгыз.";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "Nextcloud серверга тоташу уңышсыз";
@@ -241,20 +139,11 @@
 /* No comment provided by engineer. */
 "Disk Cache" = "Диск кәше";
 
-/* DonationViewController */
-"Donate" = "Иганә итү";
-
-/* Bookmark, placeholder is app name "Onion Browser" */
-"Donate to %@" = "%@-га иганә итү";
-
 /* BrowsingViewController */
 "Done" = "Әзер";
 
 /* No comment provided by engineer. */
 "Download" = "Йөкләп алу";
-
-/* No comment provided by engineer. */
-"Drawbacks:" = "Җитешмәүләр:";
 
 /* SecurityPresetsRow */
 "Easy breezy. Though it could be dangerous." = "Иң җиңел. Ләкин куркыныч булырга мөмкин.";
@@ -295,26 +184,14 @@
 /* SettingsViewController */
 "Forget in Background" = "Фондагы оныту";
 
-/* SettingsViewController */
-"Fund Development" = "Программа төзүне финанслау";
-
-/* Placeholder is 'Orbot' */
-"Get %@" = "%@-ны алу";
-
 /* AppDelegate */
 "Go Back" = "Кире кайту";
 
 /* AppDelegate */
 "Go Forward" = "Алга";
 
-/* Placeholder is 'Orbot' */
-"Go to %@" = "%@-га күчү";
-
 /* SecurityPresetsRow; a security level */
 "Gold" = "Алтын";
-
-/* CircuSitsViewController */
-"Guard" = "Сакчы";
 
 /* SecurityViewController */
 "Handle tapping on links in a non-standard way to avoid possibly opening external applications." = "Тышкы кушымталар ачылмасын өчен, сылтамаларга басуларны стандарт булмаган эшкәртү мөмкинлеген бирегез.";
@@ -328,8 +205,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "Хост";
 
-/* SyncViewController */
-"If you sync, all bookmarks will be read from the server and added/updated in Onion Browser." = "Синхронласагыз, барлык кыстыргычлар сервердан укылачак һәм Onion Browser кушымтасындагы өстәләчәк/яңартылачак.";
+/* No comment provided by engineer. */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "Бу хост өчен игътибар итмә";
@@ -339,9 +216,6 @@
 
 /* No comment provided by engineer. */
 "IndexedDB Databases" = "IndexedDB мәгълүмат базалары";
-
-/* Placeholder is 'Orbot' */
-"Install %@" = "%@ кушымтасын урнаштыру";
 
 /* CertificateViewController */
 "Issued By" = "Бирүчесе";
@@ -354,9 +228,6 @@
 
 /* Bookmark, placeholder is app name "Onion Browser" */
 "Learn more about %@" = "%@ турында күбрәк белү";
-
-/* DonationViewController */
-"Loading in-app purchase data…" = "Кушымта эчендә сатып алу мәгълүматларын йөкләнә…";
 
 /* Storage2ViewController */
 "Local Storage" = "Локаль саклагыч";
@@ -391,15 +262,6 @@
 /* AddSearchEngineViewController */
 "Name" = "Исем";
 
-/* CircuSitsViewController */
-"New Circuit for this Site" = "Бу сайт өчен яңа чылбыр";
-
-/* No comment provided by engineer. */
-"New Security Features" = "New Security Features";
-
-/* No comment provided by engineer. */
-"Next" = "Киләсе";
-
 /* No comment provided by engineer. */
 "No success, but \"%@\" instead." = "Уңышсыз, ләкин урынында \"%@\" алды.";
 
@@ -427,9 +289,6 @@
 /* AppDelegate, SyncViewController */
 "Password" = "Серсүз";
 
-/* DonationViewController */
-"Payment Sent" = "Түләү җибәрелде";
-
 /* CertificateViewController */
 "Period of Validity" = "Яраклылык вакыты";
 
@@ -445,15 +304,6 @@
 /* Tab */
 "Pull to Refresh Page" = "Битне яңарту өчен тартыгыз";
 
-/* DonationViewController */
-"Purchase Failure" = "Сатып алу уңышсыз тәмамланмады";
-
-/* SettingsViewController */
-"Rate on App Store" = "App Store-да бәяләү";
-
-/* No comment provided by engineer. */
-"Reasons to use the built-in Tor (iOS 17 only)" = "Кушымта эчендә булган Tor-ны куллану сәбәпләре (iOS 17 гына)";
-
 /* AppDelegate */
 "Reload Tab" = "Табны яңадан йөкләү";
 
@@ -467,19 +317,10 @@
 "Report a Bug" = "Хата турында белдерү";
 
 /* No comment provided by engineer. */
-"Request Access" = "Рөхсәтне сорау";
-
-/* No comment provided by engineer. */
 "Request could not be formed. Please check host and username/password!" = "Сорау төзеп булмады. Зинһар, хостны һәм кулланучы исемен/серсүзне тикшерегез!";
 
 /* No comment provided by engineer. */
 "Response body missing." = "Җавап гәүдәсе юк.";
-
-/* No comment provided by engineer. */
-"Retry" = "Кабатлау";
-
-/* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "Хәзерге биттә кулланыла торган кагыйдәләр";
@@ -523,24 +364,6 @@
 /* SecurityPresetsRow; a security level */
 "Silver" = "Көмешсу";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:" = "Шулай итеп, Сез iOS-та Tor белән күбрәк эшли аласыз! %2$@ моның ярдәмендә %1$@-ның интернет куллануны яхшырта:";
-
-/* DonationViewController */
-"Sorry, in-app purchase is disabled on your device!" = "Гафу итегез, җиһазыгызда кушымта эчендә сатып алу сүндерелде!";
-
-/* Placeholder is 'Orbot' */
-"Start %@" = "%@-ны башлау";
-
-/* No comment provided by engineer. */
-"Start built-in Tor" = "Кушымта эчендә булган Tor-ны башлау";
-
-/* Placeholder is 'Orbot' */
-"Start Tor in %@." = "Tor-ны %@ кушымтасындагы башлау.";
-
-/* No comment provided by engineer. */
-"Starting Tor…" = "Tor-ны башла...";
-
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "Беренче нокта куелгач, автотәмамлауны туктату";
 
@@ -549,12 +372,6 @@
 
 /* SettingsViewController */
 "Support" = "Техник ярдәм";
-
-/* DonationViewController */
-"Support Onion Browser Development" = "Onion браузерының төзүен финанслыгыз";
-
-/* Placeholder is 'Orbot' */
-"Switch back to %@" = "%@-ка кире кайту";
 
 /* AppDelegate */
 "Switch to Tab %d" = "%d табка күчү";
@@ -577,26 +394,11 @@
 /* No comment provided by engineer. */
 "The encryption method for this server is outdated." = "Бу сервер өчен шифрлау ысулы искергән.";
 
-/* No comment provided by engineer. */
-"Then come back for private browsing." = "Аннары хосусый гизү өчен кире кайтыгыз.";
-
 /* SecurityViewController */
 "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers." = "Бу серверның тәртибен үзгәртергә мөмкин. Мәсәлән, Captcha-лар күрсәтү яки күрсәтмәү, яисә өстәл браузерлары өчен ясалган битләрне кире кайтару.";
 
-/* CircuitsViewController */
-"This browser" = "Бу браузер";
-
 /* SecurityViewController, placeholder is app name "Onion Browser" */
 "This is your default security setting for every website you visit in %@." = "Бу %@ белән һәр кергән вебсайт өчен килешенгәнчә хәвефсезлек көйләвегез.";
-
-/* Placeholder is 'Orbot' */
-"This site may need authentication. If you received an authentication key for this site, add it to %@!" = "Бу сайт өчен аутентификация кирәк булырга мөмкин. Бу сайт өчен аутентификация ачкычы алган булсагыз, аны %@-га өстәгез!";
-
-/* Placeholder is 'Onion Browser' */
-"This will allow %@ to:" = "%@ аларны ясый ала:";
-
-/* DonationViewController */
-"Tip: %@" = "Киңәш: %@";
 
 /* BookmarkViewController */
 "Title" = "Баш исем";
@@ -610,9 +412,6 @@
 /* Tab+UIWebViewDelegate */
 "TLS protocol error" = "TLS протоколының хатасы";
 
-/* CircuitsViewController */
-"Tor Circuit" = "Tor чылбыры";
-
 /* SyncViewController */
 "Try Again" = "Янәдән тырышып карау";
 
@@ -624,12 +423,6 @@
 
 /* SettingsViewController */
 "URL Blocker" = "URL блокчы";
-
-/* Placeholder is 'Orbot' */
-"Use %@" = "%@ куллану ";
-
-/* No comment provided by engineer. */
-"Use built-in Tor" = "Кушымта эчендә булган Tor-ны куллану";
 
 /* SecurityViewController */
 "User Agent" = "Кулланучы агенты";
@@ -655,29 +448,11 @@
 /* No comment provided by engineer. */
 "WebSQL Databases" = "WebSQL мәгълүмат базалары";
 
-/* Placeholder is 'Onion Browser' */
-"Welcome to %@" = "%@-га рәхим итегез";
-
 /* SettingsViewController */
 "When disabled, all text entered in search bar will be sent to the search engine unless it starts with \"http\"." = "Опция сүндерелгәндә, эзләү юлына кертелгән барлык текст, әгәр ул \"http\" белән башланмаса, эзләү системасына җибәреләчәк";
-
-/* No comment provided by engineer. */
-"Why" = "Ни өчен";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"Why %1$@ needs %2$@" = "Ни өчен %1$@ %2$@-га мохтаҗ";
 
 /* SecurityPresetsRow */
 "Works pretty well. Your identity is mostly protected." = "Шактый яхшы эшли. Шәхесегез күбесенчә сакланган.";
 
 /* Placeholder is server domain */
 "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk." = "Сез \"%@\" итеп күрсәтүче серверга тоташкан булырга мөмкин һәм бу сезнең шәхси мәгълүматыгызны куркыныч астына куярга мөмкин.";
-
-/* DonationViewController */
-"You most recently donated %1$@ on %2$@." = "%1$@ өчен соңгы тапкыр %2$@ көнне иганә итегез.";
-
-/* No comment provided by engineer. */
-"You're one step closer to private browsing." = "Сез хосусый гизү өчен бер адым якынрак.";
-
-/* CircuitViewController */
-"Your traffic goes to 3 different parts of the world." = "Трафигыз дөньяның 3 төрле почмагы аша уза.";

@@ -1,7 +1,0 @@
-- Tor bijgewerkt naar de nieuwste versie 0.4.8.14.
-- Ondersteuning voor vergrendelingsmodus toegevoegd voor iOS 16 en hoger.
-- Functie “onveilige HTTP-verzoeken blokkeren” toegevoegd.
-- Cache wissen in de modus “tabbladen vergeten bij afsluiten” opgelost.
-- Ingebouwde Tor: kapotte status hersteld wanneer app te lang op de achtergrond was.
-- Ingebouwde Tor: Lekkage verholpen bij het opvragen van bladwijzer-favorieten, bij het praten met een Nextcloud Bladwijzerserver, bij het doen van live zoekresultaten en bij het downloaden van items.
-- Enkele kleine problemen met de UI opgelost.

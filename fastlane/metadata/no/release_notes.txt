@@ -1,7 +1,0 @@
-- Oppdatert Tor til nyeste versjon 0.4.8.14.
-- Lagt til støtte for Lockdown Mode for iOS 16 og nyere.
-- Lagt til funksjonen «blokker usikre HTTP-forespørsler».
-- Fikset hurtigbufferrensing når du er i «glem faner ved avslutning»-modus.
-- Innebygd Tor: fikset ødelagt tilstand når appen var i bakgrunnen for lenge.
-- Innebygd Tor: Fikset lekkasje når du ber om bokmerkefavoritter, når du snakker med en Nextcloud Bookmarks-server, når du gjør direkte søkeresultater og når du laster ned elementer.
-- Fikset noen mindre UI-problemer. 

@@ -1,7 +1,0 @@
-- Memperbarui Tor ke versi terbaru 0.4.8.14.
-- Menambahkan dukungan Mode Penguncian untuk iOS 16 ke atas.
-- Menambahkan fitur “blokir permintaan HTTP yang tidak aman”.
-- Memperbaiki pembersihan cache saat dalam mode “lupakan tab saat dimatikan”.
-- Tor bawaan: memperbaiki keadaan rusak saat aplikasi berada di latar belakang terlalu lama.
-- Tor bawaan: Memperbaiki kebocoran saat meminta favicon Bookmark, saat berbicara dengan server Nextcloud Bookmarks, saat melakukan hasil pencarian langsung, dan saat mengunduh item.
-- Memperbaiki beberapa masalah UI kecil. 

@@ -1,1 +1,0 @@
-Preglednik,Tor,Tor preglednik,Onion preglednik,anonimno,privatno,orbot,orfox,onion

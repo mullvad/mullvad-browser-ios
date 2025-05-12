@@ -1,7 +1,0 @@
-- Actualizat Tor la ultima versiune 0.4.8.14.
-- Adăugat suport Lockdown Mode pentru iOS 16 și mai sus.
-- Adăugată funcția „blocarea cererilor HTTP nesigure”.
-- Fix curățarea cache-ului atunci când se află în modul „uită filele la închidere”.
-- Built-in Tor: fixat starea rupt atunci când aplicația a fost în fundal pentru prea mult timp.
-- Tor încorporat: Scăpări fixate la solicitarea favicons de marcaj, la discutarea cu un server Nextcloud Bookmarks, la rezultatele căutării live și la descărcarea de elemente.
-- Fixarea unor probleme minore de interfață. 

@@ -1,18 +1,17 @@
-# Build Onion Browser 3.X
+# Build Mullvad Browser
 ## Build Dependencies
 
-Onion Browser uses [CocoaPods](https://cocoapods.org/) as its dependency manager.
+Mullvad Browser uses [CocoaPods](https://cocoapods.org/) as its dependency manager.
 
 
-## Steps to build Onion Browser 3.X
+## Steps to build Mullvad Browser
 
 ```bash
-git clone git@github.com:OnionBrowser/OnionBrowser.git
-cd OnionBrowser
-git checkout 3.X
+git clone git@github.com:mullvad/mullvad-browser-ios.git
+cd MullvadBrowser
 pod repo update
 pod install
-open OnionBrowser.xcworkspace
+open MullvadBrowser.xcworkspace
 ```
 
 ## Edit Config.xcconfig
@@ -25,6 +24,3 @@ You will at least need to edit the `PRODUCT_BUNDLE_IDENTIFIER[config=Debug]` lin
 the app in a simulator. 
 
 Make sure, you didn't accidentally remove the references to that in `project.pbxproj`!
-
-To disable the dependency on Orbot iOS for debugging in the simulator, you can set
-`OrbotManager-simulatorIgnoreOrbot` to `true`.

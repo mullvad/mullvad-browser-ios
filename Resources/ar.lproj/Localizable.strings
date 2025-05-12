@@ -1,80 +1,11 @@
 /* RuleEditorController */
 "%1$@ (Disabled: %2$@)" = "%1$@ (مُعطّل: %2$@)";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems." = "%1$@ can either rely on %2$@ for a secure connection to Tor or run its own built-in Tor. The built-in Tor has security problems.";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ If you have connectivity issues with %2$@" = "%1$@ If you have connectivity issues with %2$@";
-
-/* Placeholder 1 is bullet point, Placeholder 2 is 'Onion Browser' */
-"%1$@ if you want to use %2$@ over another VPN" = "%1$@ if you want to use %2$@ over another VPN";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ now relies on %2$@ for a secure connection to Tor." = "%1$@يعتمد الآن %2$@ على اتصال آمن بـ Tor.";
-
-/* 1. placeholder is 'Onion Browser', 2. is translated 'Lockdown Mode', 3. is two line breaks, 4. is translated 'Default Security', 5. is translated 'Block Insecure HTTP Requests'. */
-"%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature." = "%1$@ now selectively supports iOS' %2$@! (From iOS 16 onwards.)%3$@Gold and silver security levels will have this set by default. Your settings won't change automatically, though.%3$@Visit the '%4$@' page to update your default security level!%3$@P.S.: You might also want to have a look at the new '%5$@' feature.";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"%1$@ relies on %2$@ for a secure connection to Tor. Install the %2$@ app to continue." = "%1$@ يعتمد عليه %2$@ من أجل اتصال آمن بـ Tor. قم بتثبيت التطبيق %2$@ للمتابعة.";
-
-/* Placeholder 1 is 'Orbot', placeholder 2 is 'Onion Browser' */
-"%1$@ runs in onion-only mode. This is dangerous and %2$@ does not support it. Switch it off to use %2$@!" = "%1$@ يعمل في وضع البصل فقط . هذا أمر خطير ولا %2$@ يدعمه. قم بإيقاف تشغيله للاستخدام %2$@ !";
-
-/* Placeholder 1 is bullet point, placeholder 2 is 'Orbot' */
-"%1$@ Use %2$@ to connect to the official Tor network." = "%1$@استخدم %2$@ للاتصال بشبكة Tor الرسمية.";
-
-/* Placeholder is bullet point */
-"%@ a little more speed" = "%@ سرعة أكبر بقليل";
-
-/* Placeholder is 'Orbot' */
-"%@ alone provides a VPN proxy. It will hide apps from network monitoring and give you access when they are blocked." = "%@وحده يوفر وكيل VPN. سيخفي التطبيقات من مراقبة الشبكة ويمنحك الوصول عندما يتم حظرها.";
-
-/* Placeholder is bullet point */
-"%@ Get updates on the status of the connection." = "%@ احصل على تحديثات عن حالة الاتصال.";
-
-/* Placeholder is 'Orbot' */
-"%@ installed! One more step." = "%@ مثبت! خطوة أخرى أيضا.";
-
-/* Placeholder is bullet point */
-"%@ more protection from IP leaks" = "%@ مزيد من الحماية من تسريب IP";
-
-/* Placeholder is bullet point */
-"%@ new standards" = "%@ معايير جديدة";
-
-/* Placeholder is 'Orbot' */
-"%@ or built-in Tor" = "%@ or built-in Tor";
-
-/* Placeholder is bullet point */
-"%@ video and audio streaming" = "%@ تدفق الفيديو والصوت";
-
-/* Placeholder is bullet point */
-"%@ video and audio streams don't go through Tor and might get blocked" = "%@ video and audio streams don't go through Tor and might get blocked";
-
-/* Placeholder is bullet point */
-"%@ Websites can uncover your real IP address using JavaScript" = "%@ Websites can uncover your real IP address using JavaScript";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(لا يُنصح به)";
 
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH1__" = "متصفّح Onion هو تطبيق مجاني، و لكنه يحتاج إلى وقت وموارد للتطوير والمتابعة.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH2__" = "يمكنك أن تدعم التطبيق عن طريق منح بقشيش صغير عبر المشتريات التي تتم عبر التطبيق أدناه. تكون هذه المعاملة المالية لمرة واحدة غير متكررة، ولكن يمكنك أن تعود فى اي وقت لإرسال واحدة أخرى. لا يتم جمع أو تخزين أي معلومات عن المشتريات عبر التطبيق من قبل مطوري متصفح Onion.";
-
-/* DonationViewController */
-"__DONATE_EXPLANATION_PARAGRAPH3__" = "يمكنك أن تتعرف على طرق أخرى للمساعدة (تشمل Patreon أو PayPal أو Bitcoin أو Zcash) فى قسم 'عن الخدمة' فى صفحة 'الإعدادات'.";
-
-/* DonationViewController */
-"__DONATE_THANKS__" = "شكرا لك! كل مساهمة تساعد حتى لو كانت صغيرة! دفعك ل %@ يساعد في التأكد من التطوير الدائم لتطبيق متصفّح Onion  والأدوات التى تجعل Tor أسهل في الإندماج فى تطبيقات iOS أخرى.";
-
 /* SettingsViewController */
 "About" = "حول";
-
-/* Placeholder is 'Orbot' */
-"Access to %@ was Denied" = " الوصول إلى %@ مرفوض";
 
 /* SearchEnginesViewController, AddSearchEngineViewController */
 "Add" = "أضف";
@@ -91,11 +22,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "أضف موقع";
 
-/* Placeholder is 'Orbot' */
-"Add to %@" = "Add to %@";
-
-/* SyncViewController */
-"Additionally, all bookmarks not existing on the server but in Onion Browser will be created there." = "بالإضافة إلى ذلك ، سيتم إنشاء جميع الإشارات المرجعية غير الموجودة على الخادم ولكن في Onion Browser هناك.";
+/* No comment provided by engineer. */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
 "Address" = "العنوان";
@@ -121,15 +49,6 @@
 /* SecurityViewController */
 "Allow Persistent Cookies" = "السماح بملفات تعريف الارتباط الدائمة";
 
-/* DonationViewController */
-"Are you sure you want to send a %@ tip?" = "هل أنت متأكد أنك تريد إرسال بقشيش %@ ؟";
-
-/* Placeholder is 'Orbot' */
-"Ask %@ for permission to access it." = "اطلب إذن %@  للوصول إليه.";
-
-/* No comment provided by engineer. */
-"Ask again to continue." = "اسأل مرة أخرى للمتابعة.";
-
 /* AppDelegate */
 "Authentication Required" = "مطلوب التوثيق";
 
@@ -138,9 +57,6 @@
 
 /* AddSearchEngineViewController */
 "Autocomplete URL" = "اكمال ملء عنوان URL تلقائيا";
-
-/* No comment provided by engineer. */
-"Back" = "Back";
 
 /* CertificateViewController */
 "Begins On" = "تبدأ في";
@@ -153,12 +69,6 @@
 
 /* BookmarksViewController */
 "Bookmarks" = "الإشارات المرجعية";
-
-/* No comment provided by engineer. */
-"Both are free to use. Free of tracking. Code is open source." = "كلاهما مجاني للاستخدام. خالية من التتبع. الكود مفتوح المصدر.";
-
-/* CircuitViewController */
-"Bridge Configuration" = "إعدادات الجسر";
 
 /* SecurityPresetsRow; a security level */
 "Bronze" = "برونز";
@@ -180,18 +90,6 @@
 
 /* AppDelegate */
 "Close Tab" = "إغلاق التبويبة ";
-
-/* No comment provided by engineer. */
-"Configure Bridges" = "ضبط الجسور";
-
-/* DonationViewController */
-"Confirm %@" = "تأكيد %@";
-
-/* DonationViewController */
-"Confirm Purchase" = "تأكيد الشِّراء";
-
-/* CircuitViewController */
-"Connect to a website to see your circuit." = "اتصل بموقع على شبكة الإنترنت لرؤية دائرتك.";
 
 /* SyncViewController */
 "Connection to Nextcloud Server Failed" = "فشل الاتصال بخادم Nextcloud";
@@ -241,20 +139,11 @@
 /* No comment provided by engineer. */
 "Disk Cache" = "ذاكرة التخزين المؤقت على القرص";
 
-/* DonationViewController */
-"Donate" = "تبرَّع";
-
-/* Bookmark, placeholder is app name "Onion Browser" */
-"Donate to %@" = "تبرع إلى %@";
-
 /* BrowsingViewController */
 "Done" = "انتهى";
 
 /* No comment provided by engineer. */
 "Download" = "تحميل";
-
-/* No comment provided by engineer. */
-"Drawbacks:" = "Drawbacks:";
 
 /* SecurityPresetsRow */
 "Easy breezy. Though it could be dangerous." = "من السهل منسم. على الرغم من أنه يمكن أن يكون خطيرا.";
@@ -295,26 +184,14 @@
 /* SettingsViewController */
 "Forget in Background" = "نسيان في الخلفية";
 
-/* SettingsViewController */
-"Fund Development" = "تمويل التطوير";
-
-/* Placeholder is 'Orbot' */
-"Get %@" = "أحصل على %@";
-
 /* AppDelegate */
 "Go Back" = "العودة للخلف";
 
 /* AppDelegate */
 "Go Forward" = "الذهاب للأمام";
 
-/* Placeholder is 'Orbot' */
-"Go to %@" = "إذهب إلى %@";
-
 /* SecurityPresetsRow; a security level */
 "Gold" = "ذهب";
-
-/* CircuSitsViewController */
-"Guard" = "الحارس";
 
 /* SecurityViewController */
 "Handle tapping on links in a non-standard way to avoid possibly opening external applications." = "التعامل بطريقة غير تلقائية مع النقر على الروابط لتجنب احتمالية تشغيل تطبيقات خارجية.";
@@ -328,8 +205,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "المضيف";
 
-/* SyncViewController */
-"If you sync, all bookmarks will be read from the server and added/updated in Onion Browser." = "إذا قمت بالمزامنة ، فستتم قراءة جميع الإشارات المرجعية من الخادم وإضافتها / تحديثها في متصفح Onion.";
+/* No comment provided by engineer. */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "تجاهل لهذا المضيف";
@@ -339,9 +216,6 @@
 
 /* No comment provided by engineer. */
 "IndexedDB Databases" = "قواعد بيانات مفهرسة";
-
-/* Placeholder is 'Orbot' */
-"Install %@" = "تنصيب %@";
 
 /* CertificateViewController */
 "Issued By" = "صادرعن ";
@@ -354,9 +228,6 @@
 
 /* Bookmark, placeholder is app name "Onion Browser" */
 "Learn more about %@" = "اعرف المزيد عن %@";
-
-/* DonationViewController */
-"Loading in-app purchase data…" = "جاري عرض بيانات الشِّراء عبر التطبيق";
 
 /* Storage2ViewController */
 "Local Storage" = "التخزين المحلي";
@@ -391,15 +262,6 @@
 /* AddSearchEngineViewController */
 "Name" = "الاسم";
 
-/* CircuSitsViewController */
-"New Circuit for this Site" = "دائرة جديدة لهذا الموقع";
-
-/* No comment provided by engineer. */
-"New Security Features" = "New Security Features";
-
-/* No comment provided by engineer. */
-"Next" = "التالي";
-
 /* No comment provided by engineer. */
 "No success, but \"%@\" instead." = "لا نجاح ، ولكن \"%@\" بدلاً من ذلك.";
 
@@ -427,9 +289,6 @@
 /* AppDelegate, SyncViewController */
 "Password" = "كلمة السر";
 
-/* DonationViewController */
-"Payment Sent" = "تم ارسال المبلغ";
-
 /* CertificateViewController */
 "Period of Validity" = "فترة الصلاحية";
 
@@ -445,15 +304,6 @@
 /* Tab */
 "Pull to Refresh Page" = "اسحب/ي لتحديث الصفحة";
 
-/* DonationViewController */
-"Purchase Failure" = "فشلت عملية الدفع";
-
-/* SettingsViewController */
-"Rate on App Store" = "التقييم على الآب ستور";
-
-/* No comment provided by engineer. */
-"Reasons to use the built-in Tor (iOS 17 only)" = "Reasons to use the built-in Tor (iOS 17 only)";
-
 /* AppDelegate */
 "Reload Tab" = "إعادة تحميل التبويبة";
 
@@ -467,19 +317,10 @@
 "Report a Bug" = "بلّغوا عن خلل";
 
 /* No comment provided by engineer. */
-"Request Access" = "طلب الدخول";
-
-/* No comment provided by engineer. */
 "Request could not be formed. Please check host and username/password!" = "تعذر تشكيل الطلب. يرجى التحقق من المضيف واسم المستخدم / كلمة المرور!";
 
 /* No comment provided by engineer. */
 "Response body missing." = "نص الاستجابة مفقود.";
-
-/* No comment provided by engineer. */
-"Retry" = "إعادة المحاولة";
-
-/* Placeholder is 'Orbot' */
-"Retry after you added the authentication key to %@." = "Retry after you added the authentication key to %@.";
 
 /* RuleEditorController */
 "Rules in use on current page" = "القواعد المستخدمة في الصفحة الحالية";
@@ -523,24 +364,6 @@
 /* SecurityPresetsRow; a security level */
 "Silver" = "فضة";
 
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"So that you can do more with Tor on iOS! In %1$@, %2$@ improves the browsing experience with:" = "حتى تتمكن من فعل المزيد مع Tor على iOS! في %1$@، %2$@ يحسن تجربة التصفح من خلال:";
-
-/* DonationViewController */
-"Sorry, in-app purchase is disabled on your device!" = "عذرا، لم يتم تفعيل المشتريات عبر التطبيق في جهازك!";
-
-/* Placeholder is 'Orbot' */
-"Start %@" = "Start %@";
-
-/* No comment provided by engineer. */
-"Start built-in Tor" = "Start built-in Tor";
-
-/* Placeholder is 'Orbot' */
-"Start Tor in %@." = "شغل Tor في %@.";
-
-/* No comment provided by engineer. */
-"Starting Tor…" = "Starting Tor…";
-
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "ايقاف الإكمال التلقائي عند النقطة الأولى";
 
@@ -549,12 +372,6 @@
 
 /* SettingsViewController */
 "Support" = "الدعم الفني";
-
-/* DonationViewController */
-"Support Onion Browser Development" = "ادعم تطوير متصفّح Onion";
-
-/* Placeholder is 'Orbot' */
-"Switch back to %@" = "Switch back to %@";
 
 /* AppDelegate */
 "Switch to Tab %d" = "التبديل إلى التبويبه %d";
@@ -577,26 +394,11 @@
 /* No comment provided by engineer. */
 "The encryption method for this server is outdated." = "طريقة التشفير لهذا الخادم قديمة.";
 
-/* No comment provided by engineer. */
-"Then come back for private browsing." = "ثم عد للتصفح الخاص.";
-
 /* SecurityViewController */
 "These might change server behaviour. E.g. show or not show Captchas or return pages meant for desktop browsers." = "هذه قد تغير سلوك الخادم. على سبيل المثال إظهار أو عدم إظهار كلمة التحقق أو إرجاع الصفحات المخصصة لمتصفحات سطح المكتب.";
 
-/* CircuitsViewController */
-"This browser" = "هذا المتصفح";
-
 /* SecurityViewController, placeholder is app name "Onion Browser" */
 "This is your default security setting for every website you visit in %@." = "هذا هو إعداد الأمن التلقائى لكل موقع تزوره فى %@.";
-
-/* Placeholder is 'Orbot' */
-"This site may need authentication. If you received an authentication key for this site, add it to %@!" = "قد يحتاج هذا الموقع إلى مصادقة. إذا تلقيت مفتاح مصادقة لهذا الموقع ، قم بإضافته إلى %@ !";
-
-/* Placeholder is 'Onion Browser' */
-"This will allow %@ to:" = "سيسمح هذا ل %@ بـ:";
-
-/* DonationViewController */
-"Tip: %@" = "امنح بقشيش: %@";
 
 /* BookmarkViewController */
 "Title" = "العنوان";
@@ -610,9 +412,6 @@
 /* Tab+UIWebViewDelegate */
 "TLS protocol error" = "خطأ في بروتوكول TLS";
 
-/* CircuitsViewController */
-"Tor Circuit" = "دائرة Tor";
-
 /* SyncViewController */
 "Try Again" = "حاول مجددا";
 
@@ -624,12 +423,6 @@
 
 /* SettingsViewController */
 "URL Blocker" = "مانع الروابط";
-
-/* Placeholder is 'Orbot' */
-"Use %@" = "Use %@";
-
-/* No comment provided by engineer. */
-"Use built-in Tor" = "Use built-in Tor";
 
 /* SecurityViewController */
 "User Agent" = "وكيل المستخدم/ة";
@@ -655,29 +448,11 @@
 /* No comment provided by engineer. */
 "WebSQL Databases" = "قواعد بيانات WebSQL";
 
-/* Placeholder is 'Onion Browser' */
-"Welcome to %@" = "مرحبا بك في %@";
-
 /* SettingsViewController */
 "When disabled, all text entered in search bar will be sent to the search engine unless it starts with \"http\"." = "عند إلغاء التفعيل، سيتم إرسال كل النصوص المدخلة فى شريط البحث إلى محرك البحث الا إذا بدأت ب \"http\".";
-
-/* No comment provided by engineer. */
-"Why" = "لماذا";
-
-/* Placeholder 1 is 'Onion Browser', placeholder 2 is 'Orbot' */
-"Why %1$@ needs %2$@" = "لماذا %1$@ يحتاج %2$@";
 
 /* SecurityPresetsRow */
 "Works pretty well. Your identity is mostly protected." = "يعمل بشكل جيد. هويتك محمية في الغالب.";
 
 /* Placeholder is server domain */
 "You might be connecting to a server that is pretending to be \"%@\" which could put your confidential information at risk." = "قد تكون متصلاً بخادم يتظاهر بأنه \"%@\" قد يعرض معلوماتك السرية للخطر.";
-
-/* DonationViewController */
-"You most recently donated %1$@ on %2$@." = "لقد قمت مؤخّراً بالتبرع بمبلغ %1$@في %2$@";
-
-/* No comment provided by engineer. */
-"You're one step closer to private browsing." = "أنت على بعد خطوة واحدة من التصفح الخاص.";
-
-/* CircuitViewController */
-"Your traffic goes to 3 different parts of the world." = "تنتقل حركة المرور الخاصة بك إلى 3 أجزاء مختلفة من العالم.";
