@@ -367,9 +367,6 @@
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "在第一个点 (.) 处停用自动完成";
 
-/* Bookmark */
-"Subscribe to Tor Newsletter" = "订阅 Tor 最新资讯";
-
 /* SettingsViewController */
 "Support" = "支持我们";
 

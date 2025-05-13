@@ -367,9 +367,6 @@
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "첫 번째 도트에서 자동 완성 중지";
 
-/* Bookmark */
-"Subscribe to Tor Newsletter" = "Tor 뉴스레터 구독하기";
-
 /* SettingsViewController */
 "Support" = "지원";
 

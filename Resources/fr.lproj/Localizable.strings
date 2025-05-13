@@ -367,9 +367,6 @@
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "Arrêter la saisie semi-automatique au premier point";
 
-/* Bookmark */
-"Subscribe to Tor Newsletter" = "S’abonner à la lettre d’information de Tor";
-
 /* SettingsViewController */
 "Support" = "Soutien";
 

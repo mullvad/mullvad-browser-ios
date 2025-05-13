@@ -367,9 +367,6 @@
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "প্রথম ডটে অটোকমপ্লিট বন্ধ হয়ে যাবে";
 
-/* Bookmark */
-"Subscribe to Tor Newsletter" = "টরের নিউজলেটার পেতে সাবস্ক্রাইব করুন";
-
 /* SettingsViewController */
 "Support" = "সহায়তা";
 

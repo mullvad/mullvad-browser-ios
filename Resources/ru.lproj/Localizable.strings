@@ -367,9 +367,6 @@
 /* SettingsViewController */
 "Stop Auto-Complete at First Dot" = "Автодополнение до первой точки";
 
-/* Bookmark */
-"Subscribe to Tor Newsletter" = "Подписаться на рассылку новостей Tor";
-
 /* SettingsViewController */
 "Support" = "Поддержка";
 
