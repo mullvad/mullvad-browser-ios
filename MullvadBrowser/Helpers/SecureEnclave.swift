@@ -23,7 +23,7 @@ class SecureEnclave: NSObject {
 	/**
 	Tag of the single private key we're using.
 	*/
-	static let tag = "Onion Browser".data(using: .utf8)!
+	static let tag = "Mullvad Browser".data(using: .utf8)!
 
 	private static let laContext = LAContext()
 
