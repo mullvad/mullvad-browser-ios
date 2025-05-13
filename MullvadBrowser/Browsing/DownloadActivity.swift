@@ -1,11 +1,11 @@
 //
 //  DownloadActivity.swift
-//  OnionBrowser
+//  MullvadBrowser
 //
 //  Created by Benjamin Erhart on 19.05.23.
-//  Copyright © 2023 Tigas Ventures, LLC (Mike Tigas)
+//  Copyright © 2012 - 2025, Tigas Ventures, LLC (Mike Tigas)
 //
-//  This file is part of Onion Browser. See LICENSE file for redistribution terms.
+//  This file is part of Mullvad Browser. See LICENSE file for redistribution terms.
 //
 
 import UIKit

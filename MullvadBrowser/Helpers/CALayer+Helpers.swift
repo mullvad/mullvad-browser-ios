@@ -1,11 +1,11 @@
 //
 //  CALayer+Helpers.swift
-//  OnionBrowser2
+//  MullvadBrowser
 //
 //  Created by alexey kosylo on 29/04/2022.
-//  Copyright © 2022 - 2023 Tigas Ventures, LLC (Mike Tigas)
+//  Copyright © 2012 - 2025, Tigas Ventures, LLC (Mike Tigas)
 //
-//  This file is part of Onion Browser. See LICENSE file for redistribution terms.
+//  This file is part of Mullvad Browser. See LICENSE file for redistribution terms.
 //
 
 import UIKit

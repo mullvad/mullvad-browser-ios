@@ -1,11 +1,11 @@
 //
 //  InfoPlist.strings
-//  OnionBrowser2
+//  MullvadBrowser
 //
 //  Created by Benjamin Erhart on 03.04.19.
-//  Copyright © 2012 - 2023, Tigas Ventures, LLC (Mike Tigas)
+//  Copyright © 2012 - 2025, Tigas Ventures, LLC (Mike Tigas)
 //
-//  This file is part of Onion Browser. See LICENSE file for redistribution terms.
+//  This file is part of Mullvad Browser. See LICENSE file for redistribution terms.
 //
 NSPhotoLibraryAddUsageDescription = "Needed to store the selected image to your photos.";
 NSCameraUsageDescription = "Needed to read bridge addresses from displayed QR codes.";

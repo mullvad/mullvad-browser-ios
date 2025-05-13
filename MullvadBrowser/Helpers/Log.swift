@@ -1,6 +1,6 @@
 //
 //  Log.swift
-//  OnionBrowser
+//  MullvadBrowser
 //
 //  Created by Benjamin Erhart on 27.02.25.
 //

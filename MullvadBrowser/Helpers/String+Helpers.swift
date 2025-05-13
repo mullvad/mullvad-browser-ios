@@ -1,11 +1,11 @@
 //
 //  String+Helpers.swift
-//  OnionBrowser2
+//  MullvadBrowser
 //
 //  Created by Benjamin Erhart on 22.11.19.
-//  Copyright © 2012 - 2023, Tigas Ventures, LLC (Mike Tigas)
+//  Copyright © 2012 - 2025, Tigas Ventures, LLC (Mike Tigas)
 //
-//  This file is part of Onion Browser. See LICENSE file for redistribution terms.
+//  This file is part of Mullvad Browser. See LICENSE file for redistribution terms.
 //
 
 import Foundation
