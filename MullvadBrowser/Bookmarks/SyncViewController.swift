@@ -20,9 +20,9 @@ class SyncViewController: FixedFormViewController {
 
 		navigationItem.title = NSLocalizedString("Sync Bookmarks", comment: "")
 
-		var desc = String(format: NSLocalizedString("If you sync, all bookmarks will be read from the server and added/updated in %@.", comment: ""), Bundle.main.displayName)
+		var desc = String(format: NSLocalizedString("If you sync, all bookmarks will be read from the server and added/updated in %@.", comment: "Placeholder is 'Onion Browser'"), Bundle.main.displayName)
 		desc += "\n\n"
-		desc += String(format: NSLocalizedString("Additionally, all bookmarks not existing on the server but in %@ will be created there.", comment: ""), Bundle.main.displayName)
+		desc += String(format: NSLocalizedString("Additionally, all bookmarks not existing on the server but in %@ will be created there.", comment: "Placeholder is 'Onion Browser'"), Bundle.main.displayName)
 
 		form
 			+++ Section(header: NSLocalizedString("Sync Bookmarks with Nextcloud Server", comment: ""),

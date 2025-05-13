@@ -22,7 +22,7 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "Add Site";
 
-/* No comment provided by engineer. */
+/* Placeholder is 'Onion Browser' */
 "Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
 
 /* BookmarkViewController */
@@ -205,7 +205,7 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "Host";
 
-/* No comment provided by engineer. */
+/* Placeholder is 'Onion Browser' */
 "If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
 
 /* Tab+UIWebViewDelegate */
