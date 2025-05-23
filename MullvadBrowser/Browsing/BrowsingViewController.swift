@@ -20,8 +20,8 @@ class BrowsingViewController: UIViewController, TabDelegate {
 		case inBackground
 	}
 
-	private static let reloadImg = UIImage(named: "reload")
-	private static let stopImg = UIImage(named: "close")
+	private static let reloadImg = UIImage(systemName: "arrow.clockwise")
+	private static let stopImg = UIImage(systemName: "xmark")
 
 	@IBOutlet weak var searchBar: UIView?
 	@IBOutlet weak var searchBarHeightConstraint: NSLayoutConstraint? {

@@ -22,7 +22,7 @@ class LiveSearchViewController: UITableViewController {
 	private lazy var closeButton: UIButton = {
 		let button = UIButton(type: .custom)
 
-		button.setImage(UIImage(named: "close"), for: .normal)
+		button.setImage(UIImage(systemName: "xmark"), for: .normal)
 		button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
 
 		button.tintColor = .white
