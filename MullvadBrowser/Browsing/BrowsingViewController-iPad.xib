@@ -81,7 +81,7 @@
                                 <constraint firstAttribute="width" constant="30" id="adn-9D-COw"/>
                                 <constraint firstAttribute="height" constant="30" id="qRY-Xv-3wi"/>
                             </constraints>
-                            <state key="normal" image="bookmarks"/>
+                            <state key="normal" image="bookmark" catalog="system"/>
                             <connections>
                                 <action selector="showBookmarks" destination="-1" eventType="touchUpInside" id="ihV-YB-Wbs"/>
                             </connections>
@@ -308,7 +308,7 @@
     </objects>
     <resources>
         <image name="back" width="11" height="19"/>
-        <image name="bookmarks" width="14" height="18"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="forward" width="11" height="19"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="settings" width="21" height="20"/>

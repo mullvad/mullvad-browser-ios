@@ -176,7 +176,7 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgM-cO-WGo">
                                     <rect key="frame" x="241" y="0.0" width="52.5" height="48"/>
-                                    <state key="normal" image="bookmarks"/>
+                                    <state key="normal" image="bookmark" catalog="system"/>
                                     <connections>
                                         <action selector="showBookmarks" destination="-1" eventType="touchUpInside" id="ihV-YB-Wbs"/>
                                     </connections>
@@ -272,7 +272,7 @@
     </objects>
     <resources>
         <image name="back" width="11" height="19"/>
-        <image name="bookmarks" width="14" height="18"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="forward" width="11" height="19"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="settings" width="21" height="20"/>
