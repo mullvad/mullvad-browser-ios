@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Chuyển con trỏ đến thanh điền URL";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Follow Onion-Location Header Automatically";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Quên khi tắt";
 

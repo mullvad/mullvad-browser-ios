@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Fókusz az URL mezőre";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Az Onion-Location Header követése automatikusan";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Elfelejtés leállításkor";
 

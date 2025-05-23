@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Cuir an fócas sa bharra suímh";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Lean Ceanntásc Onion-Location go hUathoibríoch";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Dearmad ag am múchta";
 

@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "URLフィールドにフォーカスを合わせる";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "自動的にOnion-Locationヘッダーをフォロー";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "アプリ終了時に消去";
 

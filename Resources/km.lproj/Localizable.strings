@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "ផ្ដោតលើ​កន្លែងបញ្ចូល URL";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "អនុវត្ត​តាម Onion-Location Header ដោយ​ស្វ័យប្រវត្តិ";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "បំភ្លេចនៅពេល​បិទ";
 

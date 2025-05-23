@@ -252,12 +252,6 @@ extension BrowsingViewController: UITextFieldDelegate {
 	 - returns: a URL, if the given `search` argument can be parsed as such.
 	 */
 	private func setHttpsScheme(_ search: String) -> URL? {
-		let url = URL(string: "https://\(search)")
-
-		if url?.isOnion ?? false {
-			return URL(string: "http://\(search)")
-		}
-
-		return url
+		URL(string: "https://\(search)")
 	}
 }

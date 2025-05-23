@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "URL кырын фокуска җыю";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Onion-Location башлыгына автоматик рәвештә иярү";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Сүндерүдә оныту";
 

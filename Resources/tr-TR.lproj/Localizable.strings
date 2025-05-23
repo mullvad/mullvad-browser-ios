@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Adres alanına odaklan";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Onion-Location üst bilgisi otomatik olarak izlensin";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Kapatıldığında unutulsun";
 

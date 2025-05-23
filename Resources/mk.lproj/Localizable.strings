@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Фокус на URL полето ";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Следи автоматски заглавје на Onion-Локацијата";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Заборави на Исклучување";
 

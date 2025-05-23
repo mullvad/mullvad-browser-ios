@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Focalizează câmpul URL";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Urmărește Antete Locație-Onion Automat";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Uită la Închidere";
 

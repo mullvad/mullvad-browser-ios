@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "Virkni í slóðarreit";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "Fylgja Onion-Location hausnum sjálfkrafa";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "Gleyma þegar slökkt er á forriti";
 

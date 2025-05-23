@@ -99,15 +99,11 @@ extension URL {
 	}
 
 	var isHttp: Bool {
-		["http", "onionhttp"].contains(scheme?.lowercased())
+		scheme?.lowercased() == "http"
 	}
 
 	var isHttps: Bool {
-		["https", "onionhttps"].contains(scheme?.lowercased())
-	}
-
-	var isOnion: Bool {
-		host?.lowercased().hasSuffix(".onion") ?? false
+		scheme?.lowercased() == "https"
 	}
 
 	var exists: Bool {

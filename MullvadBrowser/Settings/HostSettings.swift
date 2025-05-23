@@ -32,7 +32,6 @@ class HostSettings: NSObject {
 	private static let whitelistCookiesKey = "whitelist_cookies"
 	private static let blockInsecureHttpKey = "block_insecure_http"
 	private static let universalLinkProtectionKey = "universal_link_protection"
-	private static let followOnionLocationHeaderKey = "follow_onion_location_header"
 	private static let userAgentKey = "user_agent"
 	private static let javaScriptKey = "javascript"
 	private static let lockdownModeKey = "lockdown_mode"
@@ -199,15 +198,6 @@ class HostSettings: NSObject {
 		}
 	}
 
-	var followOnionLocationHeader: Bool {
-		get {
-			get(Self.followOnionLocationHeaderKey) == Self.true
-		}
-		set {
-			raw[Self.followOnionLocationHeaderKey] = newValue ? Self.true : Self.false
-		}
-	}
-
 	/**
 	User Agent string to use. Will walk up the domain levels ending at the default settings,
 	if not explicitly set for this host.
@@ -301,7 +291,6 @@ class HostSettings: NSObject {
 				Self.whitelistCookiesKey: Self.false,
 				Self.blockInsecureHttpKey: Self.true,
 				Self.universalLinkProtectionKey: Self.true,
-				Self.followOnionLocationHeaderKey: Self.false,
 				Self.userAgentKey: "",
 				Self.javaScriptKey: Self.true,
 				Self.lockdownModeKey: Self.true,

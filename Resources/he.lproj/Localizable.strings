@@ -175,9 +175,6 @@
 /* AppDelegate */
 "Focus URL Field" = "התמקד בשדה כתובת אתר";
 
-/* SecurityViewController */
-"Follow Onion-Location Header Automatically" = "עקוב אחר כותרת של מיקום בצל באופן אוטומטי";
-
 /* SettingsViewController */
 "Forget at Shutdown" = "שכח בכיבוי";
 
