@@ -115,6 +115,10 @@ class Tab: UIView {
 			else {
 				secureMode = .secure
 			}
+
+			DispatchQueue.main.async { [weak self] in
+				self?.tabDelegate?.updateChrome()
+			}
 		}
 	}
 
