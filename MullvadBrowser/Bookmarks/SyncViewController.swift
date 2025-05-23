@@ -80,7 +80,7 @@ class SyncViewController: FixedFormViewController {
 					Nextcloud.sync { error in
 						DispatchQueue.main.async {
 							hud.mode = .customView
-							hud.customView = UIImageView(image: UIImage(named: "check"))
+							hud.customView = UIImageView(image: UIImage(systemName: "checkmark"))
 							hud.hide(animated: true, afterDelay: 1)
 
 							if let error = error {
