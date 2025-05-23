@@ -5,29 +5,29 @@
 	<key>DuckDuckGo</key>
 	<dict>
 		<key>search_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/?q=%@</string>
+		<string>https://duckduckgo.com/?q=%@</string>
 		<key>homepage_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/</string>
+		<string>https://duckduckgo.com/</string>
 		<key>autocomplete_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ac/?type=list&amp;q=%@</string>
+		<string>https://duckduckgo.com/ac/?type=list&amp;q=%@</string>
 	</dict>
 	<key>DuckDuckGo HTML</key>
 	<dict>
 		<key>search_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/html?q=%@</string>
+		<string>https://duckduckgo.com/html?q=%@</string>
 		<key>homepage_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/html</string>
+		<string>https://duckduckgo.com/html</string>
 		<key>autocomplete_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ac/?type=list&amp;q=%@</string>
+		<string>https://duckduckgo.com/ac/?type=list&amp;q=%@</string>
 	</dict>
 	<key>DuckDuckGo Lite</key>
 	<dict>
 		<key>search_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/lite?q=%@</string>
+		<string>https://duckduckgo.com/lite?q=%@</string>
 		<key>homepage_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/lite</string>
+		<string>https://duckduckgo.com/lite</string>
 		<key>autocomplete_url</key>
-		<string>https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ac/?type=list&amp;q=%@</string>
+		<string>https://duckduckgo.com/ac/?type=list&amp;q=%@</string>
 	</dict>
 	<key>Google</key>
 	<dict>

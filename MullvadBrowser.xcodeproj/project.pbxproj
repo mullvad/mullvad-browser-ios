@@ -41,6 +41,7 @@
 		A07037C623C7571B00D670EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07037C523C7571B00D670EC /* AppDelegate.swift */; };
 		A07037C723C79AE500D670EC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07037C223C74DC900D670EC /* Media.xcassets */; };
 		A07B55FC23D736D60051663B /* CertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B55FB23D736D60051663B /* CertificateViewController.swift */; };
+		A07EF6702DE0C62B0011D23F /* SearchEngines.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07EF66F2DE0C62B0011D23F /* SearchEngines.plist */; };
 		A08563142A04E9D900A3A7FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A08563122A04E9D800A3A7FF /* Localizable.strings */; };
 		A085633A2A04EA1E00A3A7FF /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A08563382A04EA1E00A3A7FF /* Localizable.stringsdict */; };
 		A08563602A04EA8C00A3A7FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A085635E2A04EA8C00A3A7FF /* InfoPlist.strings */; };
@@ -52,7 +53,6 @@
 		A0AF2C062A123E65000BCC85 /* BrowsingViewController+UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF2C052A123E65000BCC85 /* BrowsingViewController+UIResponder.swift */; };
 		A0BF51E523AFBF250096624A /* urlblocker.json in Resources */ = {isa = PBXBuildFile; fileRef = A0BF51AE23AFBF250096624A /* urlblocker.json */; };
 		A0BF51ED23AFBF250096624A /* start.html in Resources */ = {isa = PBXBuildFile; fileRef = A0BF51C723AFBF250096624A /* start.html */; };
-		A0BF51EF23AFBF250096624A /* SearchEngines.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0BF51D123AFBF250096624A /* SearchEngines.plist */; };
 		A0BF51F423AFBF250096624A /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = A0BF51DE23AFBF250096624A /* credits.html */; };
 		A0BF524A23AFC3580096624A /* SecurityPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF520323AFC3580096624A /* SecurityPopUpViewController.xib */; };
 		A0BF524E23AFC3580096624A /* SecurityLevelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF520723AFC3580096624A /* SecurityLevelCell.xib */; };
@@ -190,6 +190,7 @@
 		A07B55FB23D736D60051663B /* CertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewController.swift; sourceTree = "<group>"; };
 		A07D655C2208A4320002D775 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		A07D655D2208A6DA0002D775 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A07EF66F2DE0C62B0011D23F /* SearchEngines.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SearchEngines.plist; sourceTree = "<group>"; };
 		A08563132A04E9D800A3A7FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A08563152A04E9E100A3A7FF /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A08563162A04E9E200A3A7FF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -340,7 +341,6 @@
 		A0BF51AE23AFBF250096624A /* urlblocker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = urlblocker.json; sourceTree = "<group>"; };
 		A0BF51C523AFBF250096624A /* credits.html.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.html.in; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
 		A0BF51C723AFBF250096624A /* start.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = start.html; sourceTree = "<group>"; };
-		A0BF51D123AFBF250096624A /* SearchEngines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SearchEngines.plist; sourceTree = "<group>"; };
 		A0BF51DE23AFBF250096624A /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		A0BF520323AFC3580096624A /* SecurityPopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecurityPopUpViewController.xib; sourceTree = "<group>"; };
 		A0BF520723AFC3580096624A /* SecurityLevelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecurityLevelCell.xib; sourceTree = "<group>"; };
@@ -534,7 +534,7 @@
 				A08563382A04EA1E00A3A7FF /* Localizable.stringsdict */,
 				A085635E2A04EA8C00A3A7FF /* InfoPlist.strings */,
 				A07037C223C74DC900D670EC /* Media.xcassets */,
-				A0BF51D123AFBF250096624A /* SearchEngines.plist */,
+				A07EF66F2DE0C62B0011D23F /* SearchEngines.plist */,
 				A0550648271094A900922E18 /* ua-strings.plist */,
 				A0A1A3582A03DAB800DE4991 /* security-levels.html */,
 				A0BF51DE23AFBF250096624A /* credits.html */,
@@ -814,7 +814,7 @@
 				A0BF526523AFC3580096624A /* FavIconCell.xib in Resources */,
 				A0BF525823AFC3580096624A /* TabCell.xib in Resources */,
 				A0BF51E523AFBF250096624A /* urlblocker.json in Resources */,
-				A0BF51EF23AFBF250096624A /* SearchEngines.plist in Resources */,
+				A07EF6702DE0C62B0011D23F /* SearchEngines.plist in Resources */,
 				A08563142A04E9D900A3A7FF /* Localizable.strings in Resources */,
 				A08563602A04EA8C00A3A7FF /* InfoPlist.strings in Resources */,
 				A085633A2A04EA1E00A3A7FF /* Localizable.stringsdict in Resources */,
@@ -894,9 +894,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MullvadBrowser Tests/Pods-MullvadBrowser Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MullvadBrowser Tests/Pods-MullvadBrowser Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -930,9 +934,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MullvadBrowser/Pods-MullvadBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MullvadBrowser/Pods-MullvadBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
