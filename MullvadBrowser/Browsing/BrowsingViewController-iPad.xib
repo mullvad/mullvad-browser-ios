@@ -134,7 +134,7 @@
                                 <constraint firstAttribute="height" constant="30" id="cYH-SE-3eT"/>
                                 <constraint firstAttribute="width" constant="30" id="r0P-om-aoM"/>
                             </constraints>
-                            <state key="normal" image="share"/>
+                            <state key="normal" image="square.and.arrow.up" catalog="system"/>
                             <connections>
                                 <action selector="action:" destination="-1" eventType="touchUpInside" id="x39-N3-FcG"/>
                             </connections>
@@ -166,7 +166,7 @@
                                 <constraint firstAttribute="width" constant="30" id="C57-VU-wc9"/>
                                 <constraint firstAttribute="height" constant="30" id="po4-9n-fJg"/>
                             </constraints>
-                            <state key="normal" image="settings"/>
+                            <state key="normal" image="gearshape" catalog="system"/>
                             <connections>
                                 <action selector="action:" destination="-1" eventType="touchUpInside" id="wc0-KH-M46"/>
                             </connections>
@@ -310,10 +310,10 @@
         <image name="back" width="11" height="19"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="forward" width="11" height="19"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="settings" width="21" height="20"/>
-        <image name="share" width="17" height="22"/>
         <image name="shield" width="31" height="39"/>
+        <image name="square.and.arrow.up" catalog="system" width="110" height="128"/>
         <image name="tabs" width="21" height="21"/>
         <namedColor name="Accent">
             <color red="0.24699999392032623" green="0.16899999976158142" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
