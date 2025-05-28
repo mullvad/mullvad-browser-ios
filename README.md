@@ -1,129 +1,26 @@
 # Mullvad Browser
   
 [Official Site][official] | [Support][help] | [Release History][releases]  
-&copy; 2012-2024, Tigas Ventures, LLC ([Mike Tigas][miketigas])
+&copy; 2025, Mullvad VPN AB
 
 **Mullvad Browser** is a free web browser for iPhone and iPad that helps you staying safe on the Internet.
+
+It is a fork of [Onion Browser 3][onionbrowser].
 
 Please see the [LICENSE][license] file for usage and redistribution terms.
 
 ---
 
-* **Onion Browser**: 3.2.0 - See [official release history][releases] and [changelog][changelog].
+* **Mullvad Browser**: 1.0.0 - See [official release history][releases] and [changelog][changelog].
 
-[official]: https://onionbrowser.com/
-[help]: https://github.com/OnionBrowser/OnionBrowser/wiki/Help
-[releases]: https://github.com/OnionBrowser/OnionBrowser/releases
-[changelog]: https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/3.X/CHANGELOG.md
-[miketigas]: https://mike.tig.as/
-[license]: https://github.com/OnionBrowser/OnionBrowser/blob/3.X/LICENSE
-[orbot]: https://orbot.app/
-[tor]: https://www.torproject.org/
-[2.X]: https://github.com/OnionBrowser/OnionBrowser/tree/2.X
-[1.X]: https://github.com/OnionBrowser/OnionBrowser/tree/1.X
+[official]: https://mullvad.net/browser
+[help]: https://github.com/mullvad/mullvad-browser-ios/issues
+[releases]: https://github.com/mullvad/mullvad-browser-ios/releases
+[changelog]: https://github.com/mullvad/mullvad-browser-ios/blob/main/CHANGELOG.md
+[license]: https://github.com/mullvad/mullvad-browser-ios/blob/main/LICENSE
+[onionbrowser]: https://onionbrowser.com
 
-## Notable 3.X Features
-
-The following features are new to Onion Browser, mostly by leveraging [Orbot iOS][orbot]:
-
-- Use of newer, more secure, faster rendering engine `WKWebView`. 
-
-- Finally all traffic, including audio/video streams tunneled through Tor.
-
-- Everything downloadable now, including web pages.
-
-- Search in page from iOS 16 and up.
-
-- Multiple windows support on iPad.
-
-## Acknowledgements
-
-These people helped with translations. Thank you so much, folks!
-
-- Albanian:
-  Besnik, Kristina_Millona, alter2000, elioqoshi, vilisuli, marianaballa
-- Arabic: 
-  AboShanab, mada19, BNasr, Hujairi, MissPeace, ahmedessamdev, Bild96, Israel.K
-- Bengali: 
-  codesmite, Al_Shahrior, BNasr, hasan_md_rakib, nr072
-- Catalán: 
-  Ecron, pau.selles, Aetheria, Fitoschido, jmontane
-- Chinese (Simplified): 
-  Selinaf, feeblebiscuit, tsaizb, Lafrenze, ff98sha, 99yongliu, Lafrenze, chrisx8_, jxtsai
-- Chinese (Traditional): 
-  Selinaf, s8321414, jxtsai, MengPangWang, tsaizb, austinchang
-- Croatian
-  milotype, paranatox
-- Czech: 
-  Plarome, Lumeriol, hernikplays
-- Dutch: 
-  SilverXp, biancahey, kwadronaut, pljmn, Meteor0id, ChillT, lucasz10
-- Finnish:
-  PyryL, RJuho, olavinto
-- French: 
-  yahoe.001
-- German: 
-  Atalanttore, beonex1, nautilusx, ChristophSchulz, L10N, LordExtra, m_rey
-- Greek: 
-  dmaroulidis, KAUTH, pappasadrian, ssk1, apapac, arammos, beonex1, giormatsis
-- Hebrew: 
-  IONIL
-- Hindi: 
-  balapandu222, drashti4, umkdikshit, josprachi, libregeekingkid, philo_math, sonusandeep, suremak
-- Hungarian: 
-  benewfy, vargaviktor
-- Icelandic: 
-  anarchodin, sveinki
-- Indonesian:
-  myusuffin, Kholidraf, Razmawardhana, andika, ic.debora77, icaldua, khrlzhfr, kiwed
-- Irish: 
-  kscanne
-- Italian:
-  EllipticSet, Rhaal, RickDeckard, ryuw
-- Khmer:
-  Cantaloupe, PisethKONG, mosesngeth, rasy, sokty, sophatchy
-- Korean:
-  MinGyu19, jmj050716, sector429
-- Japanese: 
-  Naofumi, Songbogong, TokumeiNanashi, pluto987, jpanonowl, TENCO, kiririn
-- Macedonian: 
-  Liljana_Ackovska, Zarko_Gjurov, MatejMecka
-- Norwegian (Bokmål): 
-  kingu, eirik174
-- Persian: 
-  ariaa, arminoza, nariman, sabs, magnifico, Gilberto1, Zaefarani, alinbipr, hamidreza_yazdani, mo.hoseini, noneck, voxp, gonjayesh, koofi, nonecknoel
-- Polish:
-  GEEZET1, Pihjun, tenderloin, weegoor, wiktoriatomzik
-- Portuguese (Brazil): 
-  flaviove, CypherZnnb, Bk__13, CRCF, darkcrystal, eduaddadbr, leovasone, nopum, vmattos, Communia
-- Portuguese (Portugal): 
-  manuelarodsilva,  Bk__13, mrBatsu
-- Romanian:
-  alex1lazar, libertatemes, tud0r
-- Russian: 
-  anm, dianazryn, emedvedev, Ifti, foxing29, neocaching, Pihjun, ZiPERR
-- Spanish: 
-  arielbarbosa, Maria_Jose, emmapeel, strel, zakooch, Aetheria, Fabiola.mauriceh, Fitoschido, kodachi, lenazun, nosense, supermigue2000, vareli, antonela_
-- Tatar:
-  seber
-- Thai:
-  bact'
-- Turkish:  
-  falcontr06, kayazeren, ali_demirtas
-- Ukrainian: 
-  Herenko, lyubomyr, MykolaBubelich, Kataphan, Pihjun, gr3ttle
-- Vietnamese: 
-  AshCopper, PMinhDuc, Shinigami
-
-## Contributors
-
-This project exists thanks to all the people who contribute. 
-<a href="https://github.com/OnionBrowser/OnionBrowser/graphs/contributors"><img src="https://opencollective.com/OnionBrowser/contributors.svg?width=890&button=false" /></a>
 
 ## How to build yourself
 
 Build instructions can be found in [BUILD.md](BUILD.md).
-
-## Further reading
-
-https://tordev.guardianproject.info
