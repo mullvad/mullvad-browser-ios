@@ -24,3 +24,8 @@ You will at least need to edit the `PRODUCT_BUNDLE_IDENTIFIER[config=Debug]` lin
 the app in a simulator. 
 
 Make sure, you didn't accidentally remove the references to that in `project.pbxproj`!
+
+
+### Resources
+
+https://mullvad.net/en/press
