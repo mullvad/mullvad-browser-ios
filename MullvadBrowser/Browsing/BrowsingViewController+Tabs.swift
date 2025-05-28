@@ -88,7 +88,7 @@ UICollectionViewDropDelegate, TabCellDelegate {
 			if indexPath.row > -1 && indexPath.row < tabs.count {
 				let tab = tabs[indexPath.row]
 
-				cell.header.backgroundColor = tab == currentTab ? .accentLight : .black
+				cell.header.backgroundColor = tab == currentTab ? .accentDark : .black
 				cell.title.text = tab.title
 
 				var size = cellSize
