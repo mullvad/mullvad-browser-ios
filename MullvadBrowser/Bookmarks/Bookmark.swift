@@ -258,6 +258,14 @@ open class Bookmark: NSObject {
 		}
 	}
 
+	var iconUrl: URL? {
+		if iconName.isEmpty {
+			return nil
+		}
+
+		return Bookmark.root?.appendingPathComponent(iconName)
+	}
+
 	init(name: String? = nil, url: String? = nil, icon: UIImage? = nil) {
 		super.init()
 

@@ -11,8 +11,14 @@
 import Foundation
 import MobileCoreServices
 import UniformTypeIdentifiers
+import LinkPresentation
 
 extension Tab: UIActivityItemSource {
+
+	enum Errors: Error {
+
+		case iconLoadFailed
+	}
 
 	private var uti: UTType? {
 		guard let id = try? downloadedFile?.resourceValues(forKeys: [.typeIdentifierKey]).typeIdentifier else {
@@ -66,8 +72,8 @@ extension Tab: UIActivityItemSource {
 				|| activityType == .copyToPasteboard
 				|| activityType == .saveToCameraRoll
 				|| activityType.rawValue == "com.apple.DocumentManagerUICore.SaveToFiles" // iOS 14
-				|| activityType.rawValue == "com.apple.CloudDocsUI.AddToiCloudDrive") {
-
+				|| activityType.rawValue == "com.apple.CloudDocsUI.AddToiCloudDrive")
+		{
 			// Return local file URL -> The file will be loaded and shared from there
 			// and it will use the correct file name.
 			return downloadedFile
@@ -110,5 +116,43 @@ extension Tab: UIActivityItemSource {
 		UIGraphicsEndImageContext()
 
 		return thumbnail
+	}
+
+	func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+		let metadata = LPLinkMetadata()
+		metadata.originalURL = url
+		metadata.url = url
+		metadata.title = title
+
+		let bookmark = Bookmark.all.first { $0.url?.host == url.host }
+
+		if #available(iOS 16.0, *), let icon = bookmark?.iconUrl {
+			metadata.iconProvider = .init(contentsOf: icon, contentType: .png, openInPlace: false,
+										  coordinated: false, visibility: .all)
+		}
+		else {
+			let iconProvider = NSItemProvider()
+			iconProvider.registerObject(ofClass: UIImage.self, visibility: .all) { [weak self] completion in
+				if let url = self?.url {
+					Bookmark.icon(for: url) { image in
+						if let image = image {
+							completion(image, nil)
+						}
+						else {
+							completion(nil, Errors.iconLoadFailed)
+						}
+					}
+				}
+				else {
+					completion(nil, Errors.iconLoadFailed)
+				}
+
+				return nil
+			}
+
+			metadata.iconProvider = iconProvider
+		}
+
+		return metadata
 	}
 }
