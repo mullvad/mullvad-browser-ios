@@ -8,7 +8,16 @@
 
 import UIKit
 
-class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
+class BlocklistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+
+	@IBOutlet weak var enableLb: UILabel! {
+		didSet {
+			enableLb.text = NSLocalizedString("Use URL Blocker", comment: "")
+		}
+	}
+	@IBOutlet weak var enableSw: UISwitch!
+
+	@IBOutlet weak var tableView: UITableView!
 
 	private var hostsInUse = [String]()
 	private var hostsAll = [String]()
@@ -19,7 +28,7 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 	}
 
 	init() {
-		super.init(style: .grouped)
+		super.init(nibName: String(describing: Self.self), bundle: nil)
 	}
 
 	required init?(coder: NSCoder) {
@@ -43,20 +52,22 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 		hostsAll = UrlBlocker.shared.hosts
 
 		navigationItem.title = NSLocalizedString("Blocked 3rd-Party Hosts", comment: "")
+
+		enableSw.isOn = Settings.enableUrlBlocker
 	}
 
 
 	// MARK: UITableViewDataSource
 
-	override func numberOfSections(in tableView: UITableView) -> Int {
+	func numberOfSections(in tableView: UITableView) -> Int {
 		2
 	}
 
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		hosts(for: section).count
 	}
 
-	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		if section == 0 {
 			return NSLocalizedString("Rules in use on current page", comment: "")
 		}
@@ -64,7 +75,7 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 		return NSLocalizedString("All rules", comment: "")
 	}
 
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "rule") ?? .init(style: .subtitle, reuseIdentifier: "rule")
 		cell.selectionStyle = .none
 
@@ -87,7 +98,7 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 			}
 		}
 		else {
-			cell.textLabel?.textColor = .label
+			cell.textLabel?.textColor = Settings.enableUrlBlocker ? .label : .secondaryLabel
 			cell.detailTextLabel?.textColor = .secondaryLabel
 
 			cell.detailTextLabel?.text = detail
@@ -96,18 +107,18 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 		return cell
 	}
 
-	override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+	func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
 		true
 	}
 
-	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 		if editingStyle == .delete {
 			toggle(hosts(for: indexPath.section)[indexPath.row])
 			tableView.reloadRows(at: [indexPath], with: .automatic)
 		}
 	}
 
-	override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+	func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
 		if UrlBlocker.shared.isDisabled(host: hosts(for: indexPath.section)[indexPath.row]) != nil {
 			return NSLocalizedString("Enable", comment: "")
 		}
@@ -127,6 +138,16 @@ class BlocklistViewController: UITableViewController, UISearchResultsUpdating {
 		}
 
 		tableView.reloadSections([1], with: .automatic)
+	}
+
+
+	// MARK: Actions
+
+	@IBAction
+	func toggleBlocker() {
+		Settings.enableUrlBlocker = enableSw.isOn
+
+		tableView.reloadData()
 	}
 
 

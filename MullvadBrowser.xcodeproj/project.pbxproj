@@ -19,6 +19,8 @@
 		54F7DBC8281C189700CBEFDB /* CALayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7DBC7281C189700CBEFDB /* CALayer+Helpers.swift */; };
 		A003A1932A0D1628008D8845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003A1922A0D1628008D8845 /* SceneDelegate.swift */; };
 		A004FB2A241A782500451A9E /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06DF455241A60E700A07796 /* SecureEnclave.swift */; };
+		A00748292E295A6A0083E115 /* BlocklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00748282E295A6A0083E115 /* BlocklistViewController.xib */; };
+		A007482A2E295A6A0083E115 /* BlocklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00748282E295A6A0083E115 /* BlocklistViewController.xib */; };
 		A013DEDA2434E69A0087D12B /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A013DED92434E69A0087D12B /* UIImage+Helpers.swift */; };
 		A0140DB92D70844700BD2658 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0140DB82D70844700BD2658 /* Log.swift */; };
 		A0172C6E2888247C008D42CD /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0172C6D2888247C008D42CD /* AlertHelper.swift */; };
@@ -159,6 +161,7 @@
 		A003A1922A0D1628008D8845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A004360B1E81856F0067652D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A004360C1E81856F0067652D /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A00748282E295A6A0083E115 /* BlocklistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlocklistViewController.xib; sourceTree = "<group>"; };
 		A010FA171E7986DE00E04222 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		A010FA191E798C0400E04222 /* BUILD.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BUILD.md; sourceTree = "<group>"; };
 		A013DED92434E69A0087D12B /* UIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
@@ -663,6 +666,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C1FB102D50FC5200AE97A7 /* BlocklistViewController.swift */,
+				A00748282E295A6A0083E115 /* BlocklistViewController.xib */,
 				A0C1FB112D50FC5200AE97A7 /* UrlBlocker.swift */,
 			);
 			path = Blocking;
@@ -821,6 +825,7 @@
 				A0BF524A23AFC3580096624A /* SecurityPopUpViewController.xib in Resources */,
 				A0BF526323AFC3580096624A /* BookmarksViewController.xib in Resources */,
 				A0BF51ED23AFBF250096624A /* start.html in Resources */,
+				A00748292E295A6A0083E115 /* BlocklistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,6 +839,7 @@
 				01F879491A41141800A63654 /* urlblocker_mock_targets.plist in Resources */,
 				01F2AE451B827D3E00D5651A /* lobste.rs.crt in Resources */,
 				01F2AE4A1B82835A00D5651A /* expired.superblock.net.crt in Resources */,
+				A007482A2E295A6A0083E115 /* BlocklistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

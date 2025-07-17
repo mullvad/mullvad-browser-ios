@@ -334,4 +334,18 @@ class Settings {
 			UserDefaults.standard.set(newValue, forKey: "nextcloud_password")
 		}
 	}
+
+	class var enableUrlBlocker: Bool {
+		get {
+			// Defaults to true!
+			if UserDefaults.standard.object(forKey: "url_blocker") == nil {
+				return true
+			}
+
+			return UserDefaults.standard.bool(forKey: "url_blocker")
+		}
+		set {
+			UserDefaults.standard.set(newValue, forKey: "url_blocker")
+		}
+	}
 }

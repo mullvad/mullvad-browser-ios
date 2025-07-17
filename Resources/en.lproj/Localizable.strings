@@ -418,6 +418,9 @@
 /* SettingsViewController */
 "URL Blocker" = "URL Blocker";
 
+/* No comment provided by engineer. */
+"Use URL Blocker" = "Use URL Blocker";
+
 /* SecurityViewController */
 "User Agent" = "User Agent";
 

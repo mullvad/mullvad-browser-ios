@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlocklistViewController" customModule="OnionBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="enableLb" destination="uqJ-nQ-Jhb" id="20U-1R-t0r"/>
+                <outlet property="enableSw" destination="g7J-RK-Vuy" id="Cgi-5E-YSa"/>
+                <outlet property="tableView" destination="5rM-0X-PZp" id="YaP-46-PAE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-0X-PZp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="de8-ne-AxM"/>
+                        <outlet property="delegate" destination="-1" id="1MY-vr-R3A"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use URL Blocker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqJ-nQ-Jhb">
+                    <rect key="frame" x="16" y="534" width="231" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7J-RK-Vuy">
+                    <rect key="frame" x="255" y="529" width="51" height="31"/>
+                    <color key="onTintColor" name="Accent"/>
+                    <connections>
+                        <action selector="toggleBlocker" destination="-1" eventType="valueChanged" id="u15-SY-auk"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="g7J-RK-Vuy" firstAttribute="leading" secondItem="uqJ-nQ-Jhb" secondAttribute="trailing" constant="8" symbolic="YES" id="1Tg-Jo-5To"/>
+                <constraint firstAttribute="trailing" secondItem="5rM-0X-PZp" secondAttribute="trailing" id="532-uF-h0P"/>
+                <constraint firstItem="uqJ-nQ-Jhb" firstAttribute="centerY" secondItem="g7J-RK-Vuy" secondAttribute="centerY" id="7RE-oV-yVe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g7J-RK-Vuy" secondAttribute="bottom" constant="8" id="BhF-g8-ep1"/>
+                <constraint firstItem="g7J-RK-Vuy" firstAttribute="top" secondItem="5rM-0X-PZp" secondAttribute="bottom" constant="8" symbolic="YES" id="GoC-Jt-fpo"/>
+                <constraint firstItem="uqJ-nQ-Jhb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JcD-ll-O1D"/>
+                <constraint firstItem="5rM-0X-PZp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QNd-CP-nUu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g7J-RK-Vuy" secondAttribute="trailing" constant="16" id="ZiN-YD-VPX"/>
+                <constraint firstItem="5rM-0X-PZp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uwi-vd-5A8"/>
+            </constraints>
+            <point key="canvasLocation" x="41.25" y="-11.619718309859156"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent">
+            <color red="0.24699999392032623" green="0.16899999976158142" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

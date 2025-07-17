@@ -84,6 +84,10 @@ class UrlBlocker: NSObject {
 	// MARK: Public Methods
 
 	func blockRule(for url: URL, withMain mainUrl: URL? = nil) -> String? {
+		guard Settings.enableUrlBlocker else {
+			return nil
+		}
+
 		let rule = blockRule(for: url)
 
 		if let rule = rule, let mainUrl = mainUrl {
