@@ -1,6 +1,6 @@
 //
-//  URLSession+IPtProxyUI.swift
-//  IPtProxyUI
+//  URLSession+Helpers.swift
+//  MullvadBrowser
 //
 //  Created by Benjamin Erhart on 2021-11-29.
 //  Copyright © 2012 - 2025, Tigas Ventures, LLC (Mike Tigas)
@@ -29,7 +29,7 @@ public extension URLSession {
 		return dataTask(with: request) { data, response, error in
 
 //			Log.log(for: Self.self, "#apiTask data=\(String(describing: String(data: data ?? Data(), encoding: .utf8))), response=\(String(describing: response)), error=\(String(describing: error))")
-			
+
 			if let error = error {
 				completion?(nil, error)
 				return
@@ -49,7 +49,12 @@ public extension URLSession {
 				completion?(nil, ApiError.noBody)
 				return
 			}
-			
+
+			if String(describing: T.self) == "Data" {
+				completion?(data as? T, nil)
+				return
+			}
+
 			do {
 				completion?(try JSONDecoder().decode(T.self, from: data), nil)
 			}

@@ -1,6 +1,3 @@
-/* RuleEditorController */
-"%1$@ (Disabled: %2$@)" = "%1$@ (Disabled: %2$@)";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(not recommended)";
 
@@ -87,6 +84,9 @@
 
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Choose how long app remembers open tabs.";
+
+/* No comment provided by engineer. */
+"Choose your preferred blocklist:" = "Choose your preferred blocklist:";
 
 /* AppDelegate */
 "Close Tab" = "Close Tab";
@@ -414,6 +414,9 @@
 
 /* AddSearchEngineViewController */
 "Update" = "Update";
+
+/* No comment provided by engineer. */
+"Update Blocklist" = "Update Blocklist";
 
 /* SettingsViewController */
 "URL Blocker" = "URL Blocker";

@@ -1,6 +1,3 @@
-/* RuleEditorController */
-"%1$@ (Disabled: %2$@)" = "%1$@ (Deaktiviert: %2$@)";
-
 /* No comment provided by engineer. */
 "(not recommended)" = "(nicht empfohlen)";
 
@@ -22,8 +19,8 @@
 /* CustomSitesViewController, AddSiteViewController */
 "Add Site" = "Seite hinzufügen";
 
-/* No comment provided by engineer. */
-"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Additionally, all bookmarks not existing on the server but in %@ will be created there.";
+/* Placeholder is 'Onion Browser' */
+"Additionally, all bookmarks not existing on the server but in %@ will be created there." = "Zusätzlich werden alle Lesezeichen, die am Server nicht existieren, aber in %@, dort erstellt.";
 
 /* BookmarkViewController */
 "Address" = "Adresse";
@@ -87,6 +84,9 @@
 
 /* SettingsViewController */
 "Choose how long app remembers open tabs." = "Wie lange soll sich die App an offene Reiter erinnern?";
+
+/* No comment provided by engineer. */
+"Choose your preferred blocklist:" = "Wähle Deine bevorzugte Blockliste:";
 
 /* AppDelegate */
 "Close Tab" = "Schließe Reiter";
@@ -202,8 +202,8 @@
 /* AddSiteViewController, SyncViewController */
 "Host" = "Host";
 
-/* No comment provided by engineer. */
-"If you sync, all bookmarks will be read from the server and added/updated in %@." = "If you sync, all bookmarks will be read from the server and added/updated in %@.";
+/* Placeholder is 'Onion Browser' */
+"If you sync, all bookmarks will be read from the server and added/updated in %@." = "Wenn Du synchronisierst, werden alle Lesezeichen vom Server gelesen und in %@ hinzugefügt/aktualisiert.";
 
 /* Tab+UIWebViewDelegate */
 "Ignore for this host" = "Für diesen Host ignorieren";
@@ -414,6 +414,9 @@
 
 /* AddSearchEngineViewController */
 "Update" = "Ändern";
+
+/* No comment provided by engineer. */
+"Update Blocklist" = "Blockliste erneuern";
 
 /* SettingsViewController */
 "URL Blocker" = "URL Blocker";

@@ -26,3 +26,5 @@ fastlane/README.md
 fastlane/report.xml
 
 .idea/
+
+Resources/light-onlydomains.txt
